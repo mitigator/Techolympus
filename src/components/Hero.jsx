@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import OliveLeaf from '../assets/OliveLeaf.png';
-import HeroLeft from '../assets/HeroLeft.png';
-import HeroRight from '../assets/HeroRight.png';
+import HeroLeft from '../assets/Heroleft.png';
+import HeroRight from '../assets/Heroright.png';
 
 const Hero = () => {
   const textAnimation = {
