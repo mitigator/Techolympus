@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import christ from '../assets/christlogo.png';
+import Gatewayslogo from '../assets/Gatewayslogo.png';
+import Techolympys from '../assets/Techolympuslogo.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,9 +14,14 @@ const Navbar = () => {
   return (
     <div className="relative ">
       <nav className="bg-[#0f0f19] text-[#E7B472] font-abril-fatface p-4 flex justify-between items-center">
-        <div className="md:flex items-center space-x-2 hidden">
-          <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-          <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+        <div className="md:flex items-center space-x-2 gap-5 hidden translate-y-10 z-10">
+          <div className="w-14  rounded-full bg-[#e7b472] flex justify-center items-center">
+            <img src={Gatewayslogo} alt='Gateways Logo'/>
+          </div>
+          <div className="w-14 rounded-full bg-[#e7b472] flex justify-center items-center">
+          <img src={Techolympys} alt='Techolympys Logo'/>
+
+          </div>
         </div>
 
         <div className="flex items-center ">
@@ -72,7 +79,7 @@ const Navbar = () => {
     animate={{ opacity: 1, y: 0 }}   
     exit={{ opacity: 0, y: -20 }}   
     transition={{ duration: 0.3 }}   
-    className="absolute top-full left-0 w-full h-[100vh] bg-[#0f0f19] p-4 md:hidden"
+    className="absolute top-full left-0 w-full h-[100vh] bg-[#0f0f19] p-4 md:hidden z-20"
   >
     <a href="#events" className="block py-2 text-[#E7B472]">Events</a>
     <a href="#about" className="block py-2 text-[#E7B472]">About</a>
