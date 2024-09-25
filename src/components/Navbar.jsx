@@ -1,26 +1,88 @@
-import React from 'react';
-import christ from '../assets/christlogo.png'
-
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import christ from '../assets/christlogo.png';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className="relative">
-      <nav className="bg-[#0f0f19] text-[#E7B472] font-abril-fatface  p-4 flex justify-between items-center">
-        <div className="flex items-center space-x-2">
+    <div className="relative ">
+      <nav className="bg-[#0f0f19] text-[#E7B472] font-abril-fatface p-4 flex justify-between items-center">
+        <div className="md:flex items-center space-x-2 hidden">
           <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
           <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
         </div>
-        <div className="flex space-x-6 justify-center gap-24 ">
-          <a href="#events" >Events</a>
-          <a href="#about" >About</a>
-          <a href="#gallery" >Gallery</a>
+
+        <div className="flex items-center ">
+          <button
+            className="block md:hidden focus:outline-none"
+            onClick={toggleMenu}
+          >
+            <motion.div
+              initial={false}
+              animate={isMenuOpen ? 'open' : 'closed'}
+              className="space-y-1"
+            >
+              <motion.div
+                className="w-6 h-0.5 bg-[#E7B472]"
+                variants={{
+                  open: { rotate: 45, y: 6 },
+                  closed: { rotate: 0, y: 0 },
+                }}
+                transition={{ duration: 0.3 }}
+              />
+              <motion.div
+                className="w-6 h-0.5 bg-[#E7B472]"
+                variants={{
+                  open: { opacity: 0 },
+                  closed: { opacity: 1 },
+                }}
+                transition={{ duration: 0.3 }}
+              />
+              <motion.div
+                className="w-6 h-0.5 bg-[#E7B472]"
+                variants={{
+                  open: { rotate: -45, y: -6 },
+                  closed: { rotate: 0, y: 0 },
+                }}
+                transition={{ duration: 0.3 }}
+              />
+            </motion.div>
+          </button>
+
+          <div className="hidden md:flex space-x-6   justify-center gap-24">
+            <a href="#events">Events</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+          </div>
         </div>
+
         <div className="flex items-center">
           <img src={christ} alt="Christ University logo" className="h-8 w-auto" />
         </div>
       </nav>
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[1.5px] w-[65%] bg-[#E7B472]"></div>
-      </div>
+
+      {isMenuOpen && (
+  <motion.div
+    initial={{ opacity: 0, y: -20 }} 
+    animate={{ opacity: 1, y: 0 }}   
+    exit={{ opacity: 0, y: -20 }}   
+    transition={{ duration: 0.3 }}   
+    className="absolute top-full left-0 w-full h-[100vh] bg-[#0f0f19] p-4 md:hidden"
+  >
+    <a href="#events" className="block py-2 text-[#E7B472]">Events</a>
+    <a href="#about" className="block py-2 text-[#E7B472]">About</a>
+    <a href="#gallery" className="block py-2 text-[#E7B472]">Gallery</a>
+  </motion.div>
+)}
+
+
+      <div className="md:block hidden absolute bottom-0 left-1/2 -translate-x-1/2 h-[1.5px] w-[65%] bg-[#E7B472]"></div>
+    </div>
   );
 };
 
