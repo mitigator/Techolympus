@@ -11,6 +11,7 @@ export default {
         'bilbo-swap-caps' : ["Bilbo Swash Caps",'cursive']
       }
     },
+    
   },
   plugins: [],
 }
