@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import TecholympusLogo from '../assets/TecholympusLogo.png';
+import TecholympusLogo from '../assets/Techolympuslogo.png';
 import Card from './Card';
 import contentData from '../json/Theme.json'; // Adjust the path based on your folder structure
 
