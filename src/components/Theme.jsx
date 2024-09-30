@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import TecholympusLogo from '../assets/Techolympuslogo.png';
 import Card from './Card';
-import contentData from '../json/Theme.json'; // Adjust the path based on your folder structure
+import contentData from '../json/Theme.json'; 
 
 const Theme = () => {
-    const [content, setContent] = useState(contentData); // Directly using imported content
+    const [content, setContent] = useState(contentData); 
 
     return (
         <div className='bg-[#0f0f19] flex flex-col gap-10 items-center p-10 min-h-screen overflow-x-hidden'>
