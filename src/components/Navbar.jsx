@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className="relative">
       <nav className="bg-[#0f0f19] text-[#E7B472] font-abril-fatface p-4 flex justify-between items-center">
-        <div className="md:flex items-center space-x-2 gap-5 hidden translate-y-10 z-10">
+        <div className="md:flex items-center space-x-2 gap-5 hidden  z-10">
           <div className="w-14 rounded-full bg-[#e7b472] flex justify-center items-center">
             <img src={Gatewayslogo} alt="Gateways Logo" />
           </div>

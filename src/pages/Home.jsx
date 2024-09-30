@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import Event from '../components/Event'
 import Theme from '../components/Theme'
 import Gateways from '../components/Gateways'
+import HeroImage from '../components/HeroImage'
 
 
 const Home = () => {
