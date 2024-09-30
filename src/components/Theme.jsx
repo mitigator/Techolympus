@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import TecholympusLogo from '../assets/Techolympuslogo.png';
+import Techolympys from '../assets/Techolympuslogo.png';
 import Card from './Card';
 import contentData from '../json/Theme.json'; 
 
@@ -16,7 +16,7 @@ const Theme = () => {
                 </div>
 
                 <div className='flex justify-center items-center'>
-                    <img src={TecholympusLogo} alt="Techolympus Logo" className='w-32 h-32 object-contain' />
+                    <img src={Techolympys} alt="Techolympus Logo" className='w-32 h-32 object-contain' />
                 </div>
             </div>
             <div className='flex flex-col md:flex-row max-w-4xl w-full gap-8 justify-between'>
