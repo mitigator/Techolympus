@@ -61,9 +61,9 @@ const Navbar = () => {
           </button>
 
           <div className="hidden md:flex space-x-6 justify-center gap-24">
-            <a href="#events">Events</a>
-            <a href="#about">About</a>
-            <a href="#gallery">Gallery</a>
+            <a href="/events">Events</a>
+            <a href="/about">About</a>
+            <a href="/gallery">Gallery</a>
           </div>
         </div>
 
@@ -85,9 +85,9 @@ const Navbar = () => {
           transition={{ duration: 0.3 }}
           className="absolute top-full left-0 w-full h-[100vh] bg-[#0f0f19] p-4 md:hidden z-20"
         >
-          <a href="#events" className="block py-2 text-[#E7B472]">Events</a>
-          <a href="#about" className="block py-2 text-[#E7B472]">About</a>
-          <a href="#gallery" className="block py-2 text-[#E7B472]">Gallery</a>
+          <a href="/events" className="block py-2 text-[#E7B472]">Events</a>
+          <a href="/about" className="block py-2 text-[#E7B472]">About</a>
+          <a href="/gallery" className="block py-2 text-[#E7B472]">Gallery</a>
         </motion.div>
       )}
 
