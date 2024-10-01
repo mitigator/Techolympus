@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         'abril-fatface' : ["Abril Fatface", 'serif'],
         'bilbo-swap-caps' : ["Bilbo Swash Caps",'cursive']
+      },
+      animation: {
+        'spin-slow': 'spin 8s linear infinite',
       }
     },
     
