@@ -30,7 +30,7 @@ const Hero = () => {
 
   return (
     <div 
-    className='bg-[#0f0f19] text-[#e7b472] flex flex-col justify-center items-center h-[100vh] relative overflow-hidden bg-no-repeat bg-cover bg-center '
+    className='bg-[#0f0f19] text-[#e7b472] flex flex-col justify-center items-center h-[100vh] relative overflow-hidden bg-no-repeat bg-contain md:bg-cover bg-center '
     style={{ backgroundImage: `url(${zeus})` , }}
     
     >
