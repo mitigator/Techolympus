@@ -8,9 +8,9 @@ import textData from '../json/heratrials.json';
 const HeraTrial = () => {
     return (
         <div>
-            <Navbar />
+            <Navbar/>
             <div
-                className="bg-[#0f0f19] h-screen bg-bgleaf bg-no-repeat bg-cover bg-center flex flex-col items-center gap-10 font-caesar-dressing mt-10"
+                className="bg-[#0f0f19] h-screen bg-bgleaf bg-no-repeat bg-cover bg-center flex flex-col items-center gap-10 font-caesar-dressing pt-10"
                 style={{ backgroundImage: `url(${bg})` }}
             >
                 <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-text">

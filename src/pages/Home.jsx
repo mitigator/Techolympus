@@ -13,12 +13,12 @@ import HeraTrial from '../events/HeraTrial'
 const Home = () => {
   return (
     <div className=' bg-[#0f0f19] h-[100vh]'>
-        <HeraTrial/>
-        {/* <Hero/>
+        <Navbar/>
+        <Hero/>
         <Event/>
         <Theme/>
         <Gateways/>
-        <Footer/> */}
+        <Footer/>
     </div>
   )
 }

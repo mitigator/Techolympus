@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Events from './pages/Events';
 import Gallery from './pages/Gallery';
+import HeraTrial from './events/HeraTrial';
 import NotFound from './pages/NotFound'; // Create this component
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/events" element={<Events />} />
+        <Route path="/events" element={<HeraTrial />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="*" element={<NotFound />} /> 
