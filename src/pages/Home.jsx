@@ -6,17 +6,19 @@ import Event from '../components/Event'
 import Theme from '../components/Theme'
 import Gateways from '../components/Gateways'
 import HeroImage from '../components/HeroImage'
+import HeraTrial from '../events/HeraTrial'
+
 
 
 const Home = () => {
   return (
     <div className=' bg-[#0f0f19] h-[100vh]'>
-        <Navbar/>
-        <Hero/>
+        <HeraTrial/>
+        {/* <Hero/>
         <Event/>
         <Theme/>
         <Gateways/>
-        <Footer/>
+        <Footer/> */}
     </div>
   )
 }

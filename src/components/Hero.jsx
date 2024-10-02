@@ -30,10 +30,20 @@ const Hero = () => {
 
   return (
     <div 
-    className='bg-[#0f0f19] text-[#e7b472] flex flex-col justify-center items-center h-[100vh] relative overflow-hidden bg-no-repeat bg-contain md:bg-cover bg-center '
-    style={{ backgroundImage: `url(${zeus})` , }}
-    
+      className='bg-[#0f0f19] text-[#e7b472] flex flex-col justify-center items-center h-[90vh] md:h-[100vh] relative overflow-hidden'
     >
+     <motion.img 
+  src={zeus} 
+  alt='Zeus' 
+  className='absolute inset-0 w-full h-[100vh] object-contain md:object-cover opacity-20' 
+  initial="hidden"
+  animate="visible"
+  variants={fadeIn}
+  transition={{ duration: 1.2 }}
+/>
+
+
+      
       <motion.h1 
         className='font-abril-fatface text-[40px] sm:text-[50px] md:text-[80px] mt-10 md:mt-20 z-10'
         initial="hidden"
