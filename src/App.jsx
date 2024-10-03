@@ -5,12 +5,13 @@ import Events from './pages/Events';
 import Gallery from './pages/Gallery';
 import HeraTrial from './events/HeraTrial';
 import NotFound from './pages/NotFound'; // Create this component
+import Home2 from './pages/Home2';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home2 />} />
         <Route path="/events" element={<HeraTrial />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />

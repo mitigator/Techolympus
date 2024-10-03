@@ -12,13 +12,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className="relative">
-      <nav className="bg-[#0f0f19] text-[#E7B472] font-abril-fatface p-4 flex justify-between items-center">
+    <div className="relative z-50 ">
+      <nav className="bg-[#0f0f19] text-[#E7B472] font-abril-fatface p-4 md:p-0 flex justify-between items-center">
         <div className="md:flex items-center space-x-2 gap-5 hidden  z-10">
-          <div className="w-14 rounded-full bg-[#e7b472] flex justify-center items-center">
+          <div className="w-12 rounded-full bg-[#e7b472] flex justify-center items-center">
             <img src={Gatewayslogo} alt="Gateways Logo" />
           </div>
-          <div className="w-14 rounded-full bg-[#e7b472] flex justify-center items-center">
+          <div className="w-12 rounded-full bg-[#e7b472] flex justify-center items-center">
             <img src={Techolympys} alt="Techolympys Logo" />
           </div>
         </div>
@@ -73,7 +73,7 @@ const Navbar = () => {
           transition={{ duration: 2 }}
           className="flex items-center"
         >
-          <img src={christ} alt="Christ University logo" className="h-8 w-auto" />
+          <img src={christ} alt="Christ University logo" className="h-12 w-auto" />
         </motion.div>
       </nav>
 
