@@ -30,12 +30,12 @@ const Hero = () => {
 
   return (
     <div 
-      className='bg-[#0f0f19] text-[#e7b472] flex flex-col justify-center items-center h-[90vh] md:h-[100vh] relative overflow-hidden'
+      className='bg-[#0f0f19] text-[#e7b472] flex flex-col justify-center items-center h-[90vh] md:h-[180vh] relative overflow-hidden'
     >
      <motion.img 
   src={zeus} 
   alt='Zeus' 
-  className='absolute inset-0 w-full h-[100vh] object-contain md:object-cover opacity-20' 
+  className='absolute inset-0 w-full h-[100vh] md:h-[180vh] object-contain md:object-cover opacity-20 mt-' 
   initial="hidden"
   animate="visible"
   variants={fadeIn}

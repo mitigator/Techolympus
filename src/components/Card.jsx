@@ -5,7 +5,7 @@ const Card = ({ eventName }) => {
   return (
     <div className="relative flex justify-center items-center">
       <div
-        className="bg-[#352A2E] h-64 w-64 flex justify-center items-center relative"
+        className=" border-[5px] border-[#E7B472] bg-[#352A2E] h-64 w-64 flex justify-center items-center relative"
         style={{
           clipPath: 'polygon(50% 5%, 100% 0, 95% 15%, 98% 93%, 50% 100%, 50% 100%, 2% 93%, 5% 15%, 0 0)',
           zIndex: 0,
