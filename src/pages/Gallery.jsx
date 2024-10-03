@@ -1,8 +1,11 @@
 import React from 'react'
+import Trails from '../components/Trial'
 
 const Gallery = () => {
   return (
-    <div>Gallery</div>
+    <div>
+      <Trails/>
+    </div>
   )
 }
 

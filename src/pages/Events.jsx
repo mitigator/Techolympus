@@ -1,8 +1,11 @@
 import React from 'react'
+import Trails from '../components/Trial'
 
 const Events = () => {
   return (
-    <div>Events</div>
+    <div>
+      <Trails/>
+    </div>
   )
 }
 
