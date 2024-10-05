@@ -4,7 +4,6 @@ import bg from '../assets/aboutBackground.svg';
 import light from '../assets/light.svg';
 import logo from '../assets/aboutLogo.svg';
 import Card from '../components/Card';
-import transition from '../components/transition';
 
 const About = () => {
   return (
@@ -72,4 +71,4 @@ const About = () => {
   );
 }
 
-export default transition(About);
+export default About;
