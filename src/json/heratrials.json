@@ -1,11 +1,218 @@
-{
-    "eventId": "Event ID",
-    "eventType": "Event Type: Surprise Event",
-    "venue": "Venue:",
-    "teamSize": "Team Size:",
-    "rounds": "Rounds: 3",
-    "contactPerson": "Contact Person:",
-    "contactNumber": "Number:",
-    "title": "Hera's Trials",
-    "description": "Hera, being the queen of the gods, can represent authority and unpredictability, symbolizing a challenge that tests various abilities."
-}
+[
+    {
+        "id": 1,
+        "eventType": "Surprise Event",
+        "venue": "Auditorium",
+        "teamSize": "Team Size: 4",
+        "rounds": "Rounds: 3",
+        "contactPerson": "Contact Person: John Doe",
+        "contactNumber": "Number: 123-456-7890",
+        "title": "Hera's Trials",
+        "description": "Hera, being the queen of the gods, can represent authority and unpredictability, symbolizing a challenge that tests various abilities.",
+        "firstPrize": "₹5000",
+        "secondPrize": "₹3000",
+        "thirdPrize": "₹1000",
+        "rules": [
+            "Rule 1: Teams must consist of 4 members.",
+            "Rule 2: No mobile phones or outside help allowed.",
+            "Rule 3: Judges' decisions are final and binding.",
+            "Rule 4: All participants must arrive 15 minutes prior to the event start time."
+        ],
+        "link": "https://www.example.com"
+    },
+    {
+        "id": 2,
+        "eventType": "Photography",
+        "venue": "Venue: Photography Studio",
+        "teamSize": "Team Size: 2",
+        "rounds": "Rounds: 1",
+        "contactPerson": "Contact Person: Jane Smith",
+        "contactNumber": "Number: 123-456-7891",
+        "title": "Apollo’s Luminous Lens",
+        "description": "Luminous adds a more dynamic and radiant feel, making it stand out while still connecting with Apollo’s association with light and creativity in photography.",
+        "firstPrize": "₹4000",
+        "secondPrize": "₹2000",
+        "thirdPrize": "₹1000",
+        "rules": [
+            "Rule 1: Each team can have a maximum of 2 members.",
+            "Rule 2: All photos must be taken during the event.",
+            "Rule 3: Judges' decisions are final."
+        ],
+        "link": "https://www.example.com/photography"
+    },
+    {
+        "id": 3,
+        "eventType": "Hackathon",
+        "venue": "Tech Lab",
+        "teamSize": "Team Size: 4",
+        "rounds": "Rounds: 2",
+        "contactPerson": "Contact Person: Mike Brown",
+        "contactNumber": "Number: 123-456-7892",
+        "title": "Ares Techwar",
+        "description": "Has a modern and tech-savvy vibe, linking the idea of a competitive environment (war) with the concept of complex problem-solving (matrix). It captures both the essence of a hackathon and Ares' spirit of conflict.",
+        "firstPrize": "₹6000",
+        "secondPrize": "₹3000",
+        "thirdPrize": "₹1500",
+        "rules": [
+            "Rule 1: Teams must consist of 4 members.",
+            "Rule 2: Code must be written during the event.",
+            "Rule 3: Judges' decisions are final."
+        ],
+        "link": "https://www.example.com/hackathon"
+    },
+    {
+        "id": 4,
+        "eventType": "Coding and Debugging",
+        "venue": "Computer Lab",
+        "teamSize": "Team Size: 2",
+        "rounds": "Rounds: 2",
+        "contactPerson": "Contact Person: Sarah Johnson",
+        "contactNumber": "Number: 123-456-7893",
+        "title": "Poseidon’s Code Current",
+        "description": "This name reflects the flow and movement of coding and debugging, evoking Poseidon’s control over water currents.",
+        "firstPrize": "₹3000",
+        "secondPrize": "₹1500",
+        "thirdPrize": "₹750",
+        "rules": [
+            "Rule 1: Teams can have a maximum of 2 members.",
+            "Rule 2: No outside help is allowed.",
+            "Rule 3: Judges' decisions are final."
+        ],
+        "link": "https://www.example.com/coding-debugging"
+    },
+    {
+        "id": 5,
+        "eventType": "IoT",
+        "venue": "Innovation Center",
+        "teamSize": "Team Size: 3",
+        "rounds": "Rounds: 2",
+        "contactPerson": "Contact Person: Alex Turner",
+        "contactNumber": "Number: 123-456-7894",
+        "title": "Hephaestus' Forge",
+        "description": "Hephaestus, god of fire and craftsmanship, relates well to IoT, where devices are 'forged' and connected in the digital world.",
+        "firstPrize": "₹5000",
+        "secondPrize": "₹3000",
+        "thirdPrize": "₹1000",
+        "rules": [
+            "Rule 1: Teams must consist of 3 members.",
+            "Rule 2: No outside help allowed.",
+            "Rule 3: Judges' decisions are final."
+        ],
+        "link": "https://www.example.com/iot"
+    },
+    {
+        "id": 6,
+        "eventType": "Capture the Flag",
+        "venue": "Outdoor Area",
+        "teamSize": "Team Size: 2",
+        "rounds": "Rounds: 1",
+        "contactPerson": "Contact Person: David Lee",
+        "contactNumber": "Number: 123-456-7895",
+        "title": "Hermes' Bytechase",
+        "description": "Hermes, the swift messenger god, fits perfectly with Capture the Flag, where speed and strategy are key.",
+        "firstPrize": "₹4000",
+        "secondPrize": "₹2000",
+        "thirdPrize": "₹1000",
+        "rules": [
+            "Rule 1: Teams must consist of 2 members.",
+            "Rule 2: No outside help allowed.",
+            "Rule 3: Judges' decisions are final."
+        ],
+        "link": "https://www.example.com/capture-the-flag"
+    },
+    {
+        "id": 7,
+        "eventType": "UI/UX",
+        "venue": "Design Studio",
+        "teamSize": "Team Size: 3",
+        "rounds": "Rounds: 2",
+        "contactPerson": "Contact Person: Lisa White",
+        "contactNumber": "Number: 123-456-7896",
+        "title": "Aphrodite's Aurora",
+        "description": "This name emphasizes beauty and design, aligning perfectly with UI/UX while maintaining a connection to Aphrodite.",
+        "firstPrize": "₹4500",
+        "secondPrize": "₹2500",
+        "thirdPrize": "₹1000",
+        "rules": [
+            "Rule 1: Teams must consist of 3 members.",
+            "Rule 2: Judges' decisions are final."
+        ],
+        "link": "https://www.example.com/ui-ux"
+    },
+    {
+        "id": 8,
+        "eventType": "Gaming",
+        "venue": "Gaming Arena",
+        "teamSize": "Team Size: 4",
+        "rounds": "Rounds: 3",
+        "contactPerson": "Contact Person: Tom Green",
+        "contactNumber": "Number: 123-456-7897",
+        "title": "Dionysus' Battleground",
+        "description": "Effectively conveys the competitive and intense nature of a PUBG gaming event while linking it to Dionysus's theme of revelry and excitement.",
+        "firstPrize": "₹7000",
+        "secondPrize": "₹3500",
+        "thirdPrize": "₹1500",
+        "rules": [
+            "Rule 1: Teams must consist of 4 members.",
+            "Rule 2: Judges' decisions are final."
+        ],
+        "link": "https://www.example.com/gaming"
+    },
+    {
+        "id": 9,
+        "eventType": "Treasure Hunt",
+        "venue": "Outdoor Area",
+        "teamSize": "Team Size: 3",
+        "rounds": "Rounds: 1",
+        "contactPerson": "Contact Person: Emma Brown",
+        "contactNumber": "Number: 123-456-7898",
+        "title": "Artemis' Adventure",
+        "description": "This adds an air of intrigue and excitement, enhancing the adventurous theme of the treasure hunt!",
+        "firstPrize": "₹5000",
+        "secondPrize": "₹2500",
+        "thirdPrize": "₹1000",
+        "rules": [
+            "Rule 1: Teams must consist of 3 members.",
+            "Rule 2: Judges' decisions are final."
+        ],
+        "link": "https://www.example.com/treasure-hunt"
+    },
+    {
+        "id": 10,
+        "eventType": "IT Manager",
+        "venue": "Conference Room",
+        "teamSize": "Team Size: 1",
+        "rounds": "Rounds: 1",
+        "contactPerson": "Contact Person: Rachel Green",
+        "contactNumber": "Number: 123-456-7899",
+        "title": "Hades' Tech Authority",
+        "description": "Emphasizes leadership and management in the IT field, while still connecting to Hades as the ruler of the underworld.",
+        "firstPrize": "₹3000",
+        "secondPrize": "₹1500",
+        "thirdPrize": "₹750",
+        "rules": [
+            "Rule 1: Each participant must register individually.",
+            "Rule 2: Judges' decisions are final."
+        ],
+        "link": "https://www.example.com/it-manager"
+    },
+    {
+        "id": 11,
+        "eventType": "IT Quiz",
+        "venue": "Conference Room",
+        "teamSize": "Team Size: 1",
+        "rounds": "Rounds: 1",
+        "contactPerson": "Contact Person: Rachel Green",
+        "contactNumber": "Number: 123-456-7899",
+        "title": "HERMES' BYTECHASE",
+        "description": "Emphasizes leadership and management in the IT field, while still connecting to Hades as the ruler of the underworld.",
+        "firstPrize": "₹3000",
+        "secondPrize": "₹1500",
+        "thirdPrize": "₹750",
+        "rules": [
+            "Rule 1: Each participant must register individually.",
+            "Rule 2: Judges' decisions are final."
+        ],
+        "link": "https://www.example.com/it-manager"
+    }
+]

@@ -4,7 +4,7 @@ import OliveLeaf from '../assets/OliveLeaf.png';
 import zeus from '../assets/zeus.svg';
 import Card from '../components/Card';
 import Trails from '../components/Trial';
-import Techolympys from '../assets/Techolympuslogo.png';
+import Techolympys from '../assets/Techolympuslogo.svg';
 import contentData from '../json/Theme.json';
 import gatewaysData from '../json/Gateways.json';
 import Logo from '../assets/WhiteLogo.png';
@@ -99,40 +99,40 @@ const Home2 = () => {
 
     <div className='bg-[#0f0f19] min-h-screen flex flex-col items-center gap-20 p-20 overflow-x-hidden'>
         <h1 className='text-[#E7B472] text-[50px] mb-6 font-abril-fatface '>Events</h1>
-        <div className='flex flex-col md:flex-row justify-evenly gap-36'>
-        <Trails eventName="Hera's Trials" link='/events' />
-        <Trails eventName="APPOLO’S LUMINOUS LENS" />
+        <div className='flex flex-col flex-wrap md:flex-row justify-evenly gap-36'>
+        <Trails eventName="Coding & Debugging" link='/coding_debugging' />
+        <Trails eventName="Capture The Flag" link='/capture_the_flag' />
         </div>
-        <div className='flex flex-col md:flex-row justify-evenly gap-36'>
-        <Trails/>
-        <Trails/>
-        <Trails/>
+        <div className='flex flex-col flex-wrap md:flex-row justify-evenly gap-36'>
+        <Trails  eventName="Hackathon" link='/hackathon'  />
+        <Trails  eventName="IOT" link='/iot' />
+        <Trails  eventName="IT Quiz" link='/it_quiz' />
 
         </div>
-        <div className='flex flex-col md:flex-row justify-evenly gap-36'>
-        <Trails/>
-        <Trails/>
-        <Trails/>
+        <div className='flex flex-col flex-wrap md:flex-row justify-evenly gap-36'>
+        <Trails  eventName="UI/UX" link='/uiux' />
+        <Trails  eventName="Gaming" link='/gaming' />
+        <Trails  eventName="It Manager" link='/it_manager' />
 
         </div>
-        <div className='flex flex-col md:flex-row justify-evenly gap-36'>
-        <Trails/>
-        <Trails/>
-        <Trails/>
+        <div className='flex flex-col flex-wrap md:flex-row justify-evenly gap-36'>
+        <Trails  eventName="Photography" link='/photography' />
+        <Trails  eventName="Surprise Event" link='/surprise' />
+        <Trails  eventName="Treasure Hunt" link='/treasure' />
 
         </div>
     </div>
 
     <div className='bg-[#0f0f19] flex flex-col gap-10 items-center p-10 min-h-screen overflow-x-hidden'>
             <h1 className='font-bilbo-swap-caps text-[#e7b472] text-5xl mb-10'>{contentData.themeTitle}</h1>
-            <div className='flex flex-col-reverse md:flex-row max-w-4xl w-full gap-8'>
+            <div className='flex flex-col-reverse md:flex-row max-w-4xl w-full  gap-8'>
                 <div className='md:border-y md:border-r border-[#e7b472] text-white p-6 w-full text-center md:w-3/4 font-mono text-sm leading-relaxed xl:translate-x-[-275px] 2xl:translate-x-[-350px] lg:translate-x-[-80px] md:translate-x-[-40px] justify-between'>
                     {contentData.description[0]}
                     {contentData.description[1]}
                 </div>
 
                 <div className='flex justify-center items-center'>
-                    <img src={Techolympys} alt="Techolympus Logo" className='w-32 h-32 object-contain' />
+                    <img src={Techolympys} alt="Techolympus Logo" className='w-44 h-44 object-contain' />
                 </div>
             </div>
             <div className='flex flex-col md:flex-row max-w-4xl w-full gap-8 justify-between'>

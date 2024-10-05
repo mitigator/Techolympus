@@ -1,31 +1,21 @@
 import React from 'react';
-import Circle from '../assets/Circle.svg';
 
-const Card = ({ eventName }) => {
-  return (
-    <div className="relative flex justify-center items-center">
-      <div
-        className=" border-[5px] border-[#E7B472] bg-[#352A2E] h-64 w-64 flex justify-center items-center relative"
-        style={{
-          clipPath: 'polygon(50% 5%, 100% 0, 95% 15%, 98% 93%, 50% 100%, 50% 100%, 2% 93%, 5% 15%, 0 0)',
-          zIndex: 0,
-        }}
-      >
-        <img
-        src={Circle}
-        alt="rotating circle"
-        className="absolute w-24 h-24 animate-spin-slow"
-        style={{
-          animationDuration: '30s', 
-          zIndex: 5,
-        }}
-      />
-        <h2 className="text-[#E7B472] text-xl font-abril-fatface z-20">{eventName}</h2>
-      </div>
-    </div>
-  );
+const Card = ({personName,position}) => {
+    return (
+        <div
+            className="w-64 h-64 border-t-[1px] border-l-[1px] border-r-[1px] border-[#ED9523] rounded-lg overflow-hidden flex items-center justify-center shadow-lg" 
+            style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.05)', 
+                clipPath: 'polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%)',
+                boxShadow: '4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(0, 0, 0, 0.3)', // Retaining the boxShadow as a fallback
+            }}
+        >
+            <div className="text-center">
+                <h2 className="text-lg font-semibold text-[#ED9523]">{personName}</h2>
+                <p className="mt-2 text-white">{position}</p>
+            </div>
+        </div>
+    );
 };
-
-
 
 export default Card;
