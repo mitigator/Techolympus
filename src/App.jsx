@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import HeraTrial from './events/HeraTrial';
-import NotFound from './pages/NotFound'; // Create this component
+import NotFound from './pages/NotFound'; 
 import Home2 from './pages/Home2';
 import Surprise from './events/Surprise';
 import { Capture } from './events/Capture';
-import Coding from './events/coding';
+import Coding from './events/Coding';
 import Hackathon from './events/Hackathon';
 import { Iot } from './events/Iot';
 import Itmanager from './events/Itmanager';
