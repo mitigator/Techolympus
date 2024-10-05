@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
 import christ from '../assets/christlogo.png';
 import Gatewayslogo from '../assets/Gatewayslogo.png';
 import Techolympys from '../assets/Techolympuslogoblack.svg';
@@ -8,13 +8,41 @@ import test from '../assets/Test.pdf';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const controls = useAnimation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        controls.start({ y: '-100%', transition: { duration: 0.3 } });
+      } else {
+        // Scrolling up or stopped
+        controls.start({ y: 0, transition: { duration: 0.3 } });
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY, controls]);
+
   return (
-    <div className="relative">
+    <motion.div 
+      className="fixed top-0 left-0 right-0 z-50 "
+      initial={{ y: 0 }}
+      animate={controls}
+    >
       <nav className="bg-[#0f0f19] text-[#E7B472] font-abril-fatface p-4 md:p-0 flex justify-between items-center">
         <div className="md:flex items-center space-x-2 gap-5 hidden z-10">
           <div className="w-9 m-2 rounded-full bg-[#e7b472] flex justify-center items-center">
@@ -71,7 +99,7 @@ const Navbar = () => {
           <div className="hidden md:flex space-x-6 justify-center gap-24 z-50">
             <a className='hover:underline underline-offset-4' href="/events">Events</a>
             <a className='hover:underline underline-offset-4' href="/about">About</a>
-            <a className='hover:underline underline-offset-4' href={test} download="Brochure.pdf">Brocure</a>
+            <a className='hover:underline underline-offset-4' href={test} download="Brochure.pdf">Brochure</a>
           </div>
         </div>
 
@@ -81,8 +109,8 @@ const Navbar = () => {
           transition={{ duration: 2 }}
           className="flex items-center"
         >
-          <Link to='/'> {/* Make the Christ logo clickable */}
-            <img src={christ} alt="Christ University logo" className="h-12 w-auto " />
+          <Link to='/'>
+            <img src={christ} alt="Christ University logo" className="h-12 w-auto" />
           </Link>
         </motion.div>
       </nav>
@@ -103,7 +131,7 @@ const Navbar = () => {
             download="Brochure.pdf"
             className="block py-2 text-center m-14 text-[#E7B472]"
           >
-            Brocure
+            Brochure
           </a>
 
           <div className="flex justify-center mt-12">
@@ -111,14 +139,14 @@ const Navbar = () => {
               className="text-[#E7B472] text-4xl focus:outline-none"
               onClick={toggleMenu}
             >
-              &#10005; {/* Cross symbol */}
+              &#10005;
             </button>
           </div>
         </motion.div>
       )}
 
       <div className="md:block hidden absolute bottom-0 left-1/2 -translate-x-1/2 h-[1.5px] w-[65%] bg-[#E7B472]"></div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -14,12 +14,16 @@ import Photography from './events/Photography';
 import Treasure from './events/Treasure';
 import Uiux from './events/Uiux';
 import Gaming from './events/Gaming';
+import Loader from './components/Loader';
+import {AnimatePresence} from 'framer-motion'
+import './animation/Transition.css'
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
+    <AnimatePresence mode='wait'>
+      <BrowserRouter>
+      <Routes location={location} key={location.pathname} >
         <Route path="/" element={<Home2 />} />
         <Route path="/events" element={<HeraTrial />} />
         <Route path="/about" element={<About />} />
@@ -37,6 +41,7 @@ function App() {
         <Route path="*" element={<NotFound />} /> 
       </Routes>
     </BrowserRouter>
+    </AnimatePresence>
   );
 }
 
