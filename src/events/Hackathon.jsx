@@ -1,24 +1,33 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import bg from '../assets/bgleaf.svg';
 import Navbar from '../components/Navbar';
 import hera from '../assets/hera.svg';
 import end from '../assets/borderline.svg';
-import textData from '../json/heratrials.json';
-import { useEffect } from 'react';
 
+export const Hackathon = () => {
+    const [eventData, setEventData] = useState(null);
 
-const Hackathon = () => {
-    const eventData = textData[2]; 
     useEffect(() => {
         window.scrollTo(0, 0);
+
+        // Fetch data from API
+        fetch('https://mitigator.github.io/EventApi/event.json')
+            .then(response => response.json())
+            .then(data => {
+                setEventData(data[2]);  
+            })
+            .catch(error => console.error('Error fetching event data:', error));
     }, []);
 
+    if (!eventData) {
+        return <div>Loading...</div>;  
+    }
 
     return (
         <div>
             <Navbar />
             <div
-                className="bg-[#0f0f19] min-h-screen bg-bgleaf bg-no-repeat bg-cover bg-center bg-fixed flex flex-col items-center gap-10 font-caesar-dressing pt-20"
+                className="bg-[#0f0f19]  min-h-screen bg-bgleaf bg-no-repeat bg-cover bg-center bg-fixed flex flex-col items-center gap-10 font-caesar-dressing pt-20"
                 style={{ backgroundImage: `url(${bg})` }}
             >
                 <div className="border-2 border-[#E7B472] h-[40%] md:h-[50%] w-[90%] md:w-[75%] flex items-center relative justify-center overflow-hidden text-lg md:text-2xl">
@@ -67,16 +76,14 @@ const Hackathon = () => {
                         href={eventData.link} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="bg-[#FFD6A1] text-[#0f0f19] px-6 py-2 rounded-md text-lg md:text-xl font-bold hover:bg-[#E7B472] transition"
+                        className="bg-[#FFD6A1] text-[#0f0f19] px-6 py-2 rounded-md text-lg md:text-xl font-bold hover:bg-[#E7B472] font-abril-fatface transition"
                     >
-                        Learn More
+                        Register Now
                     </a>
                 </div>
 
                 <img src={end} alt="Border" className=" " />
             </div>
         </div>
-    );
+    )
 }
-
-export default Hackathon

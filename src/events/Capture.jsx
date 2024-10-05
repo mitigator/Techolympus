@@ -1,17 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import bg from '../assets/bgleaf.svg';
 import Navbar from '../components/Navbar';
 import hera from '../assets/hera.svg';
 import end from '../assets/borderline.svg';
-import textData from '../json/heratrials.json';
-import { useEffect } from 'react';
 import transition from '../components/transition';
 
 export const Capture = () => {
-    const eventData = textData[5]; 
+    const [eventData, setEventData] = useState(null);
+
     useEffect(() => {
         window.scrollTo(0, 0);
+
+        // Fetch data from API
+        fetch('https://mitigator.github.io/EventApi/event.json')
+            .then(response => response.json())
+            .then(data => {
+                setEventData(data[5]);  
+            })
+            .catch(error => console.error('Error fetching event data:', error));
     }, []);
+
+    if (!eventData) {
+        return <div>Loading...</div>;  
+    }
 
     return (
         <div>
@@ -66,9 +77,9 @@ export const Capture = () => {
                         href={eventData.link} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="bg-[#FFD6A1] text-[#0f0f19] px-6 py-2 rounded-md text-lg md:text-xl font-bold hover:bg-[#E7B472] transition"
+                        className="bg-[#FFD6A1] text-[#0f0f19] px-6 py-2 rounded-md text-lg md:text-xl font-bold hover:bg-[#E7B472] font-abril-fatface transition"
                     >
-                        Learn More
+                        Register Now
                     </a>
                 </div>
 

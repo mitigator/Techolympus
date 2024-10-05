@@ -1,19 +1,18 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './pages/About';
-import HeraTrial from './events/HeraTrial';
 import NotFound from './pages/NotFound'; 
 import Home2 from './pages/Home2';
-import Surprise from './events/Surprise';
+import {Surprise} from './events/Surprise';
 import { Capture } from './events/Capture';
-import Coding from './events/Coding';
-import Hackathon from './events/Hackathon';
+import { Coding } from './events/Coding';
+import {Hackathon} from './events/Hackathon';
 import { Iot } from './events/Iot';
-import Itmanager from './events/Itmanager';
-import Itquiz from './events/Itquiz';
-import Photography from './events/Photography';
-import Treasure from './events/Treasure';
-import Uiux from './events/Uiux';
-import Gaming from './events/Gaming';
+import {Itmanager} from './events/Itmanager';
+import {Itquiz} from './events/Itquiz';
+import {Photography} from './events/Photography';
+import {Treasure} from './events/Treasure';
+import {Uiux} from './events/Uiux';
+import {Gaming} from './events/Gaming';
 import {AnimatePresence} from 'framer-motion'
 import './animation/Transition.css'
 
@@ -24,7 +23,7 @@ function App() {
       <BrowserRouter>
       <Routes location={location} key={location.pathname} >
         <Route path="/" element={<Home2 />} />
-        <Route path="/events" element={<HeraTrial />} />
+        <Route path="/events" element={<Home2 />} />
         <Route path="/about" element={<About />} />
         <Route path="/capture_the_flag" element={<Capture />} />
         <Route path="/coding_debugging" element={<Coding />} />
