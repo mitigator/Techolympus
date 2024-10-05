@@ -11,7 +11,7 @@ const About = () => {
     <div className='bg-[#0f0f19]'>
       <Navbar />
       <div 
-        className="relative h-full bg-cover bg-no-repeat bg-center"
+        className="relative h-full bg-cover bg-no-repeat bg-center pt-20"
         style={{ backgroundImage: `url(${bg})`, backgroundAttachment: 'fixed' }} 
       >
         {/* Overlay Background */}

@@ -14,7 +14,6 @@ import Photography from './events/Photography';
 import Treasure from './events/Treasure';
 import Uiux from './events/Uiux';
 import Gaming from './events/Gaming';
-import Loader from './components/Loader';
 import {AnimatePresence} from 'framer-motion'
 import './animation/Transition.css'
 

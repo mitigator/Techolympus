@@ -12,7 +12,7 @@ const HeraTrial = () => {
         <div>
             <Navbar />
             <div
-                className="bg-[#0f0f19] min-h-screen bg-bgleaf bg-no-repeat bg-cover bg-center bg-fixed flex flex-col items-center gap-10 font-caesar-dressing pt-10"
+                className="bg-[#0f0f19] min-h-screen bg-bgleaf bg-no-repeat bg-cover bg-center bg-fixed flex flex-col items-center gap-10 font-caesar-dressing pt-20"
                 style={{ backgroundImage: `url(${bg})` }}
             >
                 <div className="border-2 border-[#E7B472] h-[40%] md:h-[50%] w-[90%] md:w-[75%] flex items-center relative justify-center overflow-hidden text-lg md:text-2xl">
