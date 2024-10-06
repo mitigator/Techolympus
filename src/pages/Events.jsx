@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 
 const EventCard = ({ title, description, linkUrl, imageUrl }) => (
   <motion.div
-    className="bg-[#1a1a2e] bg-opacity-50 shadow-lg rounded-xl overflow-hidden transform transition duration-500 hover:scale-150 "
+    className="bg-[#1a1a2e] bg-opacity-50 shadow-lg rounded-xl overflow-hidden transform transition duration-500 hover:scale-150"
     whileHover={{ y: -5 }}
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ const Events = () => {
   }, []);
 
   return (
-    <div className="mx-auto px-4  py-12 bg-[#0f0f19] min-h-screen text-[#E7B472]">
+    <div className="mx-auto px-4 py-12 bg-[#0f0f19] min-h-screen text-[#E7B472]">
       <Navbar />
 
       <section className="mb-16 pt-16">
@@ -71,7 +71,7 @@ const Events = () => {
               <EventCard
                 title={event.name}
                 description={event.description}
-                linkUrl="#"
+                linkUrl={`/${event.slug}`}
                 imageUrl={event.imageUrl}
               />
             </motion.div>
@@ -99,7 +99,7 @@ const Events = () => {
               <EventCard
                 title={event.name}
                 description={event.description}
-                linkUrl="#"
+                linkUrl={`/${event.slug}`}
                 imageUrl={event.imageUrl}
               />
             </motion.div>
