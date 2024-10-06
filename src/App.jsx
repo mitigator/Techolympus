@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import NotFound from './pages/NotFound'; 
+import Events from './pages/Events';
 import Home2 from './pages/Home2';
 import {Surprise} from './events/Surprise';
 import { Capture } from './events/Capture';
@@ -23,7 +24,7 @@ function App() {
       <BrowserRouter>
       <Routes location={location} key={location.pathname} >
         <Route path="/" element={<Home2 />} />
-        <Route path="/events" element={<Home2 />} />
+        <Route path="/events" element={<Events />} />
         <Route path="/about" element={<About />} />
         <Route path="/capture_the_flag" element={<Capture />} />
         <Route path="/coding_debugging" element={<Coding />} />
