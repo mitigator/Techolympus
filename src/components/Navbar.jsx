@@ -4,7 +4,7 @@ import christ from '../assets/christlogo.png';
 import Gatewayslogo from '../assets/Gatewayslogo.png';
 import Techolympys from '../assets/Techolympuslogoblack.svg';
 import { Link } from 'react-router-dom';
-import test from '../assets/Test.pdf';
+import test from '../assets/about.svg';
 
 const Navbar = (activePage) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

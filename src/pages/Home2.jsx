@@ -12,9 +12,11 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import border from '../assets/borderline.svg';
 import Preloader from '../components/Preloader';
+import Countdown from '../components/Countdown';
 
 const Home2 = () => {
     const [isLoading, setIsLoading] = useState(true);
+    const targetDate = '2024-11-14T07:30:00';
 
     // Simulate content loading
     useEffect(() => {
@@ -84,7 +86,7 @@ const Home2 = () => {
 
             {/* Background Image with lazy loading */}
             <motion.div
-                className="fixed inset-0 z-0 bg-scroll bg-center bg-no-repeat bg-contain md:bg-fixed md:bg-cover"
+                className="fixed inset-0 z-0 bg-scroll bg-center bg-no-repeat bg-contain md:bg-fixed md:bg-cover "
                 style={{
                     backgroundImage: `url(${zeus})`,
                     backgroundPosition: 'bottom',
@@ -94,7 +96,7 @@ const Home2 = () => {
                 transition={{ duration: 1.5 }}
             />
 
-            <div className='bg-[#0f0f19] text-[#e7b472] flex flex-col justify-center items-center h-[100vh] md:h-[100vh] overflow-hidden'>
+            <div className='bg-[#0f0f19] text-[#e7b472] flex flex-col justify-center items-center h-[100vh] md:h-[110vh] overflow-hidden'>
                 <motion.h1
                     className='font-abril-fatface text-[40px] sm:text-[50px] md:text-[80px] mt-10 md:mt-20 z-10'
                     variants={fadeIn}
@@ -110,6 +112,8 @@ const Home2 = () => {
                 >
                     techOlympus
                 </motion.h2>
+                <Countdown targetDate={targetDate} />
+
 
                 <motion.div
                     className='flex flex-col items-center font-abril-fatface'
@@ -142,6 +146,7 @@ const Home2 = () => {
                     >
                         Department Of Computer Science
                     </motion.p>
+
                 </motion.div>
             </div>
 

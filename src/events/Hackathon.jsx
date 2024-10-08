@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import bg from '../assets/bgleaf.svg';
 import Navbar from '../components/Navbar';
-import hera from '../assets/Poseiden.svg';
+import hera from '../assets/god.svg';
 import end from '../assets/borderline.svg';
 import Preloader from '../components/Preloader'
 

@@ -4,23 +4,23 @@ import Navbar from '../components/Navbar';
 import zeus from '../assets/zeus.svg';
 // Import local images for technical events
 import uiuxImage from '../assets/aphrodite.svg'; 
-import hackathonImage from '../assets/aphrodite.svg';
+import hackathonImage from '../assets/god.svg';
 import captureTheFlagImage from '../assets/Hermes.svg';
 import itQuizImage from '../assets/athena.svg';
-import iotImage from '../assets/athena.svg';
+import iotImage from '../assets/iot.svg';
 import codingDebuggingImage from '../assets/Poseiden.svg';
 import border from '../assets/borderline.svg';
 
 // Import local images for non-technical events
 import photographyImage from '../assets/Apollo.svg';
 import gamingImage from '../assets/disynonys.svg';
-import treasureHuntImage from '../assets/Apollo.svg';
-import itManagerImage from '../assets/athena.svg';
+import treasureHuntImage from '../assets/artemis.svg';
+import itManagerImage from '../assets/Hades.svg';
 import surpriseEventImage from '../assets/hera.svg';
 
 const EventCard = ({ title, description, linkUrl, imageUrl }) => (
   <motion.div
-    className=" bg-opacity-50 px-[10px] border-[#E7B472]  py-[20px] hover:shadow-[#E7B472] shadow-lg  overflow-hidden transform transition duration-100 hover:scale-150"
+    className=" bg-opacity-50 px-[10px] z-30 border-[#E7B472]  py-[20px] hover:shadow-[#E7B472] shadow-lg  overflow-hidden transform transition duration-100 hover:scale-150"
     whileHover={{ y: -5 }}
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ const EventCard = ({ title, description, linkUrl, imageUrl }) => (
       </div>
       <a
         href={linkUrl}
-        className="inline-block text-center hover:bg-[#E7B472] text-[#E7B472] hover:text-[#0f0f19] px-4 py-2  border border-[#E7B472] transition duration-300"
+        className="inline-block text-center z-[500] hover:bg-[#E7B472] text-[#E7B472] hover:text-[#0f0f19] px-4 py-2  border border-[#E7B472] transition duration-300"
       >
         Learn More
       </a>
