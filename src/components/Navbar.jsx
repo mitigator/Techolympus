@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import christ from '../assets/christlogo.png';
 import Gatewayslogo from '../assets/Gatewayslogo.png';
@@ -43,14 +43,14 @@ const Navbar = () => {
       initial={{ y: 0 }}
       animate={controls}
     >
-      <nav className="bg-[#0f0f19] text-[#E7B472] font-abril-fatface p-4 md:p-0 flex justify-between items-center">
-        <div className="md:flex items-center space-x-2 gap-5 hidden z-10">
-          <div className="w-14 m-2 h-14 rounded-full bg-[#e7b472] flex justify-center items-center">
+      <nav className="bg-[#0f0f199f] text-[#E7B472] font-abril-fatface p-6 md:p-0 flex justify-between items-center">
+        <div className="z-10 items-center hidden gap-5 space-x-2 md:flex">
+          <div className="w-10 m-2 p-[4px] h-10 rounded-full bg-[#e7b472d2] border border-[#e7b472] flex justify-center items-center">
             <Link to='/'>
               <img src={Gatewayslogo} alt="Gateways Logo" />
             </Link>
           </div>
-          <div className="w-14 h-14 m-2 rounded-full bg-[#e7b472] flex justify-center items-center">
+          <div className="w-10 h-10 m-2 p-[4px] rounded-full bg-[#e7b472d2] border border-[#e7b472]  flex justify-center items-center">
             <Link to='/'>
               <img src={Techolympys} alt="Techolympys Logo" />
             </Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
         <div className="flex items-center">
           {!isMenuOpen && (
             <button
-              className="block md:hidden focus:outline-none z-50"
+              className="z-50 block md:hidden focus:outline-none"
               onClick={toggleMenu}
             >
               <motion.div
@@ -96,7 +96,7 @@ const Navbar = () => {
             </button>
           )}
 
-          <div className="hidden md:flex space-x-6 justify-center gap-24 z-50">
+          <div className="z-50 justify-center hidden gap-24 space-x-6 md:flex">
             <a className='hover:underline underline-offset-4' href="/events">Events</a>
             <a className='hover:underline underline-offset-4' href="/about">About</a>
             <a className='hover:underline underline-offset-4' href={test} download="Brochure.pdf">Brochure</a>
@@ -110,7 +110,7 @@ const Navbar = () => {
           className="flex items-center"
         >
           <Link to='/'>
-            <img src={christ} alt="Christ University logo" className="h-12 w-auto" />
+            <img src={christ} alt="Christ University logo" className="w-auto h-12" />
           </Link>
         </motion.div>
       </nav>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
-
+import zeus from '../assets/zeus.svg';
 // Import local images for technical events
 import uiuxImage from '../assets/aphrodite.svg'; 
 import hackathonImage from '../assets/aphrodite.svg';
@@ -9,6 +9,7 @@ import captureTheFlagImage from '../assets/Hermes.svg';
 import itQuizImage from '../assets/athena.svg';
 import iotImage from '../assets/athena.svg';
 import codingDebuggingImage from '../assets/Poseiden.svg';
+import border from '../assets/borderline.svg';
 
 // Import local images for non-technical events
 import photographyImage from '../assets/Apollo.svg';
@@ -19,24 +20,24 @@ import surpriseEventImage from '../assets/hera.svg';
 
 const EventCard = ({ title, description, linkUrl, imageUrl }) => (
   <motion.div
-    className="bg-[#1a1a2e] bg-opacity-50 shadow-lg rounded-xl overflow-hidden transform transition duration-500 hover:scale-150"
+    className=" bg-opacity-50 px-[10px] border-[#E7B472]  py-[20px] hover:shadow-[#E7B472] shadow-lg  overflow-hidden transform transition duration-100 hover:scale-150"
     whileHover={{ y: -5 }}
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
-    style={{ width: '300px', height: '450px' }} // Fixed card size
+    style={{ width: '300px' }} // Fixed card size
   >
-    <div className="h-48 overflow-hidden" style={{ height: '200px' }}>
-      <img src={imageUrl} alt={title} className="w-full h-full object-cover" />
+    <div className="h-48 " >
+      <img src={imageUrl} alt={title} className="object-contain w-full h-full" />
     </div>
-    <div className="p-4 flex flex-col justify-between" style={{ height: '250px' }}>
-      <div>
+    <div className="flex flex-col justify-between p-4 " >
+      <div className='h-[170px] '>
         <h3 className="text-xl font-semibold mb-2 text-[#E7B472]">{title}</h3>
         <p className="text-[#E7B472] opacity-80 mb-4">{description}</p>
       </div>
       <a
         href={linkUrl}
-        className="inline-block bg-[#E7B472] text-[#0f0f19] px-4 py-2 rounded-full hover:bg-[#d9a661] transition duration-300"
+        className="inline-block text-center hover:bg-[#E7B472] text-[#E7B472] hover:text-[#0f0f19] px-4 py-2  border border-[#E7B472] transition duration-300"
       >
         Learn More
       </a>
@@ -73,17 +74,27 @@ const Events = () => {
   return (
     <div className="mx-auto px-4 py-12 bg-[#0f0f19] min-h-screen text-[#E7B472]">
       <Navbar />
+      <motion.div
+                className="fixed inset-0 z-0 bg-scroll bg-center bg-no-repeat bg-contain md:bg-fixed md:bg-cover"
+                style={{
+                    backgroundImage: `url(${zeus})`,
+                    backgroundPosition: 'bottom',
+                }}
+                initial={{ scale: 1.1 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 1.5 }}
+            />
 
-      <section className="mb-16 pt-16">
+      <section className="pt-16 mb-16">
         <motion.h2
-          className="text-3xl font-semibold mb-6 text-center"
+          className="mb-20 text-5xl font-semibold text-center font-abril-fatface "
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           Technical Events
         </motion.h2>
-        <div className="grid grid-cols-1 md:pl-24 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+        <div className="grid justify-center grid-cols-1 gap-8 md:pl-24 sm:grid-cols-2 lg:grid-cols-3">
           {technicalEvents.map((event, index) => (
             <motion.div
               key={index}
@@ -101,17 +112,22 @@ const Events = () => {
           ))}
         </div>
       </section>
+      <div className='flex justify-center w-full'>
+
+      <img src={border} alt="Border" className="object-contain " loading="lazy" />
+      </div>
+
 
       <section>
         <motion.h2
-          className="text-3xl font-semibold mb-6 pt-20 text-center"
+          className="pt-20 mb-20 text-5xl font-semibold text-center font-abril-fatface "
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           Non-Technical Events
         </motion.h2>
-        <div className="grid grid-cols-1 md:pl-24 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+        <div className="grid justify-center grid-cols-1 gap-8 md:pl-24 sm:grid-cols-2 lg:grid-cols-3">
           {nonTechnicalEvents.map((event, index) => (
             <motion.div
               key={index}

@@ -84,7 +84,7 @@ const Home2 = () => {
 
             {/* Background Image with lazy loading */}
             <motion.div
-                className="md:bg-fixed  md:bg-cover fixed inset-0 bg-center bg-no-repeat bg-contain bg-scroll z-0"
+                className="fixed inset-0 z-0 bg-scroll bg-center bg-no-repeat bg-contain md:bg-fixed md:bg-cover"
                 style={{
                     backgroundImage: `url(${zeus})`,
                     backgroundPosition: 'bottom',
@@ -117,11 +117,11 @@ const Home2 = () => {
                     transition={{ duration: 1, delay: 2 }}
                 >
                     <motion.div
-                        className='translate-y-[65px] md:translate-y-[85px]'
-                        whileHover={{ scale: 1.1 }}
+                        className='translate-y-[65px] md:translate-y-[85px] flex flex-col'
+                        // whileHover={{ scale: 1.1 }}
                     >
-                        <p className='text-[25px] sm:text-[40px]'>30</p>
-                        <p className='text-[12px] sm:text-[20px]'>years</p>
+                        <p className='text-[25px] sm:text-[40px] '>30</p>
+                        <p className='text-[12px] sm:text-[20px] leading-[0px]'>years</p>
                     </motion.div>
 
                     <motion.img
@@ -140,10 +140,11 @@ const Home2 = () => {
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 0.8, delay: 2.5 }}
                     >
-                        Computer Science Department PG
+                        Department Of Computer Science
                     </motion.p>
                 </motion.div>
             </div>
+
 
             <motion.div
                 className='bg-[#0f0f19] min-h-screen flex flex-col items-center gap-20 p-20 overflow-x-hidden'
@@ -177,44 +178,47 @@ const Home2 = () => {
                     <motion.div variants={itemVariants}><Trails eventName="Surprise Event" link='/surprise' /></motion.div>
                     <motion.div variants={itemVariants}><Trails eventName="Treasure Hunt" link='/treasure' /></motion.div>
                 </motion.div>
-            </motion.div>
+            </motion.div> 
+            
+            
 
             <motion.div
-                className='bg-[#0f0f19] flex flex-col gap-10 items-center p-10 min-h-screen overflow-x-hidden'
+                className='bg-[#0f0f19] flex flex-col gap-5 items-center p-10 min-h-screen overflow-x-hidden'
                 variants={containerVariants}
             >
                 <motion.h1
-                    className='font-bilbo-swap-caps text-[#e7b472] text-5xl mb-10'
+                    className='font-bilbo-swap-caps text-[#e7b472] text-5xl '
                     variants={itemVariants}
                 >
                     {contentData.themeTitle}
                 </motion.h1>
                 <motion.div
-                    className='flex flex-col-reverse md:flex-row max-w-4xl w-full gap-8'
+                    className='flex flex-col-reverse items-center w-full gap-8 md:max-w-5xl md:flex-row'
                     variants={containerVariants}
                 >
                     <motion.div
-                        className='md:border-y md:border-r  md:border-l border-[#e7b472] text-white p-6 w-full text-justify md:w-full font-mono text-sm leading-relaxed xl:translate-x-[-275px] 2xl:translate-x-[-350px] lg:translate-x-[-80px] md:translate-x-[-40px] justify-between'
+                        className='md:border-y md:border-r  md:border-l h-fit border-[#e7b472] text-white p-6 w-full text-justify md:w-full font-mono text-sm leading-relaxed xl:translate-x-[-275px] 2xl:translate-x-[-350px] lg:translate-x-[-80px] md:translate-x-[-40px] justify-between'
                         variants={itemVariants}
                     >
                         {contentData.description[0]}
-                        {contentData.description[1]}
+                        <br/> <br/>
+                                                {contentData.description[1]}
                     </motion.div>
 
                     <motion.div
-                        className='flex justify-center items-center'
+                        className='flex items-center justify-center'
                         variants={itemVariants}
                         whileHover={{ scale: 1.1, rotate: 5 }}
                     >
-                        <img src={Techolympys} alt="Techolympus Logo" className='w-44 h-44 object-contain' />
+                        <img src={Techolympys} alt="Techolympus Logo" className='object-contain w-[30rem] h-[30rem]' />
                     </motion.div>
                 </motion.div>
                 <motion.div
-                    className='flex flex-col md:flex-row max-w-4xl w-full gap-8 justify-between'
+                    className='flex flex-col justify-between w-full max-w-4xl gap-8 md:flex-row'
                     variants={containerVariants}
                 >
-                    <motion.div
-                        className='flex justify-center items-center'
+                    {/* <motion.div
+                        className='flex items-center justify-center'
                         variants={itemVariants}
                     >
                         <Card />
@@ -225,12 +229,14 @@ const Home2 = () => {
                     >
                         {contentData.description[0]}
                         {contentData.description[1]}
-                    </motion.div>
+                    </motion.div> */}
                 </motion.div>
             </motion.div>
 
+ 
+
             <motion.div
-                className='bg-[#0f0f19] flex flex-col gap-10 items-center p-10 min-h-screen overflow-x-hidden'
+                className='bg-[#0f0f19] flex  flex-col gap-10 items-center p-10 min-h-screen overflow-x-hidden'
                 variants={containerVariants}
             >
                 <motion.h1
@@ -240,11 +246,11 @@ const Home2 = () => {
                     {gatewaysData.title}
                 </motion.h1>
                 <motion.div
-                    className='flex flex-col-reverse md:flex-row md:h-[300px] w-full gap-8'
+                    className='flex  justify-center flex-col-reverse md:flex-row-reverse md:h-[300px] w-full gap-8'
                     variants={containerVariants}
                 >
                     <motion.div
-                        className='md:border-y md:border-r md:border-l border-[#e7b472] text-white p-6 w-full text-justify md:w-3/4 font-mono text-sm leading-relaxed flex justify-center items-center 2xl:translate-x-[-50px] xl:translate-x-[-40px] lg:translate-x-[-60px] md:translate-x-[-40px]'
+                        className='md:border-y md:border-r md:border-l border-[#e7b472] text-white p-6 w-full text-justify md:w-1/2 font-mono text-sm leading-relaxed flex justify-center items-center 2xl:translate-x-[-50px] xl:translate-x-[-40px] lg:translate-x-[-60px] md:translate-x-[-40px]'
                         variants={itemVariants}
                     >
                         <div className='text-justify'>
@@ -254,11 +260,11 @@ const Home2 = () => {
                     </motion.div>
 
                     <motion.div
-                        className='flex justify-center items-center md:w-1/3'
+                        className='flex items-center justify-center md:w-1/3'
                         variants={itemVariants}
                         whileHover={{ scale: 1.1, rotate: -5 }}
                     >
-                        <img src={Logo} alt="Techolympus Logo" className='w-full h-full object-contain' />
+                        <img src={Logo} alt="Techolympus Logo" className='object-contain w-full h-full' />
                     </motion.div>
                 </motion.div>
             </motion.div>    
