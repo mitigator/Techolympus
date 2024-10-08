@@ -45,12 +45,12 @@ const Navbar = () => {
     >
       <nav className="bg-[#0f0f19] text-[#E7B472] font-abril-fatface p-4 md:p-0 flex justify-between items-center">
         <div className="md:flex items-center space-x-2 gap-5 hidden z-10">
-          <div className="w-9 m-2 rounded-full bg-[#e7b472] flex justify-center items-center">
+          <div className="w-14 m-2 h-14 rounded-full bg-[#e7b472] flex justify-center items-center">
             <Link to='/'>
               <img src={Gatewayslogo} alt="Gateways Logo" />
             </Link>
           </div>
-          <div className="w-9 m-2 rounded-full bg-[#e7b472] flex justify-center items-center">
+          <div className="w-14 h-14 m-2 rounded-full bg-[#e7b472] flex justify-center items-center">
             <Link to='/'>
               <img src={Techolympys} alt="Techolympys Logo" />
             </Link>
@@ -145,7 +145,6 @@ const Navbar = () => {
         </motion.div>
       )}
 
-      <div className="md:block hidden absolute bottom-0 left-1/2 -translate-x-1/2 h-[1.5px] w-[65%] bg-[#E7B472]"></div>
     </motion.div>
   );
 };

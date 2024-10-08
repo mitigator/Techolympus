@@ -23,20 +23,20 @@ const About = () => {
         <div className='flex flex-col gap-8 md:gap-10 items-center z-10 text-[#E7B472] pt-16 px-4'>
           <h1 className='text-3xl md:text-4xl font-abril-fatface font-bold text-center'>Christ University</h1>
           <img src={logo} alt="About Logo" className='w-1/2 md:w-1/3' />
-          <p className='font-atomic-age text-center w-full md:w-[75%]'>
+          <p className='font-atomic-age text-justify w-full md:w-[75%]'>
             Welcome to CHRIST (Deemed to be University), a prestigious institution renowned for its pioneering role in Indian higher education. Established as Christ College in 1969, the institution has led the way in offering innovative curricula, promoting academic discipline, and delivering holistic education while adopting global higher education standards, all thanks to its creative and dedicated faculty.
           </p>
-          <p className='font-atomic-age text-center w-full md:w-[75%]'>
+          <p className='font-atomic-age text-justify w-full md:w-[75%]'>
             Join us as we celebrate this vibrant legacy at our upcoming event!
           </p>
         </div>
 
         <div className='flex flex-col gap-8 md:gap-10 items-center z-10 text-[#E7B472] pt-16 px-4'>
           <h1 className='text-3xl md:text-4xl font-abril-fatface font-bold text-center'>Department of Computer Science</h1>
-          <p className='font-atomic-age text-center w-full md:w-[75%]'>
+          <p className='font-atomic-age text-justify w-full md:w-[75%]'>
             The Department of Computer Science at CHRIST (Deemed to be University), Bangalore, established in 1990, is committed to shaping skilled computer professionals equipped with strong ethical values and a deep sense of social responsibility. Over the past two decades, we have steadily built our expertise in cutting-edge computer science education and research while maintaining a focus on fostering global perspectives grounded in Indian values.
           </p>
-          <p className='font-atomic-age text-center w-full md:w-[75%]'>
+          <p className='font-atomic-age text-justify w-full md:w-[75%]'>
             Our mission is to prepare young minds for the evolving challenges of the IT industry, nurturing them to become leaders who will shape the future with both technical excellence and human compassion.
           </p>
         </div>

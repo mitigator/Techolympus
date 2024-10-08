@@ -2,6 +2,21 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 
+// Import local images for technical events
+import uiuxImage from '../assets/aphrodite.svg'; 
+import hackathonImage from '../assets/aphrodite.svg';
+import captureTheFlagImage from '../assets/Hermes.svg';
+import itQuizImage from '../assets/athena.svg';
+import iotImage from '../assets/athena.svg';
+import codingDebuggingImage from '../assets/Poseiden.svg';
+
+// Import local images for non-technical events
+import photographyImage from '../assets/Apollo.svg';
+import gamingImage from '../assets/disynonys.svg';
+import treasureHuntImage from '../assets/Apollo.svg';
+import itManagerImage from '../assets/athena.svg';
+import surpriseEventImage from '../assets/hera.svg';
+
 const EventCard = ({ title, description, linkUrl, imageUrl }) => (
   <motion.div
     className="bg-[#1a1a2e] bg-opacity-50 shadow-lg rounded-xl overflow-hidden transform transition duration-500 hover:scale-150"
@@ -34,17 +49,25 @@ const Events = () => {
   const [nonTechnicalEvents, setNonTechnicalEvents] = useState([]);
 
   useEffect(() => {
-    // Fetch technical events
-    fetch('https://mitigator.github.io/EventApi/technical.json')
-      .then((response) => response.json())
-      .then((data) => setTechnicalEvents(data.technicalEvents))
-      .catch((error) => console.error('Error fetching technical events:', error));
+    const technicalData = [
+      { name: "UI/UX - Aphrodite's Aurora", description: "A design competition focusing on creating intuitive user interfaces and enhancing user experiences.", slug: 'uiux', imageUrl: uiuxImage },
+      { name: "Hackathon - Ares Techwar", description: "A 24-hour hackathon where participants solve real-world problems using innovative technologies.", slug: 'hackathon', imageUrl: hackathonImage },
+      { name: "Capture the Flag - Hermes' Bytechase", description: "A cybersecurity competition to test participants' hacking skills in a controlled environment.", slug: 'capture_the_flag', imageUrl: captureTheFlagImage },
+      { name: "IT Quiz - Athena's Arena", description: "A quiz competition testing participants' knowledge in IT and computer science.", slug: 'it_quiz', imageUrl: itQuizImage },
+      { name: "IoT - Hephaestus' Forge", description: "An Internet of Things competition focusing on creating smart solutions for everyday problems.", slug: 'iot', imageUrl: iotImage },
+      { name: "Coding and Debugging - Poseidon's Code Current", description: "A coding competition focused on solving algorithms and debugging code under time constraints.", slug: 'coding_debugging', imageUrl: codingDebuggingImage }
+    ];
+    
+    const nonTechnicalData = [
+      { name: "Photography - Apollo's Luminous Lens", description: "A photography event capturing the essence of light and shadow in unique environments.", slug: 'photography', imageUrl: photographyImage },
+      { name: "Gaming - Dionysus' Battleground", description: "A gaming tournament featuring popular multiplayer games with fierce competition.", slug: 'gaming', imageUrl: gamingImage },
+      { name: "Treasure Hunt - Artemis' Adventure", description: "A treasure hunt event where participants solve clues and challenges to find the hidden treasure.", slug: 'treasure', imageUrl: treasureHuntImage },
+      { name: "IT Manager - Hades' Tech Authority", description: "An event testing participants' skills in IT management, problem-solving, and decision-making.", slug: 'it_manager', imageUrl: itManagerImage },
+      { name: "Surprise Event - Hera's Trails", description: "A surprise event where participants face unexpected challenges and tasks.", slug: 'surprise', imageUrl: surpriseEventImage }
+    ];
 
-    // Fetch non-technical events
-    fetch('https://mitigator.github.io/EventApi/nonTechnical.json')
-      .then((response) => response.json())
-      .then((data) => setNonTechnicalEvents(data.nonTechnicalEvents))
-      .catch((error) => console.error('Error fetching non-technical events:', error));
+    setTechnicalEvents(technicalData);
+    setNonTechnicalEvents(nonTechnicalData);
   }, []);
 
   return (
