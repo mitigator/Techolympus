@@ -73,7 +73,7 @@ const Events = () => {
 
   return (
     <div className="mx-auto px-4 py-12 bg-[#0f0f19] min-h-screen text-[#E7B472]">
-      <Navbar />
+      <Navbar activePage="events"/>
       <motion.div
                 className="fixed inset-0 z-0 bg-scroll bg-center bg-no-repeat bg-contain md:bg-fixed md:bg-cover"
                 style={{

@@ -4,67 +4,104 @@ import bg from '../assets/aboutBackground.svg';
 import light from '../assets/light.svg';
 import logo from '../assets/aboutLogo.svg';
 import Card from '../components/Card';
+import border from '../assets/borderline.svg';
+import NewAboutCard from '../components/NewAboutCard';
+
 
 const About = () => {
   return (
     <div className='bg-[#0f0f19]'>
-      <Navbar />
+      <Navbar  activePage = "about"/>
       <div 
-        className="relative h-full bg-cover bg-no-repeat bg-center pt-20"
+        className="relative h-full pt-20 bg-center bg-no-repeat bg-cover"
         style={{ backgroundImage: `url(${bg})`, backgroundAttachment: 'fixed' }} 
       >
         {/* Overlay Background */}
         <div 
-          className="absolute inset-0 h-full bg-cover md:bg-contain bg-[#0f0f19] opacity-40" 
+          className="absolute inset-0 h-full bg-cover md:bg-contain bg-[#0f0f19] opacity-0" 
           style={{ backgroundImage: `url(${light})`, backgroundAttachment: 'fixed' }} 
         ></div>
 
         {/* Centered Content */}
-        <div className='flex flex-col gap-8 md:gap-10 items-center z-10 text-[#E7B472] pt-16 px-4'>
-          <h1 className='text-3xl md:text-4xl font-abril-fatface font-bold text-center'>Christ University</h1>
+        <div className='flex flex-col gap-8 md:gap-10 items-center z-10 text-[#e7b472] pt-16 px-4'>
+          <h1 className='text-[#e7b472] text-3xl md:text-[50px] mb-6 font-abril-fatface pt-10 text-center'>Christ University</h1>
           <img src={logo} alt="About Logo" className='w-1/2 md:w-1/3' />
-          <p className='font-atomic-age text-justify w-full md:w-[75%]'>
+
+         <div
+         className='fle flex-col font-mono  border border-[#e7b472] p-10 text-white md:w-[75%] text-center justify-center'
+         >
+
+          <p className='w-full '>
             Welcome to CHRIST (Deemed to be University), a prestigious institution renowned for its pioneering role in Indian higher education. Established as Christ College in 1969, the institution has led the way in offering innovative curricula, promoting academic discipline, and delivering holistic education while adopting global higher education standards, all thanks to its creative and dedicated faculty.
           </p>
-          <p className='font-atomic-age text-justify w-full md:w-[75%]'>
+          <br/>
+          <p className='w-full '>
             Join us as we celebrate this vibrant legacy at our upcoming event!
           </p>
+         </div>
         </div>
 
-        <div className='flex flex-col gap-8 md:gap-10 items-center z-10 text-[#E7B472] pt-16 px-4'>
-          <h1 className='text-3xl md:text-4xl font-abril-fatface font-bold text-center'>Department of Computer Science</h1>
-          <p className='font-atomic-age text-justify w-full md:w-[75%]'>
+        <div className='flex justify-center w-full mt-[5rem]'>
+
+<img src={border} alt="Border" className="object-contain" loading="lazy" />
+</div>
+
+
+        <div className='flex flex-col gap-8 md:gap-10 items-center z-10 text-[#e7b472] pt-16 px-4'>
+          <h1 className='text-[#e7b472] text-3xl md:text-[50px] mb-6 font-abril-fatface pt-10 text-center'>Department of Computer Science</h1>
+          <div
+         className='fle flex-col font-mono text-center border border-[#e7b472] p-10 text-white md:w-[75%]  justify-center'
+         >
+          
+          <p className='w-full '>
             The Department of Computer Science at CHRIST (Deemed to be University), Bangalore, established in 1990, is committed to shaping skilled computer professionals equipped with strong ethical values and a deep sense of social responsibility. Over the past two decades, we have steadily built our expertise in cutting-edge computer science education and research while maintaining a focus on fostering global perspectives grounded in Indian values.
           </p>
-          <p className='font-atomic-age text-justify w-full md:w-[75%]'>
+          <br/>
+          <p className='w-full '>
             Our mission is to prepare young minds for the evolving challenges of the IT industry, nurturing them to become leaders who will shape the future with both technical excellence and human compassion.
           </p>
+          </div>
         </div>
+    <div className='flex justify-center w-full mt-[5rem]'>
+
+        <img src={border} alt="Border" className="object-contain" loading="lazy" />
+    </div>
+
 
         {/* Team Section */}
-        <div className='flex flex-col items-center gap-10 md:gap-20 pb-20 overflow-x-hidden'>
-          <h1 className='text-[#E7B472] text-3xl md:text-[50px] mb-6 font-abril-fatface pt-10 text-center'>Meet Our Team</h1>
-          <div className='flex flex-col md:flex-row justify-evenly gap-10 md:gap-20'>
-            <Card personName="Dr. Cynthia T" position='Fest Coordinator' />
-            <Card personName="Dr. Sudhakar T" position='Fest Coordinator' />
+        <div className='flex flex-col items-center gap-10 pb-20 overflow-x-hidden md:gap-20'>
+          <h1 className='text-[#e7b472] text-3xl md:text-[50px] mb-6 font-abril-fatface pt-10 text-center'>Meet Our Team</h1>
+          <div className='flex flex-col gap-10 md:flex-row justify-evenly md:gap-20'>
+            <NewAboutCard name="Dr. Cynthia T" desig = "Fest Coordinator"/>
+            <NewAboutCard name="Dr. Sudhakar T" desig = "Fest Coordinator"/>
           </div>
-          <div className='flex flex-col md:flex-row flex-wrap justify-evenly gap-10 md:gap-20'>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+          <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
+          <NewAboutCard name="R Sharanya" desig = "Core Team Member"/>
+          <NewAboutCard name="Mohit P" desig = "Core Team Member"/>
+          <NewAboutCard name="Punith Raj" desig = "Core Team Member"/>
+
+
           </div>
-          <div className='flex flex-col md:flex-row justify-evenly flex-wrap gap-10 md:gap-20'>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+          <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
+          <NewAboutCard name="Anshika Yadav" desig = "Core Team Member"/>
+          <NewAboutCard name="Anto Kelvin" desig = "Core Team Member"/>
+          <NewAboutCard name="Aleena Ealias" desig = "Core Team Member"/>
+          <NewAboutCard name="Ansh Bhandari" desig = "Core Team Member"/>
           </div>
-          <div className='flex flex-col md:flex-row justify-evenly flex-wrap gap-10 md:gap-20'>
-            <Card />
-            <Card />
-            <Card />
+          <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
+          <NewAboutCard name="Aditi Patel" desig = "Core Team Member"/>
+          <NewAboutCard name="Saumya Dwivedi " desig = "Core Team Member"/>
+          <NewAboutCard name="Vivek S" desig = "Core Team Member"/>
           </div>
+          <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
+          <NewAboutCard name="Satyam Jhawar" desig = "Core Team Member"/>
+          <NewAboutCard name="Hitesh Salimath" desig = "Core Team Member"/>
+          <NewAboutCard name="Karthikeyan" desig = "Core Team Member"/>
+          <NewAboutCard name="Neha Seirah" desig = "Core Team Member"/>
+          </div>
+        
+
+
         </div>
       </div>
     </div>

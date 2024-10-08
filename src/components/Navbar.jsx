@@ -6,7 +6,7 @@ import Techolympys from '../assets/Techolympuslogoblack.svg';
 import { Link } from 'react-router-dom';
 import test from '../assets/Test.pdf';
 
-const Navbar = () => {
+const Navbar = (activePage) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const controls = useAnimation();
@@ -15,6 +15,8 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+
+  
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -43,14 +45,14 @@ const Navbar = () => {
       initial={{ y: 0 }}
       animate={controls}
     >
-      <nav className="bg-[#0f0f199f] text-[#E7B472] font-abril-fatface p-6 md:p-0 flex justify-between items-center">
-        <div className="z-10 items-center hidden gap-5 space-x-2 md:flex">
-          <div className="w-10 m-2 p-[4px] h-10 rounded-full bg-[#e7b472d2] border border-[#e7b472] flex justify-center items-center">
+      <nav className="bg-[#0606064e] border-[#E7B472] text-[#E7B472] font-abril-fatface p-6 md:p-0 flex justify-between items-center">
+        <div className="z-10 items-center hidden gap-5 py-3 space-x-2 md:flex">
+          <div className="w-10 m-2 p-[4px] h-10 rounded-full hover:bg-[#e7b472] bg-[#e7b472d2] border border-[#e7b472] flex justify-center items-center">
             <Link to='/'>
               <img src={Gatewayslogo} alt="Gateways Logo" />
             </Link>
           </div>
-          <div className="w-10 h-10 m-2 p-[4px] rounded-full bg-[#e7b472d2] border border-[#e7b472]  flex justify-center items-center">
+          <div className="w-10 h-10 m-2 p-[4px] rounded-full hover:bg-[#e7b472] bg-[#e7b472d2] border border-[#e7b472]  flex justify-center items-center">
             <Link to='/'>
               <img src={Techolympys} alt="Techolympys Logo" />
             </Link>
@@ -96,10 +98,10 @@ const Navbar = () => {
             </button>
           )}
 
-          <div className="z-50 justify-center hidden gap-24 space-x-6 md:flex">
-            <a className='hover:underline underline-offset-4' href="/events">Events</a>
-            <a className='hover:underline underline-offset-4' href="/about">About</a>
-            <a className='hover:underline underline-offset-4' href={test} download="Brochure.pdf">Brochure</a>
+          <div className="z-50 justify-center hidden gap-24 space-x-6 md:flex font-abril-fatface">
+            <a className={`hover:underline underline-offset-4 ${activePage==="events"?"underline":""}`} href="/events">Events</a>
+            <a className={`hover:underline underline-offset-4 ${activePage==="about"?"underline":""}`} href="/about">About</a>
+            <a className={`hover:underline underline-offset-4`} href={test} download="Brochure.pdf">Brochure</a>
           </div>
         </div>
 
@@ -109,9 +111,9 @@ const Navbar = () => {
           transition={{ duration: 2 }}
           className="flex items-center"
         >
-          <Link to='/'>
+          <a to='https://christuniversity.in/' target='_blank'>
             <img src={christ} alt="Christ University logo" className="w-auto h-12" />
-          </Link>
+          </a>
         </motion.div>
       </nav>
 
@@ -123,9 +125,9 @@ const Navbar = () => {
           transition={{ duration: 0.3 }}
           className="absolute top-full text-4xl left-0 w-full h-[100vh] bg-[#0f0f19] p-4 md:hidden z-50"
         >
-          <a href="/" className="block py-2 text-center m-14 text-[#E7B472]">Home</a>
-          <a href="/events" className="block py-2 text-center m-14 text-[#E7B472]">Events</a>
-          <a href="/about" className="block py-2 text-center m-14 text-[#E7B472]">About</a>
+          <a href="/" className={`block py-2 text-center m-14 text-[#E7B472]`}>Home</a>
+          <a href="/events" className={`block py-2 text-center m-14 text-[#E7B472]  ${activePage==="events"?"underline underline-offset-4":""}`}>Events</a>
+          <a href="/about" className={`block py-2 text-center m-14 text-[#E7B472]  ${activePage==="events"?"underline underline-offset-4":""}`}>About</a>
           <a
             href={test}
             download="Brochure.pdf"

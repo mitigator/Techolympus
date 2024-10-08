@@ -80,7 +80,7 @@ const Home2 = () => {
             animate="visible"
             variants={containerVariants}
         >
-            <Navbar />
+            <Navbar activePage="home" />
 
             {/* Background Image with lazy loading */}
             <motion.div
@@ -160,7 +160,7 @@ const Home2 = () => {
                 </motion.h1>
 
                 <motion.div className='flex flex-col flex-wrap md:flex-row justify-evenly gap-36' variants={containerVariants}>
-                    <motion.div variants={itemVariants}><Trails eventName="Coding & Debugging" link='/coding_debugging' /></motion.div>
+                    <motion.div variants={itemVariants}><Trails eventName="Coding  Debugging" link='/coding_debugging' /></motion.div>
                     <motion.div variants={itemVariants}><Trails eventName="Capture The Flag" link='/capture_the_flag' /></motion.div>
                 </motion.div>
                 <motion.div className='flex flex-col flex-wrap md:flex-row justify-evenly gap-36' variants={containerVariants}>
@@ -186,6 +186,8 @@ const Home2 = () => {
                 className='bg-[#0f0f19] flex flex-col gap-5 items-center p-10 min-h-screen overflow-x-hidden'
                 variants={containerVariants}
             >
+            <img src={border} alt="Border" className="object-contain" loading="lazy" />
+
                 <motion.h1
                     className='font-bilbo-swap-caps text-[#e7b472] text-5xl '
                     variants={itemVariants}
@@ -239,6 +241,8 @@ const Home2 = () => {
                 className='bg-[#0f0f19] flex  flex-col gap-10 items-center p-10 min-h-screen overflow-x-hidden'
                 variants={containerVariants}
             >
+                            <img src={border} alt="Border" className="object-contain" loading="lazy" />
+
                 <motion.h1
                     className='font-abril-fatface text-[#e7b472] text-5xl mb-10'
                     variants={itemVariants}
