@@ -4,18 +4,18 @@ import Navbar from '../components/Navbar';
 import zeus from '../assets/zeus.svg';
 // Import local images for technical events
 import uiuxImage from '../assets/aphrodite.svg'; 
-import hackathonImage from '../assets/aphrodite.svg';
+import hackathonImage from '../assets/god.svg';
 import captureTheFlagImage from '../assets/Hermes.svg';
 import itQuizImage from '../assets/athena.svg';
-import iotImage from '../assets/athena.svg';
+import iotImage from '../assets/iot.svg';
 import codingDebuggingImage from '../assets/Poseiden.svg';
 import border from '../assets/borderline.svg';
 
 // Import local images for non-technical events
 import photographyImage from '../assets/Apollo.svg';
 import gamingImage from '../assets/disynonys.svg';
-import treasureHuntImage from '../assets/Apollo.svg';
-import itManagerImage from '../assets/athena.svg';
+import treasureHuntImage from '../assets/artemis.svg';
+import itManagerImage from '../assets/Hades.svg';
 import surpriseEventImage from '../assets/hera.svg';
 
 const EventCard = ({ title, description, linkUrl, imageUrl }) => (
