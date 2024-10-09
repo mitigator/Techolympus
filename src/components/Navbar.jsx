@@ -123,7 +123,7 @@ const Navbar = (activePage) => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
-          className="absolute top-full text-4xl left-0 w-full h-[100vh] bg-[#0f0f19] p-4 md:hidden z-50"
+          className="absolute font-abril-fatface top-full text-4xl left-0 w-full h-[100vh] bg-[#0f0f19] p-4 md:hidden z-50"
         >
           <a href="/" className={`block py-2 text-center m-14 text-[#E7B472]`}>Home</a>
           <a href="/events" className={`block py-2 text-center m-14 text-[#E7B472]  ${activePage==="events"?"underline underline-offset-4":""}`}>Events</a>

@@ -12,6 +12,10 @@
     display: none;
   }
 
+  body{
+    user-select: none;
+  }
+
   .something{
     background-color: #000000;
     

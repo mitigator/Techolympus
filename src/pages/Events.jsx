@@ -19,30 +19,29 @@ import itManagerImage from '../assets/athena.svg';
 import surpriseEventImage from '../assets/hera.svg';
 
 const EventCard = ({ title, description, linkUrl, imageUrl }) => (
-  <motion.div
-    className=" bg-opacity-50 px-[10px] border-[#E7B472]  py-[20px] hover:shadow-[#E7B472] shadow-lg  overflow-hidden transform transition duration-100 hover:scale-150"
-    whileHover={{ y: -5 }}
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5 }}
+  <div
+    className=" bg-[#0000004f] px-[10px] border-[#E7B472]  py-[20px] hover:shadow-[#E7B472] shadow-lg  overflow-hidden transform transition duration-100 hover:scale-[105%]"
+    // initial={{ opacity: 0, y: 20 }}
+    // animate={{ opacity: 1, y: 0 }}
+    
     style={{ width: '300px' }} // Fixed card size
   >
     <div className="h-48 " >
       <img src={imageUrl} alt={title} className="object-contain w-full h-full" />
     </div>
     <div className="flex flex-col justify-between p-4 " >
-      <div className='h-[170px] '>
-        <h3 className="text-xl font-semibold mb-2 text-[#E7B472]">{title}</h3>
-        <p className="text-[#E7B472] opacity-80 mb-4">{description}</p>
+      <div className='h-[170px] text-center md:text-left'>
+        <h3 className="text-xl text-center font-semibold mb-2 text-[#E7B472] font-abril-fatface">{title}</h3>
+        <p className="text-[#fff] font-mono opacity-80 mb-4 ">{description}</p>
       </div>
       <a
         href={linkUrl}
-        className="inline-block text-center hover:bg-[#E7B472] text-[#E7B472] hover:text-[#0f0f19] px-4 py-2  border border-[#E7B472] transition duration-300"
+        className=" font-mono inline-block text-center hover:bg-[#E7B472] text-[#E7B472] hover:text-[#0f0f19] px-4 py-2  border border-[#E7B472] transition duration-300 "
       >
-        Learn More
+        Explore
       </a>
     </div>
-  </motion.div>
+  </div>
 );
 
 const Events = () => {
@@ -72,13 +71,14 @@ const Events = () => {
   }, []);
 
   return (
-    <div className="mx-auto px-4 py-12 bg-[#0f0f19] min-h-screen text-[#E7B472]">
+    <div className="mx-auto px-4 py-12 bg-[#000000] min-h-screen text-[#E7B472]">
       <Navbar activePage="events"/>
       <motion.div
-                className="fixed inset-0 z-0 bg-scroll bg-center bg-no-repeat bg-contain md:bg-fixed md:bg-cover"
+                className="fixed inset-0 z-0 bg-scroll bg-center bg-no-repeat bg-contain filter md:bg-fixed md:bg-cover"
                 style={{
                     backgroundImage: `url(${zeus})`,
                     backgroundPosition: 'bottom',
+                  
                 }}
                 initial={{ scale: 1.1 }}
                 animate={{ scale: 1 }}
@@ -94,9 +94,10 @@ const Events = () => {
         >
           Technical Events
         </motion.h2>
-        <div className="grid justify-center grid-cols-1 gap-8 md:pl-24 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 grid-col s-1 sm:grid-cols-2 lg:grid-cols-3">
           {technicalEvents.map((event, index) => (
             <motion.div
+              className='flex justify-center '
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -127,9 +128,10 @@ const Events = () => {
         >
           Non-Technical Events
         </motion.h2>
-        <div className="grid justify-center grid-cols-1 gap-8 md:pl-24 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid justify-center grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {nonTechnicalEvents.map((event, index) => (
             <motion.div
+            className='flex justify-center '  
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
