@@ -24,7 +24,7 @@ const About = () => {
 
         {/* Centered Content */}
         <div className='flex flex-col gap-8 md:gap-10 items-center z-10 text-[#e7b472] pt-16 px-4'>
-          <h1 className='text-[#e7b472] text-3xl md:text-[50px] mb-6 font-abril-fatface pt-10 text-center'>Christ University</h1>
+          <h1 className='text-[#e7b472] text-3xl md:text-[50px] mb-6 font-abril-fatface pt-10 text-center'>CHRIST (Deemed to be University)</h1>
           <img src={logo} alt="About Logo" className='w-1/2 md:w-1/3' />
 
          <div
