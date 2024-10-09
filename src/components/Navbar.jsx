@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import christ from '../assets/christlogo.png';
+import christ from '../assets/navchrist.webp';
 import Gatewayslogo from '../assets/Gatewayslogo.png';
 import Techolympys from '../assets/Techolympuslogoblack.svg';
 import { Link } from 'react-router-dom';
