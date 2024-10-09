@@ -116,7 +116,7 @@ const Home2 = () => {
 
 
                 <motion.div
-                    className='flex flex-col items-center font-abril-fatface'
+                    className='flex flex-col items-center font-abril-fatface md:translate-y-[-50px]'
                     variants={fadeIn}
                     transition={{ duration: 1, delay: 2 }}
                 >
@@ -139,7 +139,7 @@ const Home2 = () => {
                     />
 
                     <motion.p
-                        className='font-bilbo-swap-caps text-[#e7b472] text-[1.2em] sm:text-[1.8em] md:text-[2em] mt-4'
+                        className='font-bilbo-swap-caps text-[#e7b472] text-[1.2em] sm:text-[1.8em] md:text-[2em] mt-4 md:mb-10'
                         initial={{ x: -100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 0.8, delay: 2.5 }}

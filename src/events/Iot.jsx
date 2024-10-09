@@ -68,10 +68,8 @@ export const Iot = () => {
 
                 {/* Prize Section */}
                 <div className="text-[#FFD6A1] text-2xl text-center">
-                    <h2 className="text-6xl md:text-6xl font-bold bg-clip-text pb-10 text-transparent bg-gradient-text">Prizes</h2>
-                    <p>1st Prize: {eventData.firstPrize}</p>
-                    <p>2nd Prize: {eventData.secondPrize}</p>
-                    <p>3rd Prize: {eventData.thirdPrize}</p>
+                <h2 className="text-6xl md:text-6xl font-bold bg-clip-text pb-10 text-transparent bg-gradient-text">Prize Pool</h2>
+                <p className='text-4xl'>{eventData.firstPrize}</p>
                 </div>
 
                 <img src={end} alt="Border" className="object-contain" />

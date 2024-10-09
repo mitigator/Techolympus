@@ -17,52 +17,73 @@ const Countdown = ({ targetDate }) => {
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-  const [prevTimeLeft, setPrevTimeLeft] = useState(timeLeft);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setPrevTimeLeft(timeLeft); 
-      setTimeLeft(calculateTimeLeft()); 
+      setTimeLeft(calculateTimeLeft());
     }, 1000);
 
     return () => clearTimeout(timer);
   }, [timeLeft]);
 
-  const shouldFlip = (unit) => timeLeft[unit] !== prevTimeLeft[unit];
+  const renderCircle = (unit, max, value) => {
+    const radius = 50;
+    const circumference = 2 * Math.PI * radius;
+    const offset = circumference - (value / max) * circumference;
+
+    return (
+      <svg className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 transform -rotate-90" viewBox="0 0 120 120">
+        <circle
+          cx="60"
+          cy="60"
+          r="50"
+          stroke="#2d3748"
+          strokeWidth="8"
+          fill="none"
+        />
+        <circle
+          cx="60"
+          cy="60"
+          r="50"
+          stroke="#e7b472"
+          strokeWidth="8"
+          fill="none"
+          strokeDasharray={circumference}
+          strokeDashoffset={offset}
+          strokeLinecap="round"
+        />
+        <text
+          x="60"
+          y="60"
+          dy=".3em"
+          textAnchor="middle"
+          className="text-lg sm:text-xl lg:text-2xl font-bold"
+          fill="#FFD6A1"
+          transform="rotate(90 60 60)" 
+        >
+          {value || '0'}
+        </text>
+      </svg>
+    );
+  };
 
   return (
-    <div className="flex justify-center space-x-10 m-6">
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 justify-center m-6">
       <div className="text-center">
-        <div className={`flip-container ${shouldFlip('days') ? 'animate-flip' : ''}`}>
-          <div className="flip text-4xl font-bold text-[#e7b472]">
-            {timeLeft.days || '0'}
-          </div>
-        </div>
-        <div className="text-sm">Days</div>
+        {renderCircle('days', 365, timeLeft.days)}
+        <div className="text-xs sm:text-sm text-[#FFD6A1]">Days</div>
       </div>
       <div className="text-center">
-        <div className={`flip-container ${shouldFlip('hours') ? 'animate-flip' : ''}`}>
-          <div className="flip text-4xl font-bold text-[#e7b472]">
-            {timeLeft.hours || '0'}
-          </div>
-        </div>
-        <div className="text-sm">Hours</div>
+        {renderCircle('hours', 24, timeLeft.hours)}
+        <div className="text-xs sm:text-sm text-[#FFD6A1]">Hours</div>
       </div>
       <div className="text-center">
-        <div className={`flip-container ${shouldFlip('minutes') ? 'animate-flip' : ''}`}>
-          <div className="flip text-4xl font-bold text-[#e7b472]">
-            {timeLeft.minutes || '0'}
-          </div>
-        </div>
-        <div className="text-sm">Minutes</div>
+        {renderCircle('minutes', 60, timeLeft.minutes)}
+        <div className="text-xs sm:text-sm text-[#FFD6A1]">Minutes</div>
       </div>
       <div className="text-center">
-        <div className={`flip-container ${shouldFlip('seconds') ? 'animate-flip' : ''}`}>
-          <div className="flip text-4xl font-bold text-[#e7b472]">
-            {timeLeft.seconds || '0'}
-          </div>
-        </div>
-        <div className="text-sm">Seconds</div>
+        {renderCircle('seconds', 60, timeLeft.seconds)}
+        <div className="text-xs sm:text-sm text-[#FFD6A1]">Seconds</div>
       </div>
     </div>
   );
