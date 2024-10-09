@@ -25,7 +25,7 @@ const EventCard = ({ title, description, linkUrl, imageUrl }) => (
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
-    style={{ width: '300px' }} // Fixed card size
+    style={{ width: '300px' }} 
   >
     <div className="h-48 " >
       <img src={imageUrl} alt={title} className="object-contain w-full h-full" />
@@ -37,7 +37,7 @@ const EventCard = ({ title, description, linkUrl, imageUrl }) => (
       </div>
       <a
         href={linkUrl}
-        className="inline-block text-center z-[500] hover:bg-[#E7B472] text-[#E7B472] hover:text-[#0f0f19] px-4 py-2  border border-[#E7B472] transition duration-300"
+        className="inline-block text-center z-[5] hover:bg-[#E7B472] text-[#E7B472] hover:text-[#0f0f19] px-4 py-2  border border-[#E7B472] transition duration-300"
       >
         Learn More
       </a>
