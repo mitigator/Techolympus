@@ -23,10 +23,10 @@ const Navbar = (activePage) => {
 
       if (currentScrollY > lastScrollY) {
         // Scrolling down
-        controls.start({ y: '-100%', transition: { duration: 0.3 } });
+        controls.start({ y: '-100%', transition: { duration: 0.2 } });
       } else {
         // Scrolling up or stopped
-        controls.start({ y: 0, transition: { duration: 0.3 } });
+        controls.start({ y: 0, transition: { duration: 0.2 } });
       }
 
       setLastScrollY(currentScrollY);
@@ -45,10 +45,10 @@ const Navbar = (activePage) => {
       initial={{ y: 0 }}
       animate={controls}
     >
-      <nav className="bg-[#05051887]  border-[#E7B472] text-[#E7B472] font-abril-fatface  md:p-1 pl-5 md:pl-0 flex justify-between items-center py-3">
+      <nav className="bg-[#08080ec3]  border-[#E7B472] text-[#E7B472] font-abril-fatface  md:p-1 pl-5 md:pl-0 flex justify-between items-center md:py-0">
         <div className="z-10 items-center hidden gap-5 pl-2 space-x-2 md:py-1 md:flex">
          
-          <div className="w-11 h-11 m-2 p-[1px] rounded-full hover:bg-[#e7b472] bg-[#e7b472d2] border border-[#e7b472]  flex justify-center items-center">
+          <div className="w-11 h-11 m-2 p-[1px] rounded-full hover:bg-[#e7b472] bg-[#e7b472d2] border border-[#e7b472]  flex justify-center items-center hover:shadow-xl shadow-[#e7b472]">
             <Link to='/'>
               <img src={Techolympys} alt="Techolympys Logo" />
             </Link>
@@ -101,29 +101,47 @@ const Navbar = (activePage) => {
           </div>
         </div>
 
+       
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
-          className="flex items-center"
+          className=" items-center py-3 md:py-0 hidden md:flex"
         >
+
+          <a to='https://christuniversity.in/' target='_blank'>
+            <img src={christ} alt="Christ University logo" className="w-auto h-10 md:h-12" />
+          </a>
+
+        </motion.div>
+
+        {!isMenuOpen&&
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+          className="flex items-center md:py-3 md:hidden"
+        >
+
           <a to='https://christuniversity.in/' target='_blank'>
             <img src={christ} alt="Christ University logo" className="w-auto h-10 md:h-14" />
           </a>
-        </motion.div>
-      </nav>
 
+        </motion.div>
+        }
       {isMenuOpen && (
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
-          className="absolute font-abril-fatface top-full text-4xl left-0 w-full h-[100vh] bg-[#0f0f19] p-4 md:hidden z-50"
+          className="absolute font-abril-fatface top-full text-4xl left-0 w-full py-auto h-[100vh] bg-[#08080e] p-4 md:hidden z-[100] flex flex-col items-center"
         >
-          <a href="/" className={`block py-2 text-center m-14 text-[#E7B472]`}>Home</a>
-          <a href="/events" className={`block py-2 text-center m-14 text-[#E7B472]  ${activePage==="events"?"underline underline-offset-4":""}`}>Events</a>
-          <a href="/about" className={`block py-2 text-center m-14 text-[#E7B472]  ${activePage==="events"?"underline underline-offset-4":""}`}>About</a>
+          <div className='flex flex-col  my-auto'>
+
+          <a href="/" className={`block py-1 text-center m-14 text-[#E7B472]`}>Home</a>
+          <a href="/events" className={`block py-1 text-center m-14 text-[#E7B472]  ${activePage==="events"?"underline underline-offset-4":""}`}>Events</a>
+          <a href="/about" className={`block py-1 text-center m-14 text-[#E7B472]  ${activePage==="events"?"underline underline-offset-4":""}`}>About</a>
           {/* <a
             href={test}
             download="Brochure.pdf"
@@ -140,8 +158,21 @@ const Navbar = (activePage) => {
               &#10005;
             </button>
           </div>
+          </div>
         </motion.div>
       )}
+      </nav>
+
+      <style>
+        {
+          isMenuOpen&&`
+          body {
+            overflow: hidden;
+          }
+        `
+        }
+      </style>
+
 
     </motion.div>
   );

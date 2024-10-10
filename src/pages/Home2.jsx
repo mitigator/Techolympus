@@ -37,14 +37,15 @@ const Home2 = () => {
     };
 
     const htr = [
-        'Full Name of the Student',
         'Name of the college the student is currently studying in',
-        'College Provided Register Number of the Team Leader (Roll number provided by the college)',
-        'Phone number of the student which is registered on whatsapp too',
-        'Name and phone number of the Member-1 who is the team leader',
+        'Name,College provided student register number and phone number of Member-1 who is the team leader ',
         'Details of other teammates in the team. (Only applicable for Team Events)',
-        'Open the payment link provided in the google form and make the payment to register for the evet. Payment has to be done only once and not for individual events.',
-        'Upload the screenshot of the payment made either in an image format or pdf format. (No other formats will be accepted)',
+        'Open the payment link provided in the google form and make the payment to register for the event. Payment has to be done only once per  individual.',
+        'In case, if the Individual / Team is registering for another event, they can upload the same payment screenshot/s that displays the Transaction ID.',
+        'Upload the screenshot of the payment made either in an image format or pdf format. (No other formats will be accepted). All the payment screenshots of the team members need to be added in a single pdf file.',
+        'Details of other teammates in the team. (Only applicable for Team Events)',
+        // 'Open the payment link provided in the google form and make the payment to register for the evet. Payment has to be done only once and not for individual events.',
+        // 'Upload the screenshot of the payment made either in an image format or pdf format. (No other formats will be accepted)',
         'Click on the Submit button in the google form to submit the details mentioned in the form and successfully complete the registration for the event.'
 
     ]
@@ -109,7 +110,7 @@ const Home2 = () => {
                 transition={{ duration: 1.5 }}
             />
 
-            <div className='bg-[#0f0f19] text-[#e7b472] flex flex-col justify-center items-center h-[100vh] md:h-[110vh] overflow-hidden'>
+            <div className='bg-[#08080e] text-[#e7b472] flex flex-col justify-center items-center h-[100vh] md:h-[110vh] overflow-hidden'>
                 <motion.h1
                     className='font-abril-fatface text-[40px] sm:text-[50px] md:text-[80px] mt-10 md:mt-20 z-10'
                     variants={fadeIn}
@@ -165,7 +166,7 @@ const Home2 = () => {
 
 
             <motion.div
-                className='bg-[#0f0f19] min-h-screen flex flex-col items-center gap-20 p-20 overflow-x-hidden'
+                className='bg-[#08080e] min-h-screen flex flex-col items-center gap-20 p-20 overflow-x-hidden'
                 variants={containerVariants}
             >
                 <img src={border} alt="Border" className="object-contain" loading="lazy" />
@@ -201,7 +202,7 @@ const Home2 = () => {
             
 
             <motion.div
-                className='bg-[#0f0f19] flex flex-col gap-5 items-center p-10 min-h-screen overflow-x-hidden'
+                className='bg-[#08080e] flex flex-col gap-5 items-center p-10 min-h-screen overflow-x-hidden'
                 variants={containerVariants}
             >
             <img src={border} alt="Border" className="object-contain" loading="lazy" />
@@ -256,7 +257,7 @@ const Home2 = () => {
  
 
             <motion.div
-                className='bg-[#0f0f19] flex  flex-col gap-10 items-center p-10 min-h-screen overflow-x-hidden'
+                className='bg-[#08080e] flex  flex-col gap-10 items-center p-10 min-h-screen overflow-x-hidden'
                 variants={containerVariants}
             >
                             <img src={border} alt="Border" className="object-contain" loading="lazy" />
@@ -268,11 +269,11 @@ const Home2 = () => {
                     {gatewaysData.title}
                 </motion.h1>
                 <motion.div
-                    className='flex  justify-center flex-col-reverse md:flex-row-reverse md:h-[300px] w-full gap-8'
+                    className='flex flex-col-reverse items-center justify-center w-full gap-8 md:flex-row-reverse md:h-auto'
                     variants={containerVariants}
                 >
                     <motion.div
-                        className='md:border-y md:border-r md:border-l border-[#e7b472] text-white md:p-6 w-full text-justify md:w-1/2 font-mono text-sm leading-relaxed flex justify-center items-center 2xl:translate-x-[-50px] xl:translate-x-[-40px] lg:translate-x-[-60px] md:translate-x-[-40px]'
+                        className='md:border-y md:border-r h-fit md:border-l border-[#e7b472] text-white md:p-6 w-full text-justify md:w-1/2 font-mono text-sm leading-relaxed flex justify-center items-center 2xl:translate-x-[-50px] xl:translate-x-[-40px] lg:translate-x-[-60px] md:translate-x-[-40px]'
                         variants={itemVariants}
                     >
                         <div className='text-justify'>
@@ -293,7 +294,7 @@ const Home2 = () => {
 
 
             <motion.div
-                className='bg-[#0f0f19] flex  flex-col gap-10 items-center p-6 min-h-screen overflow-x-hidden'
+                className='bg-[#08080e] flex  flex-col gap-10 items-center p-6 min-h-screen overflow-x-hidden'
                 variants={containerVariants}
             >
                             <img src={border} alt="Border" className="object-contain" loading="lazy" />
@@ -314,7 +315,7 @@ const Home2 = () => {
                     >
                         {
                             htr.map((node,i)=>(
-                                <div key={i} className={`flex flex-col my-2 ${i===6?"bg-[#e7b47245] p-2 border-[#e7b472] border":""} `}>
+                                <div key={i} className={`flex flex-col my-2 ${i===5?"bg-[#e7b47245] p-2 border-[#e7b472] border":""} `}>
                                     <div className={`text-xl font-bold text-[#e7b472] underline underline-offset-2 `}>Step {i+1}</div>
                                     <div>{node}</div>
                                 </div>

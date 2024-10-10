@@ -31,7 +31,7 @@ const EventCard = ({ title, description, linkUrl, imageUrl }) => (
       <img src={imageUrl} alt={title} className="object-contain w-full h-full" />
     </div>
     <div className="flex flex-col justify-between p-4 " >
-      <div className='h-[180px] text-center md:text-left'>
+      <div className='h-[200px] md:h-[180px] text-center md:text-left'>
         <h3 className="text-xl text-center font-semibold mb-2 text-[#E7B472] font-abril-fatface">{title}</h3>
         <p className="text-[#fff] font-mono opacity-80 mb-4 md:text-justify ">{description}</p>
       </div>

@@ -22,7 +22,7 @@ const Trial = ({ eventName, link }) => {
       >
         <div className="relative bg-[url('../assets/img.svg')] bg-contain bg-no-repeat w-[385px] h-[297px] flex justify-center items-center transition-transform duration-300 group-hover:scale-105">
           <div className="w-[310px] h-[310px] bg-[url('./assets/img2.svg')] bg-center bg-contain bg-no-repeat relative flex justify-center items-center">
-            <h2 className=" text-[#E7B472] text-center max-w-[200px] text-2xl break-words  font-abril-fatface z-[10000] group-hover:scale-110 transition-transform duration-300">
+            <h2 className=" text-[#E7B472] text-center max-w-[200px] text-2xl break-words  font-abril-fatface  group-hover:scale-110 transition-transform duration-300">
               {eventName}
             </h2>
           </div>
