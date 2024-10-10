@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import OliveLeaf from '../assets/OliveLeaf.png';
 import zeus from '../assets/zeus.svg';
-import Card from '../components/Card';
 import Trails from '../components/Trial';
 import Techolympys from '../assets/Techolympuslogo.svg';
 import contentData from '../json/Theme.json';

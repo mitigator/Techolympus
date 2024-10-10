@@ -24,10 +24,23 @@ function SingleEventPage(props) {
     {/* Event Details Section */}
     <div className="text-[#FFD6A1] font-abril-fatface  w-[90%] md:w-[75%] flex flex-col gap-4 md:flex-row md:justify-between px-4 md:px-0 text-lg md:text-2xl">
         <div className="flex flex-col items-start w-full gap-4 md:flex-row md:items-center">
-            <p className='px-4 h-full items-center justify-center flex w-full text-center  py-2  border-[#E7B472] border-2  '>{eventData.eventType}</p>
-            <p className='px-4 h-full items-center justify-center flex w-full text-center  py-2  border-[#E7B472] border-2  '>{eventData.teamSize} Per Team</p>
-            <p className='px-4 h-full items-center justify-center flex w-full text-center  py-2  border-[#E7B472] border-2  '>{eventData.venue}</p>
-            <p className='px-4 h-full items-center justify-center flex w-full text-center  py-2  border-[#E7B472] border-2  '>{eventData.rounds} Rounds</p>
+            <div className='flex flex-col w-full h-full'>
+                <div className='text-base font-bold bg-[#E7B472] font-mono text-[#030520] px-2 py-1'>Event Type</div>
+            <p className='px-4 h-full items-center justify-center flex  text-center  py-2  border-[#E7B472] border-2  '>{eventData.eventType}</p>
+            </div>
+            <div className='flex flex-col w-full h-full'>
+                <div className='text-base font-bold bg-[#E7B472] font-mono text-[#030520] px-2 py-1'>Team Size</div>
+                <p className='px-4 h-full items-center justify-center flex w-full text-center  py-2  border-[#E7B472] border-2  '>{eventData.teamSize} Per Team</p>
+                </div>
+            <div className='flex flex-col w-full h-full'>
+                <div className='  text-base font-bold bg-[#E7B472] font-mono text-[#030520] px-2 py-1'>Event Venue</div>
+                <p className='px-4 h-full items-center justify-center flex w-full text-center  py-2  border-[#E7B472] border-2  '>{eventData.venue}</p>
+                </div>
+            <div className='flex flex-col w-full h-full'>
+                <div className=' text-base font-bold bg-[#E7B472] font-mono text-[#030520] px-2 py-1'>Rounds</div>
+                <p className='px-4 h-full items-center justify-center flex w-full text-center  py-2  border-[#E7B472] border-2  '>{eventData.rounds}</p>
+                </div>
+
         </div>
 
     </div>
@@ -45,35 +58,55 @@ function SingleEventPage(props) {
 
     {/* Prize Section */}
     <div className="text-[#FFD6A1] text-2xl text-center">
-        <h2 className="pb-10 text-4xl font-bold text-transparent font-abril-fatface md:text-6xl bg-clip-text bg-gradient-text">Prizes</h2>
-        <div className=' mt-10 flex flex-col font-mono font-bold text-[30px] md:text-[60px] gap-[2rem]'>
-        <p className='p-5 text-[#FFD700]   '>1st Prize: {eventData.firstPrize}</p>
-        <p  className='p-5 text-[#d6d6d6]     '>2nd Prize: {eventData.secondPrize}</p>
-        <p  className='p-5 text-[#ab6a2a] '>3rd Prize: {eventData.thirdPrize}</p>
+        <h2 className="pb-10 text-4xl font-bold text-transparent font-abril-fatface md:text-6xl bg-clip-text bg-gradient-text">Prize Pool</h2>
+        <div className=' mt-10 flex flex-col font-mono font-bold text-[30px] md:text-[70px] gap-[2rem]'>
+        <p className='p-5 text-[#FFD700]   '>{eventData.firstPrize}</p>
+        {/* <p  className='p-5 text-[#d6d6d6]     '>2nd Prize: {eventData.secondPrize}</p>
+        <p  className='p-5 text-[#ab6a2a] '>3rd Prize: {eventData.thirdPrize}</p> */}
         </div>
     </div>
 
     <img src={end} alt="Border" className="object-contain" />
 
-
-    {/* Rules Section */}
-    <div className="text-[#FFD6A1] text-center px-4 md:px-0 mt-6 mb-[100px] md:mb-[150px]">
-        <h2 className="pb-5 text-5xl font-bold text-transparent font-abril-fatface md:text-6xl bg-clip-text bg-gradient-text">Rules</h2>
-        <ul className=" justify-center  text-lg md:text-2xl text-justify list-none list-inside flex flex-col gap-[1rem]">
-            {eventData.rules.map((rule, index) => (
-                <li className='mx-auto max-w-[80%] md:max-w-[60%] text-center border font-mono border-[#FFD6A1] px-4 py-2' key={index}>{rule}</li>
+     {/* Prerequsites Section */}
+     <div className="text-[#FFD6A1] text-center px-4 md:px-0 mt-6 mb-[100px] md:mb-[50px]">
+        <h2 className="pb-5 text-5xl font-bold text-transparent font-abril-fatface md:text-6xl bg-clip-text bg-gradient-text">Prerequisites</h2>
+        <ul className="  justify-center  text-lg md:text-2xl text-justify list-none list-inside flex flex-col gap-[1rem]">
+            {eventData.prerequisites.map((rule, index) => (
+                <li className='mx-auto max-w-[80%] md:max-w-[100%] text-center  font-mono px-4 py-2' key={index}>{``}{rule}{``}</li>
             ))}
         </ul>
-        <div className=" mx-auto px-10 text-center w-fit flex flex-col items-start gap-5 mt-10 text-[#FFD6A1] py-5 bg-[#00000038] font-abril-fatface md:items-center ">
-            <p className='w-full text-xl text-center'>Contact Person</p>
-            <div className='flex flex-row items-center gap-2'> 
-
-            <p className='text-center'>{eventData.contactPerson}<br/>{eventData.contactNumber}</p>
-            {/* <p className='w-full px-4 py-2 text-center '></p>
-            <p className='w-full px-4 py-2 text-center ' >{eventData.contactNumber}</p> */}
-            </div>
-        </div>
     </div>
+
+    <img src={end} alt="Border" className="object-contain" />
+
+
+
+    {/* Rules Section */}
+    <div className="text-[#FFD6A1] text-center px-4 md:px-0 mt-6 mb-[100px] md:mb-[100px]">
+        <h2 className="pb-5 text-5xl font-bold text-transparent font-abril-fatface md:text-6xl bg-clip-text bg-gradient-text">Rules</h2>
+        <ul className="  justify-center  text-lg md:text-2xl text-justify list-none list-inside flex flex-col gap-[1rem]">
+            {eventData.rules.map((rule, index) => (
+                <li className='mx-auto max-w-[80%] md:max-w-[100%] text-center  font-mono px-4 py-2' key={index}>{``}{rule}{``}</li>
+            ))}
+        </ul>
+    </div>
+
+    <img src={end} alt="Border" className="object-contain" />
+
+
+    {/* Constact Section */}
+    <div className="text-[#FFD6A1] text-center px-4 md:px-0 mt-6 mb-[100px] md:mb-[50px]">
+        <h2 className="pb-5 text-5xl font-bold text-transparent font-abril-fatface md:text-6xl bg-clip-text bg-gradient-text">Contact Info</h2>
+              <div className='flex flex-col gap-3 mx-auto'>
+                <div className='mx-auto max-w-[80%] md:max-w-[100%] font-bold text-center text-3xl  font-mono px-4 py-2' >{eventData.contactPerson}</div>
+                <div className='text-xl font-bold  tracking-[8px]'>{eventData.contactNumber}</div>
+              </div>
+           
+    </div>
+
+    <img src={end} alt="Border" className="object-contain" />
+
    
 
     {/* External Link Button */}
@@ -110,6 +143,7 @@ SingleEventPage.propTypes = {
         contactPerson: PropTypes.string.isRequired,
         contactNumber: PropTypes.string.isRequired,
         link: PropTypes.string.isRequired,
+        prerequisites:PropTypes.string.isRequired
     }).isRequired,
     img: PropTypes.string.isRequired,
 };

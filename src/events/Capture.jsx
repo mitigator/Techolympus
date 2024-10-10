@@ -22,15 +22,21 @@ export const Capture = () => {
             .catch(error => console.error('Error fetching event data:', error));
     }, []);
 
-    if (!eventData) {
-        return <div><Preloader/></div>;     
-    }
+    // if (!eventData) {
+    //     return <div><Preloader/></div>;     
+    // }
 
     return (
+        <>{
+            !eventData?
+            <Preloader/>:
         <div>
             <Navbar />
             <SingleEventPage eventData={eventData} img={img}/>
             <Footer/>
         </div>
+        }
+        
+        </>
     );
 };

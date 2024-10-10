@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import zeus from '../assets/zeus.svg';
 // Import local images for technical events
 import uiuxImage from '../assets/aphrodite.svg'; 
-import hackathonImage from '../assets/god.svg';
+import hackathonImage from '../assets/ares.svg';
 import captureTheFlagImage from '../assets/Hermes.svg';
 import itQuizImage from '../assets/athena.svg';
 import iotImage from '../assets/iot.svg';
@@ -30,7 +30,7 @@ const EventCard = ({ title, description, linkUrl, imageUrl }) => (
       <img src={imageUrl} alt={title} className="object-contain w-full h-full" />
     </div>
     <div className="flex flex-col justify-between p-4 " >
-      <div className='h-[170px] text-center md:text-left'>
+      <div className='h-[180px] text-center md:text-left'>
         <h3 className="text-xl text-center font-semibold mb-2 text-[#E7B472] font-abril-fatface">{title}</h3>
         <p className="text-[#fff] font-mono opacity-80 mb-4 ">{description}</p>
       </div>

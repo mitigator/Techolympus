@@ -1,0 +1,273 @@
+[
+    {
+        "id": 1,
+        "eventType": "Surprise Event",
+        "venue": "Sky View, Central Block",
+        "teamSize": "2",
+        "rounds": "4",
+        "contactPerson": "Neema Martin",
+        "contactNumber": "8217645968",
+        "title": "Hera's Trials",
+        "description": "Embark on an exhilarating voyage into the unknown with Hera’s Trails, a thrilling surprise event at Gateways 2024. In this immersive experience inspired by Greek mythology, you’ll face a series of mysterious rounds designed to captivate, challenge, and push your boundaries. The suspense builds with each twist, as ancient myths come to life in unexpected ways. Prepare to be amazed, entertained, and tested as you navigate a world where every moment unveils a new surprise. Don’t miss your chance to unlock the hidden mysteries of this mythical adventure!",
+        "firstPrize": "₹5000",
+        "secondPrize": "₹3000",
+        "thirdPrize": "₹1000",
+        "rules": [
+            "Rule 1: Teams can have a maximum of 2 members.",
+            "Rule 2: No mobile phones or outside help allowed.",
+            "Rule 3: Judges' decisions are final and binding.",
+            "Rule 4: All participants must arrive 15 minutes prior to the event start time.",
+            "Rule 4: If there's a tie in points, a tie-breaker round will be held in order to determine the winner."
+        ],
+        "prerequisites": [
+        "Prerequisite 1: Ability to solve puzzles and think creatively.",
+        "Prerequisite 2: Participants must be able to engage in light physical activities"
+    ],
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSczx9M0gt8cfeYA1zrET5GujrhNLA_C_JITmqiH63dJnUtZGg/viewform?usp=sf_link"
+    },
+    {
+        "id": 2,
+        "eventType": "Photography",
+        "venue": "Venue: 815, Central Block",
+        "teamSize": "1",
+        "rounds": "1",
+        "contactPerson": "Rajendran",
+        "contactNumber": "7348875942",
+        "title": "Apollo’s Luminous Lens",
+        "description": "APOLLO’S LUMINOUS LENS is a photography competition that emphasizes creativity by challenging participants to align their work with a specific theme chosen by the judges. Participants will capture photographs based on this theme, showcasing their unique perspectives. ",
+        "firstPrize": "₹4000",
+        "secondPrize": "₹2000",
+        "thirdPrize": "₹1000",
+        "rules": [
+            "Rule 1: It is an individual event.",
+            "Rule 2: Photos must be taken during the event using the surroundings available at the venue.",
+            "Rule 3: Editing is optional but should be minimal (basic color correction or cropping).",
+            "Rule 4: Judges' decisions are final."
+        ],
+        "prerequisites": [
+        "Prerequisite 1: Basic knowledge of Greek mythology.",
+        "Prerequisite 2: Participants should bring their own cameras or smartphones."
+    ],
+        "link": "https://www.example.com/photography"
+    },
+    {
+        "id": 3,
+        "eventType": "Hackathon",
+        "venue": "Tech Lab",
+        "teamSize": "4",
+        "rounds": "3",
+        "contactPerson": "VISHNU SWAROOP",
+        "contactNumber": " 7025511967",
+        "title": "Ares Techwar",
+        "description": "Welcome to Ares TechWar: The Mythological Hackathon! Inspired by the epic quests of ancient Greece, this hackathon merges mythology with futuristic tech, challenging you to develop innovative solutions. Compete alongside developers, creators, and visionaries as you tackle real-world problems or design groundbreaking projects across any tech domain, all within a myth-inspired atmosphere. Unleash your creativity, collaborate, and showcase your skills for a chance to win exciting prizes. While the gods may inspire, it's your innovation that will determine the victor!",
+        "firstPrize": "₹17000",
+        "secondPrize": "₹3000",
+        "thirdPrize": "₹1500",
+        "rules": [
+            "Rule 1: Teams must consist of 2-4 members.",
+            "Rule 2: Registration for the event is exclusively online",
+            "Rule 3: All submissions must be the original work of the participating teams. Plagiarism or the use of pre-built templates or code without citation will result in disqualification.",
+            "Rule 4: Judges' decisions are final"
+        ],
+        "prerequisites": [
+        "Prerequisite 1: Participants must have access to a reliable internet connection, laptops or PCs with the necessary development environments, tools, and software relevant to their project.",
+        "Prerequisite 2: Teams should be prepared to use online communication tools."
+    ],
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfVw29Yn0hlPIWAmMCu8BMI1_c1aP0I130hYSW-ajggVp71EQ/viewform?usp=sf_link"
+    },
+    {
+        "id": 4,
+        "eventType": "Coding and Debugging",
+        "venue": "811 Central Block",
+        "teamSize": "2",
+        "rounds": "2",
+        "contactPerson": "Subhojeet Saho",
+        "contactNumber": "8210523693",
+        "title": "Poseidon’s Code Current",
+        "description": "This competition is a great opportunity for programmers to showcase their debugging expertise, problem-solving abilities, and teamwork. With two players per team, participants will tackle challenging tasks and compete for top honors, all while honing their coding skills in a competitive yet fun environment.",
+        "firstPrize": "₹8000",
+        "secondPrize": "₹1500",
+        "thirdPrize": "₹750",
+        "rules": [
+            "Rule 1: Teams can have a maximum of 2 members.",
+            "Rule 2: Teams must be proficient in at least one of the following programming languages: C/C++,Java,Python,JavaScript,Go Lang ",
+            "Rule 3: No outside help is allowed.",
+            "Rule 4: Judges' decisions are final."
+        ],
+        "prerequisites": [
+        "Prerequisite 1: Each team must have a valid HackerRank account.",
+        "Prerequisite 2: Programming knowledge."
+    ],
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfhq9sY9N8-IcaYemJH105k_mSjUJYcdE0wkkN1KsJZPfH_IQ/viewform?usp=sf_link"
+    },
+    {
+        "id": 5,
+        "eventType": "IoT",
+        "venue": "Innovation Center",
+        "teamSize": "3",
+        "rounds": "2",
+        "contactPerson": "SANTHOSH KUMAR",
+        "contactNumber": "63793141514",
+        "title": "Hephaestus' Forge",
+        "description": "Prepare to explore the exciting Internet of Things (IoT) world with Hephaestus' Forge. This event challenges participants to harness the power of IoT to innovate solutions that benefit society. Teams must demonstrate their knowledge and creativity through a structured competition emphasizing innovation, originality, and societal benefits.",
+        "firstPrize": "₹13000",
+        "secondPrize": "₹3000",
+        "thirdPrize": "₹1000",
+        "rules": [
+            "Rule 1: Teams must consist of 3 members.",
+            "Rule 2: Participants must build their own IoT project.",
+            "Rule 3: Judges' decisions are final."
+        ],
+        "prerequisites": [
+        "Prerequisite 1: Equipments, parts for the device.",
+        "Prerequisite 2: Teams must submit their ideas through a google form which will be provided."
+    ],
+        "link": "https://www.example.com/iot"
+    },
+    {
+        "id": 6,
+        "eventType": "Capture the Flag",
+        "venue": "MCA Lab Block 2",
+        "teamSize": "2-3",
+        "rounds": "1",
+        "contactPerson": "L Vinay Kumar Reddy ",
+        "contactNumber": "8296755149 ",
+        "title": "Hermes' Bytechase",
+        "description": "Step into a realm where ancient Greek mythology takes center stage in our thrilling event, Hermes’ Bytechase.Participants will navigate a mystical underworld filled with legendary figures and mythical creatures. As cunning explorers, you'll need to outsmart powerful gods, decode cryptic messages from oracles, and face mythical beasts to uncover hidden secrets and treasures. Each challenge you face will test your programming, strategy, decrypting, and problem-solving skills, all while drawing inspiration from the epic tales of Greek lore. Only those who master the art of strategy and embrace their mythological heritage will rise to claim victory in this exciting journey through the ancient world. Will you be the hero who overcomes the trials, or will you be lost in legend? ",
+        "firstPrize": "₹8000",
+        "secondPrize": "₹2000",
+        "thirdPrize": "₹1000",
+        "rules": [
+            "Rule 1: Teams must consist of 2 or 3 members.",
+            "Rule 2: Sharing information or discussing with members of other teams is strictly prohibited.",
+            "Rule 3: Judges' decisions are final."
+        ],
+        "prerequisites": [
+        "Prerequisite 1: Basic knowledge of encryption and decryption techniques.",
+        "Prerequisite 2: Competence in using command-line tools."
+    ],
+        "link": "https://www.example.com/capture-the-flag"
+    },
+    {
+        "id": 7,
+        "eventType": "UI/UX",
+        "venue": "BCA lab, Block 2",
+        "teamSize": "2",
+        "rounds": "2",
+        "contactPerson": "S Alankritha",
+        "contactNumber": "9035288804",
+        "title": "Aphrodite's Aurora",
+        "description": "APHRODITE'S AURORA celebrates the timeless allure of Greek mythology, drawing inspiration from the grace and elegance of Aphrodite, the Greek goddess of beauty and love. The event begins with participants crafting UI/UX designs using Figma, channeling the rich artistic heritage of ancient Greece and the mythological aesthetics of the gods and goddesses. In the next phase, these designs are brought to life as functional interfaces using HTML and CSS, blending classical beauty with modern design principles. Only the most creative and meticulously crafted designs, embodying the essence of ancient myths, will shine through and claim victory, symbolizing a revival of classical artistry in the digital age.",
+        "firstPrize": "₹7000",
+        "secondPrize": "₹2500",
+        "thirdPrize": "₹1000",
+        "rules": [
+            "Rule 1: Up to 2 members per team.",
+            "Rule 2: Judges' decisions are final.",
+            "Rule 3: Teams have to create their own design during the event. Pre-made designs are not accepted."
+        ],
+        "prerequisites": [
+        "Prerequisite 1: Basic knowledge of working with UI tools.",
+        "Prerequisite 2: Technical knowledge to implement the design."
+    ],
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLScT4on9uw7tAJyPuUU4xeOSOiCMqdsuYJWJbzQIc2fDgxEXeg/viewform?usp=sf_link"
+    },
+    {
+        "id": 8,
+        "eventType": "Gaming",
+        "venue": "Bsc Lab, Block 2",
+        "teamSize": "4",
+        "rounds": "2",
+        "contactPerson": "Alwin Tomy",
+        "contactNumber": "9482011600",
+        "title": "Dionysus' Battleground",
+        "description": "Welcome to Dionysus' Battleground, a thrilling gaming event where ancient myth meets intense competition in BGMI! Enter the battlefield with your squad and master tactics, teamwork, and precision to claim victory. Navigate through fierce firefights, outsmart rivals, and adapt to the ever-changing combat zones as the spirit of Dionysus drives you forward. Prove your might, rise among legends, and let your skills shine in this epic virtual challenge. Gear up, squad up, and step into the arena—your time to dominate has arrived!",
+        "firstPrize": "₹7000",
+        "secondPrize": "₹3500",
+        "thirdPrize": "₹1500",
+        "rules": [
+            "Rule 1: Teams must consist of 4 members.",
+            "Rule 2: Judges' decisions are final.",
+            "Rule 3: Participants should bring their own gaming gears."
+        ],
+        "prerequisites": [
+        "Prerequisite 1: A valid BGMI account.",
+        "Prerequisite 2: Mobile phones and chargers must be carried by the participants."
+    ],
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLScKwm8LEIUAbtwqA6xi--mUjJko_sWSca8TAXdCBlRniNB5Cw/viewform?usp=sf_link"
+    },
+    {
+        "id": 9,
+        "eventType": "Treasure Hunt",
+        "venue": "Sky View",
+        "teamSize": "4",
+        "rounds": "3",
+        "contactPerson": "Athul Raja",
+        "contactNumber": "6235692700",
+        "title": "Artemis' Adventure",
+        "description": "Join us at Christ University College for an exhilarating Treasure Hunt event, merging the mystique of Greek mythology with the thrill of adventure! Embark on a quest to uncover legendary artifacts like Hades' Helm of Darkness and Zeus' Lightning Bolt, hidden within a realm filled with ancient mysteries. Each clue will challenge your wits with mythological riddles and puzzles inspired by the tales of the gods. Solve ancient codes, navigate through mythical challenges, and race against time to become the ultimate treasure seeker. Exciting prizes await those who dare to outsmart the gods and claim the treasures of legend!",
+        "firstPrize": "₹7000",
+        "secondPrize": "₹2500",
+        "thirdPrize": "₹1000",
+        "rules": [
+            "Rule 1: Up to 3-4 members per team and 2 teams per college",
+            "Rule 2: No mobile phones or outside help allowed.",
+            "Rule 3: Judges' decisions are final.",
+            "Rule 4: Clues must not be shared with other teams.",
+            "Rule 5: Usage of any unfair means will result in immediate disqualiification."
+        ],
+        "prerequisites": [
+        "Prerequisite 1: Basic knowledge of Greek mythology.",
+        "Prerequisite 2: Ability to solve puzzles and think creatively.",
+        "Prerequisite 3: Able to perform light physical activities."
+    ],
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfqYS9ai0b1FUYeLwkO8pV9g1svgpYDrcinmUNEnTJV1ZmEKw/viewform?usp=sf_link"
+    },
+    {
+        "id": 10,
+        "eventType": "IT Manager",
+        "venue": "Seminar Hall Block 2",
+        "teamSize": "1",
+        "rounds": "3",
+        "contactPerson": "Manu Martin",
+        "contactNumber": "8746960082",
+        "title": "Hades' Tech Authority",
+        "description": "HADES' TECH AUTHORITY is a thrilling IT Manager event designed to ignite the passion and creativity of computer science students. As a premier gathering for aspiring IT professionals, this event offers a unique platform to evaluate your knowledge, compete with fellow students from different colleges across south India, and showcase your talents. ",
+        "firstPrize": "₹7000",
+        "secondPrize": "₹1500",
+        "thirdPrize": "₹750",
+        "rules": [
+            "Rule 1: Each participant must register individually.",
+            "Rule 2: Judges' decisions are final."
+        ],
+        "prerequisites": [
+        "Prerequisite 1: Communication Skills.",
+        "Prerequisite 2: Courage and Attitude."
+    ],
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSdUCBDBa5FIvQMLD5YMqqQIGWu0eRGEvc2HCW4HMPJwo1iecA/viewform?usp=sf_link"
+    },
+    {
+        "id": 11,
+        "eventType": "IT Quiz",
+        "venue": "105 Meeting Hall",
+        "teamSize": "2",
+        "rounds": "5",
+        "contactPerson": "Kezya",
+        "contactNumber": "7825931777",
+        "title": "ATHENA'S ARENA",
+        "description": "Prepare to step into a realm where myth and intellect converge! Join us at ATHENA'S ARENA , where ancient wisdom reigns supreme. This quiz event will test your knowledge of general trivia, Greek mythology, and the realms of logic and strategy. Assemble your team and prove you are the ultimate masters of knowledge and lore in this timeless arena, where only those with the sharpest minds and deepest understanding of ancient tales will triumph!",
+        "firstPrize": "₹5000",
+        "secondPrize": "₹1500",
+        "thirdPrize": "₹750",
+        "rules": [
+            "Rule 1: Participation is open to individuals or teams of 2 members.",
+            "Rule 2: Usage of a device/any other means that provide an unfair advantage will result in immediate disqualification of the team.",
+            "Rule 3: Judges' decisions are final."
+        ],
+        "prerequisites": [
+        "Prerequisite 1: Basic Computer Science Knowledge.",
+        "Prerequisite 2: General IT and Technology Awareness."
+    ],
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfLk5fXynGKV-INVSHl2L0jjCRjRUy9j9mWbemsrAk4Kg9RgA/viewform?usp=sf_link"
+    }
+]

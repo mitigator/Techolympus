@@ -1,9 +1,7 @@
-import React from 'react';
 import Navbar from '../components/Navbar';
 import bg from '../assets/aboutBackground.svg'; 
 import light from '../assets/light.svg';
 import logo from '../assets/aboutLogo.svg';
-import Card from '../components/Card';
 import border from '../assets/borderline.svg';
 import NewAboutCard from '../components/NewAboutCard';
 
@@ -71,7 +69,12 @@ const About = () => {
         {/* Team Section */}
         <div className='flex flex-col items-center gap-10 pb-20 overflow-x-hidden md:gap-20'>
           <h1 className='text-[#e7b472] text-3xl md:text-[50px] mb-6 font-abril-fatface pt-10 text-center'>Meet Our Team</h1>
-          <div className='flex flex-col gap-10 md:flex-row justify-evenly md:gap-20'>
+          <div className='flex flex-col gap-10 md:flex-row justify-evenly md:gap-12'>
+            <NewAboutCard name="Dr. Ashok Immanuel" desig = "Head Of Department"/>
+            <NewAboutCard name="Dr. Chandra J" desig = "Program Coordinator"/>
+          </div>
+          
+          <div className='flex flex-col gap-10 md:flex-row justify-evenly md:gap-44'>
             <NewAboutCard name="Dr. Cynthia T" desig = "Fest Coordinator"/>
             <NewAboutCard name="Dr. Sudhakar T" desig = "Fest Coordinator"/>
           </div>
@@ -92,12 +95,19 @@ const About = () => {
           <NewAboutCard name="Aditi Patel" desig = "Core Team Member"/>
           <NewAboutCard name="Saumya Dwivedi " desig = "Core Team Member"/>
           <NewAboutCard name="Vivek S" desig = "Core Team Member"/>
+          <NewAboutCard name="Satyam Jhawar" desig = "Core Team Member"/>
+
+
           </div>
           <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
-          <NewAboutCard name="Satyam Jhawar" desig = "Core Team Member"/>
           <NewAboutCard name="Hitesh Salimath" desig = "Core Team Member"/>
           <NewAboutCard name="Karthikeyan" desig = "Core Team Member"/>
           <NewAboutCard name="Neha Seirah" desig = "Core Team Member"/>
+
+          </div>
+          <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
+          
+          <NewAboutCard name="Mohsin Chunawala" desig = "Core Team Member"/>
           </div>
         
 
