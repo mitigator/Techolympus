@@ -143,7 +143,7 @@ const Home2 = () => {
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 0.8, delay: 2.5 }}
                     >
-                        Department Of Computer Science
+                        Department Of Computer Science, Central Campus, Bangalore
                     </motion.p>
 
                 </motion.div>
