@@ -21,6 +21,26 @@
     
   }
 
+  .bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .color-animation{
+    animation: color-change 1s infinite ease-in-out;
+    
+    
+  }
+  @keyframes color-change {
+    0% { color: #fff;  transform: scale(1); }
+    25% { color: #e7b472;}
+    50% { color: #fdbe0e; transform: scale(1.2);}
+    75% { color: #e7b472;}
+    100% { color: #fff; transform: scale(1);}
+  }
+  
+
 
   .loader {
     position: relative;

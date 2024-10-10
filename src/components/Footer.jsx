@@ -10,17 +10,18 @@ const Footer = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className='bg-[#E7B472] flex  justify-between items-center text-[#0f0f19] h-auto md:h-20 py-4 md:py-0 z-100'>
+      <div className='bg-[#E7B472] flex-col '>
+       <div className='flex   justify-between items-center text-[#0f0f19] h-auto md:h-20 pt-4 md:py-0 z-100'>
         <motion.div 
-          className='flex flex-col ml-5 md:ml-10 justify-center items-center mb-4 md:mb-0'
+          className='flex flex-col items-center justify-center mb-4 ml-5 md:ml-10 md:mb-0'
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
-          <p className='font-abril-fatface text-lg md:text-xl'>Gateways 2024</p>
-          <p className='font-bilbo-swap-caps text-sm md:text-base ml-0 md:ml-2'>techOlympus</p>
+          <p className='text-lg font-abril-fatface md:text-xl'>Gateways 2024</p>
+          <p className='ml-0 text-sm font-bilbo-swap-caps md:text-base md:ml-2'>techOlympus</p>
         </motion.div>
         
-        <div className='flex space-x-4 mr-5 md:mr-10'>
+        <div className='flex mr-5 space-x-4 md:mr-10'>
           <motion.a 
             href='https://www.instagram.com/2024gateways/?igsh=MWNhdzh6YXdia3NwNg%3D%3D' 
             target='_blank' 
@@ -39,6 +40,10 @@ const Footer = () => {
           >
             <FaLinkedin className="h-5 w-5 md:h-8 md:w-8 text-[#0f0f19]" />
           </motion.a>
+        </div>
+       </div>
+        <div className='py-1 bg-[#c0955e] mx-auto font-mono font-bold text-center'>Developed By Shubham, Pavitharani and Aravind 
+          
         </div>
       </div>
     </motion.div>

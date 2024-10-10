@@ -60,7 +60,7 @@ function SingleEventPage(props) {
     <div className="text-[#FFD6A1] text-2xl text-center">
         <h2 className="pb-10 text-4xl font-bold text-transparent font-abril-fatface md:text-6xl bg-clip-text bg-gradient-text">Prize Pool</h2>
         <div className=' mt-10 flex flex-col font-mono font-bold text-[30px] md:text-[70px] gap-[2rem]'>
-        <p className='p-5 text-[#FFD700]   '>{eventData.firstPrize}</p>
+        <p className='p-5 bebas-neue-regular text-[#E7B472]  color-animation '>{eventData.firstPrize}</p>
         {/* <p  className='p-5 text-[#d6d6d6]     '>2nd Prize: {eventData.secondPrize}</p>
         <p  className='p-5 text-[#ab6a2a] '>3rd Prize: {eventData.thirdPrize}</p> */}
         </div>
@@ -98,7 +98,7 @@ function SingleEventPage(props) {
     {/* Constact Section */}
     <div className="text-[#FFD6A1] text-center px-4 md:px-0 mt-6 mb-[100px] md:mb-[50px]">
         <h2 className="pb-5 text-5xl font-bold text-transparent font-abril-fatface md:text-6xl bg-clip-text bg-gradient-text">Contact Info</h2>
-              <div className='flex flex-col gap-3 mx-auto'>
+              <div className='flex flex-col gap-3 mx-auto bebas-neue-regular'>
                 <div className='mx-auto max-w-[80%] md:max-w-[100%] font-bold text-center text-3xl  font-mono px-4 py-2' >{eventData.contactPerson}</div>
                 <div className='text-xl font-bold  tracking-[8px]'>{eventData.contactNumber}</div>
               </div>

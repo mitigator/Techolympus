@@ -4,6 +4,7 @@ import light from '../assets/light.svg';
 import logo from '../assets/aboutLogo.svg';
 import border from '../assets/borderline.svg';
 import NewAboutCard from '../components/NewAboutCard';
+import Footer from '../components/Footer';
 
 
 const About = () => {
@@ -102,11 +103,10 @@ const About = () => {
           <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
           <NewAboutCard name="Hitesh Salimath" desig = "Core Team Member"/>
           <NewAboutCard name="Karthikeyan" desig = "Core Team Member"/>
-          <NewAboutCard name="Neha Seirah" desig = "Core Team Member"/>
 
+          <NewAboutCard name="Neha Seirah" desig = "Core Team Member"/>
           </div>
           <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
-          
           <NewAboutCard name="Mohsin Chunawala" desig = "Core Team Member"/>
           </div>
         
@@ -114,6 +114,7 @@ const About = () => {
 
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

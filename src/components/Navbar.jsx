@@ -45,14 +45,14 @@ const Navbar = (activePage) => {
       initial={{ y: 0 }}
       animate={controls}
     >
-      <nav className="bg-[#0606064e] border-[#E7B472] text-[#E7B472] font-abril-fatface p-6 md:p-0 flex justify-between items-center">
+      <nav className="bg-[#0606066d] border-[#E7B472] text-[#E7B472] font-abril-fatface p-6 md:p-0 flex justify-between items-center">
         <div className="z-10 items-center hidden gap-5 py-3 space-x-2 md:flex">
-          <div className="w-10 m-2 p-[4px] h-10 rounded-full hover:bg-[#e7b472] bg-[#e7b472d2] border border-[#e7b472] flex justify-center items-center">
+          <div className="w-12 m-2 p-[4px] h-12 rounded-full hover:bg-[#e7b472] bg-[#e7b472d2] border border-[#e7b472] flex justify-center items-center">
             <Link to='/'>
               <img src={Gatewayslogo} alt="Gateways Logo" />
             </Link>
           </div>
-          <div className="w-10 h-10 m-2 p-[4px] rounded-full hover:bg-[#e7b472] bg-[#e7b472d2] border border-[#e7b472]  flex justify-center items-center">
+          <div className="w-12 h-12 m-2 p-[4px] rounded-full hover:bg-[#e7b472] bg-[#e7b472d2] border border-[#e7b472]  flex justify-center items-center">
             <Link to='/'>
               <img src={Techolympys} alt="Techolympys Logo" />
             </Link>
@@ -112,7 +112,7 @@ const Navbar = (activePage) => {
           className="flex items-center"
         >
           <a to='https://christuniversity.in/' target='_blank'>
-            <img src={christ} alt="Christ University logo" className="w-auto h-12" />
+            <img src={christ} alt="Christ University logo" className="w-auto h-14" />
           </a>
         </motion.div>
       </nav>

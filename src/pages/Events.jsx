@@ -17,6 +17,7 @@ import gamingImage from '../assets/disynonys.svg';
 import treasureHuntImage from '../assets/artemis.svg';
 import itManagerImage from '../assets/Hades.svg';
 import surpriseEventImage from '../assets/hera.svg';
+import Footer from '../components/Footer';
 
 const EventCard = ({ title, description, linkUrl, imageUrl }) => (
   <div
@@ -71,7 +72,7 @@ const Events = () => {
   }, []);
 
   return (
-    <div className="mx-auto px-4 py-12 bg-[#000000] min-h-screen text-[#E7B472]">
+    <div className="mx-auto  pt-12  bg-[#000000] min-h-screen text-[#E7B472]">
       <Navbar activePage="events"/>
       <motion.div
                 className="fixed inset-0 z-0 bg-scroll bg-center bg-no-repeat bg-contain filter md:bg-fixed md:bg-cover"
@@ -147,6 +148,10 @@ const Events = () => {
           ))}
         </div>
       </section>
+      <div className='pt-[100px]'>
+
+      <Footer/>
+      </div>
     </div>
   );
 };
