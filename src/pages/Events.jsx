@@ -33,7 +33,7 @@ const EventCard = ({ title, description, linkUrl, imageUrl }) => (
     <div className="flex flex-col justify-between p-4 " >
       <div className='h-[180px] text-center md:text-left'>
         <h3 className="text-xl text-center font-semibold mb-2 text-[#E7B472] font-abril-fatface">{title}</h3>
-        <p className="text-[#fff] font-mono opacity-80 mb-4 ">{description}</p>
+        <p className="text-[#fff] font-mono opacity-80 mb-4 md:text-justify ">{description}</p>
       </div>
       <a
         href={linkUrl}
@@ -88,7 +88,7 @@ const Events = () => {
 
       <section className="pt-16 mb-16">
         <motion.h2
-          className="mb-20 text-5xl font-semibold text-center font-abril-fatface "
+          className="px-10 mb-20 text-5xl font-semibold text-center md:px-auto font-abril-fatface "
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}

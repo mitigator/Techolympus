@@ -45,21 +45,17 @@ const Navbar = (activePage) => {
       initial={{ y: 0 }}
       animate={controls}
     >
-      <nav className="bg-[#0606066d] border-[#E7B472] text-[#E7B472] font-abril-fatface p-6 md:p-0 flex justify-between items-center">
-        <div className="z-10 items-center hidden gap-5 py-3 space-x-2 md:flex">
-          <div className="w-12 m-2 p-[4px] h-12 rounded-full hover:bg-[#e7b472] bg-[#e7b472d2] border border-[#e7b472] flex justify-center items-center">
-            <Link to='/'>
-              <img src={Gatewayslogo} alt="Gateways Logo" />
-            </Link>
-          </div>
-          <div className="w-12 h-12 m-2 p-[4px] rounded-full hover:bg-[#e7b472] bg-[#e7b472d2] border border-[#e7b472]  flex justify-center items-center">
+      <nav className="bg-[#05051887]  border-[#E7B472] text-[#E7B472] font-abril-fatface  md:p-1 pl-5 md:pl-0 flex justify-between items-center">
+        <div className="z-10 items-center hidden gap-5 pl-2 space-x-2 md:py-1 md:flex">
+         
+          <div className="w-11 h-11 m-2 p-[1px] rounded-full hover:bg-[#e7b472] bg-[#e7b472d2] border border-[#e7b472]  flex justify-center items-center">
             <Link to='/'>
               <img src={Techolympys} alt="Techolympys Logo" />
             </Link>
           </div>
         </div>
 
-        <div className="flex items-center">
+        <div className="flex items-center ">
           {!isMenuOpen && (
             <button
               className="z-50 block md:hidden focus:outline-none"
@@ -101,7 +97,7 @@ const Navbar = (activePage) => {
           <div className="z-50 justify-center hidden gap-24 space-x-6 md:flex font-abril-fatface">
             <a className={`hover:underline underline-offset-4 ${activePage==="events"?"underline":""}`} href="/events">Events</a>
             <a className={`hover:underline underline-offset-4 ${activePage==="about"?"underline":""}`} href="/about">About</a>
-            <a className={`hover:underline underline-offset-4`} href={test} download="Brochure.pdf">Brochure</a>
+            {/* <a className={`hover:underline underline-offset-4`} href={test} download="Brochure.pdf">Brochure</a> */}
           </div>
         </div>
 
@@ -112,7 +108,7 @@ const Navbar = (activePage) => {
           className="flex items-center"
         >
           <a to='https://christuniversity.in/' target='_blank'>
-            <img src={christ} alt="Christ University logo" className="w-auto h-14" />
+            <img src={christ} alt="Christ University logo" className="w-auto h-10 md:h-14" />
           </a>
         </motion.div>
       </nav>
@@ -128,13 +124,13 @@ const Navbar = (activePage) => {
           <a href="/" className={`block py-2 text-center m-14 text-[#E7B472]`}>Home</a>
           <a href="/events" className={`block py-2 text-center m-14 text-[#E7B472]  ${activePage==="events"?"underline underline-offset-4":""}`}>Events</a>
           <a href="/about" className={`block py-2 text-center m-14 text-[#E7B472]  ${activePage==="events"?"underline underline-offset-4":""}`}>About</a>
-          <a
+          {/* <a
             href={test}
             download="Brochure.pdf"
             className="block py-2 text-center m-14 text-[#E7B472]"
           >
             Brochure
-          </a>
+          </a> */}
 
           <div className="flex justify-center mt-12">
             <button

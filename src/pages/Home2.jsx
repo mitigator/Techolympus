@@ -12,6 +12,7 @@ import Footer from '../components/Footer';
 import border from '../assets/borderline.svg';
 import Preloader from '../components/Preloader';
 import Countdown from '../components/Countdown';
+import { div } from 'framer-motion/client';
 
 const Home2 = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -34,6 +35,16 @@ const Home2 = () => {
         hidden: { opacity: 0 },
         visible: { opacity: 1 },
     };
+
+    const htr = [
+        'this is the first Rule this is the first Rule this is the first Rule',
+        'this is the first Rule this is the first Rule this is the first Rule',
+        'this is the first Rule this is the first Rule this is the first Rule',
+        'this is the first Rule this is the first Rule this is the first Rule',
+        'this is the first Rule this is the first Rule this is the first Rule',
+        'this is the first Rule this is the first Rule this is the first Rule',
+
+    ]
 
     const splitText = (text) => {
         return text.split('').map((char, index) => (
@@ -138,7 +149,7 @@ const Home2 = () => {
                     />
 
                     <motion.p
-                        className='font-bilbo-swap-caps text-[#e7b472] text-[1.2em] sm:text-[1.8em] md:text-[2em] mt-4 md:mb-10'
+                        className='font-bilbo-swap-caps text-center text-[#e7b472] text-[1.2em] sm:text-[1.8em] md:text-[2em] mt-4 md:mb-10'
                         initial={{ x: -100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 0.8, delay: 2.5 }}
@@ -203,7 +214,7 @@ const Home2 = () => {
                     variants={containerVariants}
                 >
                     <motion.div
-                        className='md:border-y md:border-r  md:border-l h-fit border-[#e7b472] text-white p-6 w-full text-justify md:w-full font-mono text-sm leading-relaxed xl:translate-x-[-275px] 2xl:translate-x-[-350px] lg:translate-x-[-80px] md:translate-x-[-40px] justify-between'
+                        className='md:border-y md:border-r  md:border-l h-fit border-[#e7b472] text-white md:p-6 w-full text-justify md:w-full font-mono text-sm leading-relaxed xl:translate-x-[-275px] 2xl:translate-x-[-350px] lg:translate-x-[-80px] md:translate-x-[-40px] justify-between'
                         variants={itemVariants}
                     >
                         {contentData.description[0]}
@@ -212,11 +223,11 @@ const Home2 = () => {
                     </motion.div>
 
                     <motion.div
-                        className='flex items-center justify-center'
+                        className='flex items-center justify-center '
                         variants={itemVariants}
                         whileHover={{ scale: 1.1, rotate: 5 }}
                     >
-                        <img src={Techolympys} alt="Techolympus Logo" className='object-contain w-[30rem] h-[30rem]' />
+                        <img src={Techolympys} alt="Techolympus Logo" className='object-contain w-[30rem] h-30rem]' />
                     </motion.div>
                 </motion.div>
                 <motion.div
@@ -258,7 +269,7 @@ const Home2 = () => {
                     variants={containerVariants}
                 >
                     <motion.div
-                        className='md:border-y md:border-r md:border-l border-[#e7b472] text-white p-6 w-full text-justify md:w-1/2 font-mono text-sm leading-relaxed flex justify-center items-center 2xl:translate-x-[-50px] xl:translate-x-[-40px] lg:translate-x-[-60px] md:translate-x-[-40px]'
+                        className='md:border-y md:border-r md:border-l border-[#e7b472] text-white md:p-6 w-full text-justify md:w-1/2 font-mono text-sm leading-relaxed flex justify-center items-center 2xl:translate-x-[-50px] xl:translate-x-[-40px] lg:translate-x-[-60px] md:translate-x-[-40px]'
                         variants={itemVariants}
                     >
                         <div className='text-justify'>
@@ -275,7 +286,46 @@ const Home2 = () => {
                         <img src={Logo} alt="Techolympus Logo" className='object-contain w-full h-full' />
                     </motion.div>
                 </motion.div>
-            </motion.div>    
+            </motion.div>
+
+
+            <motion.div
+                className='bg-[#0f0f19] flex  flex-col gap-10 items-center p-6 min-h-screen overflow-x-hidden'
+                variants={containerVariants}
+            >
+                            <img src={border} alt="Border" className="object-contain" loading="lazy" />
+
+                <motion.h1
+                    className='font-abril-fatface text-center w-full  text-[#e7b472] text-5xl md:mb-10'
+                    variants={itemVariants}
+                >
+                    How To Register
+                </motion.h1>
+                <motion.div
+                    className='flex flex-col-reverse justify-center w-full gap-8 md:flex-row-reverse'
+                    variants={containerVariants}
+                >
+                    <motion.div
+                        className='md:border-y bg-[#0000004c] flex-col md:border-r md:border-l  p-5 px-4 md:px-8 border-[#e7b472] text-white   w-full text-justify md:w-1/2 font-mono text-sm leading-relaxed flex justify-center  '
+                        variants={itemVariants}
+                    >
+                        {
+                            htr.map((node,i)=>(
+                                <div key={i} className='flex flex-col my-2 '>
+                                    <div className='text-xl font-bold text-[#e7b472] underline underline-offset-2'>Step {i+1}</div>
+                                    <div>{node}</div>
+                                </div>
+
+                            ))
+                        }
+                    </motion.div>
+                    
+
+                    
+                </motion.div>
+            </motion.div>
+
+
                    
             <Footer />
         </motion.div>
