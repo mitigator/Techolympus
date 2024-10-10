@@ -102,8 +102,8 @@ const Navbar = (activePage) => {
         </div>
 
         <motion.div
-          initial={{ rotateX: 90 }}
-          animate={{ rotateX: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
           className="flex items-center"
         >
