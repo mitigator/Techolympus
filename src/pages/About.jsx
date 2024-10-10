@@ -80,7 +80,7 @@ const About = () => {
             <NewAboutCard name="Dr. Sudhakar T" desig = "Fest Coordinator"/>
           </div>
           <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
-          <NewAboutCard name="R Sharanya" desig = "Core Team Member"/>
+          <NewAboutCard name="Satyam Jhawar" desig = "Core Team Member"/>
           <NewAboutCard name="Mohit P" desig = "Core Team Member"/>
           <NewAboutCard name="Punith Raj" desig = "Core Team Member"/>
 
@@ -88,23 +88,24 @@ const About = () => {
           </div>
           <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
           <NewAboutCard name="Anshika Yadav" desig = "Core Team Member"/>
-          <NewAboutCard name="Anto Kelvin" desig = "Core Team Member"/>
-          <NewAboutCard name="Aleena Ealias" desig = "Core Team Member"/>
           <NewAboutCard name="Ansh Bhandari" desig = "Core Team Member"/>
+          <NewAboutCard name="Aditi Patel" desig = "Core Team Member"/>
+          <NewAboutCard name="Hitesh Salimath" desig = "Core Team Member"/>
+
           </div>
           <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
-          <NewAboutCard name="Aditi Patel" desig = "Core Team Member"/>
+          <NewAboutCard name="Neha Seirah" desig = "Core Team Member"/>
+          <NewAboutCard name="Karthikeyan" desig = "Core Team Member"/>
           <NewAboutCard name="Saumya Dwivedi " desig = "Core Team Member"/>
           <NewAboutCard name="Vivek S" desig = "Core Team Member"/>
-          <NewAboutCard name="Satyam Jhawar" desig = "Core Team Member"/>
 
 
           </div>
           <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
-          <NewAboutCard name="Hitesh Salimath" desig = "Core Team Member"/>
-          <NewAboutCard name="Karthikeyan" desig = "Core Team Member"/>
+          <NewAboutCard name="R Sharanya" desig = "Core Team Member"/>
+          <NewAboutCard name="Anto Kelvin" desig = "Core Team Member"/>
+          <NewAboutCard name="Aleena Ealias" desig = "Core Team Member"/>
 
-          <NewAboutCard name="Neha Seirah" desig = "Core Team Member"/>
           </div>
           <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
           <NewAboutCard name="Mohsin Chunawala" desig = "Core Team Member"/>
