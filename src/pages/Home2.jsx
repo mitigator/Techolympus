@@ -37,12 +37,15 @@ const Home2 = () => {
     };
 
     const htr = [
-        'this is the first Rule this is the first Rule this is the first Rule',
-        'this is the first Rule this is the first Rule this is the first Rule',
-        'this is the first Rule this is the first Rule this is the first Rule',
-        'this is the first Rule this is the first Rule this is the first Rule',
-        'this is the first Rule this is the first Rule this is the first Rule',
-        'this is the first Rule this is the first Rule this is the first Rule',
+        'Full Name of the Student',
+        'Name of the college the student is currently studying in',
+        'College Provided Register Number of the Team Leader (Roll number provided by the college)',
+        'Phone number of the student which is registered on whatsapp too',
+        'Name and phone number of the Member-1 who is the team leader',
+        'Details of other teammates in the team. (Only applicable for Team Events)',
+        'Open the payment link provided in the google form and make the payment to register for the evet. Payment has to be done only once and not for individual events.',
+        'Upload the screenshot of the payment made either in an image format or pdf format. (No other formats will be accepted)',
+        'Click on the Submit button in the google form to submit the details mentioned in the form and successfully complete the registration for the event.'
 
     ]
 
@@ -311,8 +314,8 @@ const Home2 = () => {
                     >
                         {
                             htr.map((node,i)=>(
-                                <div key={i} className='flex flex-col my-2 '>
-                                    <div className='text-xl font-bold text-[#e7b472] underline underline-offset-2'>Step {i+1}</div>
+                                <div key={i} className={`flex flex-col my-2 ${i===6?"bg-[#e7b47245] p-2 border-[#e7b472] border":""} `}>
+                                    <div className={`text-xl font-bold text-[#e7b472] underline underline-offset-2 `}>Step {i+1}</div>
                                     <div>{node}</div>
                                 </div>
 
