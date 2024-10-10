@@ -42,7 +42,7 @@ const Footer = () => {
           </motion.a>
         </div>
        </div>
-        <div className='py-1 bg-[#c0955e] mx-auto font-mono font-bold text-center'>Developed By Shubham, Pavitharani and Aravind 
+        <div className='py-1 bg-[#c0955e] text-xs  mx-auto font-mono font-bold text-center'>Developed By Shubham, Pavitharani and Aravind 
           
         </div>
       </div>
