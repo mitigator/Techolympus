@@ -280,12 +280,12 @@ const Home2 = () => {
  
 
             <motion.div
-                className='bg-[#08080e] flex  flex-col gap-10 items-center p-10 min-h-screen overflow-x-hidden'
+                className='bg-[#08080e] flex  flex-col gap-10 items-center p-10 h-fit overflow-x-hidden overflow-y-hidden'
                 variants={containerVariants}
             >
                             <img
                             data-aos="fade-up"
-                            data-aos-duration="1000" src={border} alt="Border" className="object-contain w-[90%] md:w-auto" loading="lazy" />
+                            data-aos-duration="1000" src={border} alt="Border" className=" object-contain w-[90%] md:w-auto" loading="lazy" />
 
                 <h1
                     className='font-abril-fatface text-[#e7b472] text-5xl mb-10'
