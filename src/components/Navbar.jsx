@@ -45,7 +45,7 @@ const Navbar = (activePage) => {
       initial={{ y: 0 }}
       animate={controls}
     >
-      <nav className="bg-[#08080ec3]  border-[#E7B472] text-[#E7B472] font-abril-fatface  md:p-1 pl-5 md:pl-0 flex justify-between items-center md:py-0">
+      <nav className="bg-[#08080ec3]  border-[#E7B472] text-[#E7B472] font-abril-fatface  md:p-1 pl-5 md:pl-0 flex justify-between items-center py-3 md:py-0">
         <div className="z-10 items-center hidden gap-5 pl-2 space-x-2 md:py-1 md:flex">
          
           <div className="w-11 h-11 m-2 p-[1px] rounded-full hover:bg-[#e7b472] bg-[#e7b472d2] border border-[#e7b472]  flex justify-center items-center hover:shadow-xl shadow-[#e7b472]">
@@ -67,7 +67,7 @@ const Navbar = (activePage) => {
                 className="space-y-1"
               >
                 <motion.div
-                  className="w-6 h-0.5 bg-[#E7B472]"
+                  className="w-7 h-[3px] bg-[#E7B472]"
                   variants={{
                     open: { rotate: 45, y: 6 },
                     closed: { rotate: 0, y: 0 },
@@ -75,7 +75,7 @@ const Navbar = (activePage) => {
                   transition={{ duration: 0.3 }}
                 />
                 <motion.div
-                  className="w-6 h-0.5 bg-[#E7B472]"
+                  className="w-6 h-[3px] bg-[#E7B472]"
                   variants={{
                     open: { opacity: 0 },
                     closed: { opacity: 1 },
@@ -83,7 +83,7 @@ const Navbar = (activePage) => {
                   transition={{ duration: 0.3 }}
                 />
                 <motion.div
-                  className="w-6 h-0.5 bg-[#E7B472]"
+                  className="w-8 h-[3px] bg-[#E7B472]"
                   variants={{
                     open: { rotate: -45, y: -6 },
                     closed: { rotate: 0, y: 0 },
@@ -106,7 +106,7 @@ const Navbar = (activePage) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
-          className=" items-center py-3 md:py-0 hidden md:flex"
+          className="items-center hidden py-3 md:py-0 md:flex"
         >
 
           <a to='https://christuniversity.in/' target='_blank'>
@@ -134,7 +134,7 @@ const Navbar = (activePage) => {
           
           className="absolute font-abril-fatface top-full text-4xl left-0 w-full py-auto h-[100vh] bg-[#08080e] p-4 md:hidden z-[100] flex flex-col items-center"
         >
-          <div className='flex flex-col  my-auto'>
+          <div className='flex flex-col my-auto'>
 
           <a
           data-aos="zoom-in"

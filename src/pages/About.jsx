@@ -23,7 +23,12 @@ const About = () => {
 
         {/* Centered Content */}
         <div data-aos="fade-up" data-aos-duration="1000"  className='flex flex-col gap-8 md:gap-10 items-center z-10 text-[#e7b472] pt-16 px-4'>
-          <h1 className='text-[#e7b472] text-3xl md:text-[50px] mb-6 font-abril-fatface pt-10 text-center  break-words md:w-auto'>CHRIST ( Deemed To Be University )</h1>
+          <h1 className='text-[#e7b472] hidden md:block text-3xl md:text-[50px] mb-6 font-abril-fatface pt-10 text-center  break-words md:w-auto'>CHRIST ( Deemed To Be University )</h1>
+          <div className='flex flex-col md:hidden'>
+          <h1 className='text-[#e7b472] text-3xl md:text-[50px]  font-abril-fatface pt-10 text-center  break-words md:w-auto'>CHRIST</h1>
+          <h1 className='text-[#e7b472] text-3xl md:text-[50px] mb-6 font-abril-fatface  text-center  break-words md:w-auto'>( Deemed To Be University )</h1>
+
+          </div>
           <img data-aos="fade-up" data-aos-duration="1000" src={logo} alt="About Logo" className='' />
 
          <div
