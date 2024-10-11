@@ -24,7 +24,7 @@ function SingleEventPage(props) {
     data-aos="zoom-in-up"
                     data-aos-duration="1500"
     className=" h-[40%] md:pb-auto pb-10 md:h-[50%] w-[90%] md:w-[75%]  flex items-center  justify-center overflow-hidden">
-        <img src={img} alt="image" className="scale-[120%] w-[650px] object-contain md:h-[400px] md:w-[400px]" />
+        <img src={img} alt="image" className="scale-[120%] w-[300px] object-contain md:h-[400px] md:w-[400px]" />
     </div>
 
     {/* Event Details Section */}
