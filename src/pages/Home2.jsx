@@ -99,7 +99,7 @@ const Home2 = () => {
             <Navbar activePage="home" />
 
             {/* Background Image with lazy loading */}
-            <motion.div
+            {/* <motion.div
                 className="fixed inset-0 z-0 bg-scroll bg-center bg-no-repeat bg-contain md:bg-fixed md:bg-cover "
                 style={{
                     backgroundImage: `url(${zeus})`,
@@ -108,7 +108,20 @@ const Home2 = () => {
                 initial={{ scale: 1.1 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 1.5 }}
-            />
+            /> */}
+
+            <div
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            className="fixed inset-0 z-0 bg-scroll bg-center bg-no-repeat bg-contain md:bg-fixed md:bg-cover  "
+            style={{
+                backgroundImage: `url(${zeus})`,
+                backgroundPosition: 'bottom',
+            }}
+            
+            >
+
+            </div>
 
             <div className='bg-[#08080e] text-[#e7b472] flex flex-col justify-center items-center h-[100vh] md:h-[110vh] overflow-hidden'>
                 <motion.h1

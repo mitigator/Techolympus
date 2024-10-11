@@ -16,9 +16,15 @@ import {Uiux} from './events/Uiux';
 import {Gaming} from './events/Gaming';
 import {AnimatePresence} from 'framer-motion'
 import './animation/Transition.css'
+import "aos/dist/aos.css"
+import  AOS from 'aos';
+import { useEffect } from 'react';
 
 
 function App() {
+  useEffect(()=>{
+    AOS.init();
+  },[])
   return (
     <AnimatePresence mode='wait'>
       <BrowserRouter>
