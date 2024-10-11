@@ -22,11 +22,13 @@ const About = () => {
         ></div>
 
         {/* Centered Content */}
-        <div className='flex flex-col gap-8 md:gap-10 items-center z-10 text-[#e7b472] pt-16 px-4'>
+        <div data-aos="fade-up" data-aos-duration="1000"  className='flex flex-col gap-8 md:gap-10 items-center z-10 text-[#e7b472] pt-16 px-4'>
           <h1 className='text-[#e7b472] text-3xl md:text-[50px] mb-6 font-abril-fatface pt-10 text-center  break-words md:w-auto'>CHRIST ( Deemed To Be University )</h1>
-          <img src={logo} alt="About Logo" className='' />
+          <img data-aos="fade-up" data-aos-duration="1000" src={logo} alt="About Logo" className='' />
 
          <div
+         data-aos="fade-up"
+        data-aos-duration="1000"
          className='fle flex-col font-mono  border border-[#e7b472] p-10 text-white md:w-[75%] text-center justify-center'
          >
 
@@ -40,15 +42,16 @@ const About = () => {
          </div>
         </div>
 
-        <div className='flex justify-center w-full mt-[5rem]'>
+        <div data-aos="fade-up" data-aos-duration="1000"  className='flex justify-center w-full mt-[5rem]'>
 
-<img src={border} alt="Border" className="object-contain" loading="lazy" />
+<img src={border}  alt="Border" className="object-contain" loading="lazy" />
 </div>
 
 
-        <div className='flex flex-col gap-8 md:gap-10 items-center z-10 text-[#e7b472] pt-16 px-4'>
+        <div data-aos="fade-up" data-aos-duration="1000"  className='flex flex-col gap-8 md:gap-10 items-center z-10 text-[#e7b472] pt-16 px-4'>
           <h1 className='text-[#e7b472] text-3xl md:text-[50px] mb-6 font-abril-fatface pt-10 text-center  leading-relaxed'>Department of Computer Science<br/>Central Campus, Bangalore</h1>
           <div
+          data-aos="fade-up" data-aos-duration="1000" 
          className='fle flex-col font-mono text-center border border-[#e7b472] p-10 text-white md:w-[75%]  justify-center'
          >
           
@@ -61,39 +64,39 @@ const About = () => {
           </p>
           </div>
         </div>
-    <div className='flex justify-center w-full mt-[5rem]'>
+    <div data-aos="fade-up" data-aos-duration="1000"  className='flex justify-center w-full mt-[5rem]'>
 
         <img src={border} alt="Border" className="object-contain" loading="lazy" />
     </div>
 
 
         {/* Team Section */}
-        <div className='flex flex-col items-center gap-10 pb-20 overflow-x-hidden md:gap-20'>
-          <h1 className='text-[#e7b472] text-3xl md:text-[50px] mb-6 font-abril-fatface pt-10 text-center'>Meet Our Team</h1>
-          <div className='flex flex-col gap-10 md:flex-row justify-evenly md:gap-12'>
+        <div   className='flex flex-col items-center gap-10 pb-20 overflow-x-hidden md:gap-20'>
+          <h1 data-aos="fade-up" data-aos-duration="1000"  className='text-[#e7b472] text-3xl md:text-[50px] mb-6 font-abril-fatface pt-10 text-center'>Meet Our Team</h1>
+          <div data-aos="fade-up" data-aos-duration="1000"  className='flex flex-col gap-10 md:flex-row justify-evenly md:gap-12'>
             <NewAboutCard name="Dr. Ashok Immanuel" desig = "Head Of Department"/>
             <NewAboutCard name="Dr. Chandra J" desig = "Program Coordinator"/>
           </div>
           
-          <div className='flex flex-col gap-10 md:flex-row justify-evenly md:gap-44'>
+          <div data-aos="fade-up" data-aos-duration="1000"  className='flex flex-col gap-10 md:flex-row justify-evenly md:gap-44'>
             <NewAboutCard name="Dr. Cynthia T" desig = "Fest Coordinator"/>
             <NewAboutCard name="Dr. Sudhakar T" desig = "Fest Coordinator"/>
           </div>
-          <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
+          <div data-aos="fade-up" data-aos-duration="1000"  className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
           <NewAboutCard name="Satyam Jhawar" desig = "Core Team Member"/>
           <NewAboutCard name="Mohit P" desig = "Core Team Member"/>
           <NewAboutCard name="Punith Raj" desig = "Core Team Member"/>
 
 
           </div>
-          <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
+          <div data-aos="fade-up" data-aos-duration="1000"  className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
           <NewAboutCard name="Anshika Yadav" desig = "Core Team Member"/>
           <NewAboutCard name="Ansh Bhandari" desig = "Core Team Member"/>
           <NewAboutCard name="Aditi Patel" desig = "Core Team Member"/>
           <NewAboutCard name="Hitesh Salimath" desig = "Core Team Member"/>
 
           </div>
-          <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
+          <div data-aos="fade-up" data-aos-duration="1000"  className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
           <NewAboutCard name="Neha Seirah" desig = "Core Team Member"/>
           <NewAboutCard name="Karthikeyan" desig = "Core Team Member"/>
           <NewAboutCard name="Saumya Dwivedi " desig = "Core Team Member"/>
@@ -101,13 +104,13 @@ const About = () => {
 
 
           </div>
-          <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
+          <div data-aos="fade-up" data-aos-duration="1000"  className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
           <NewAboutCard name="R Sharanya" desig = "Core Team Member"/>
           <NewAboutCard name="Anto Kelvin" desig = "Core Team Member"/>
           <NewAboutCard name="Aleena Ealias" desig = "Core Team Member"/>
 
           </div>
-          <div className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
+          <div data-aos="fade-up" data-aos-duration="1000"  className='flex flex-col flex-wrap gap-10 md:flex-row justify-evenly md:gap-20'>
           <NewAboutCard name="Mohsin Chunawala" desig = "Core Team Member"/>
           </div>
         

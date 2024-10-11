@@ -35,7 +35,7 @@
   @keyframes color-change {
     0% { color: #fff;  transform: scale(1); }
     25% { color: #e7b472;}
-    50% { color: #fdbe0e; transform: scale(1.2);}
+    50% { color: #fdbe0e; transform: scale(1.1);}
     75% { color: #e7b472;}
     100% { color: #fff; transform: scale(1);}
   }

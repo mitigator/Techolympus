@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 const Footer = () => {
   return (
     <motion.div 
+      data-aos="fade-up"
       className='relative z-50'
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}

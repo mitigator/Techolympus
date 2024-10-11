@@ -21,6 +21,8 @@ import Footer from '../components/Footer';
 
 const EventCard = ({ title, description, linkUrl, imageUrl }) => (
   <div
+   data-aos="zoom-in"
+   data-aos-duration="1000"
     className=" bg-[#0000004f] px-[10px] border-[#E7B472]  py-[20px] hover:shadow-[#E7B472] shadow-lg  overflow-hidden transform transition duration-100 hover:scale-[105%]"
     // initial={{ opacity: 0, y: 20 }}
     // animate={{ opacity: 1, y: 0 }}
@@ -75,11 +77,10 @@ const Events = () => {
     <div className="mx-auto  pt-12  bg-[#000000] min-h-screen text-[#E7B472]">
       <Navbar activePage="events"/>
       <motion.div
-                className="fixed inset-0 z-0 bg-scroll bg-center bg-no-repeat bg-contain filter md:bg-fixed md:bg-cover"
+                className="fixed inset-0 z-0  bg-scroll bg-bottom bg-contain md:bg-top bg-no-repeat md:bg-fixed md:bg-cover  "
                 style={{
                     backgroundImage: `url(${zeus})`,
-                    backgroundPosition: 'bottom',
-                  
+                   
                 }}
                 initial={{ scale: 1.1 }}
                 animate={{ scale: 1 }}
@@ -87,22 +88,26 @@ const Events = () => {
             />
 
       <section className="pt-16 mb-16">
-        <motion.h2
+        <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
           className="px-10 mb-20 text-5xl font-semibold text-center md:px-auto font-abril-fatface "
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+         
         >
           Technical Events
-        </motion.h2>
+        </div>
         <div className="grid gap-8 grid-col s-1 sm:grid-cols-2 lg:grid-cols-3">
           {technicalEvents.map((event, index) => (
-            <motion.div
+            <div
+            
               className='flex justify-center '
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+            data-aos="zoom-in-up"
+            data-aos-duration={1000+100*index}
+              // 
+              // initial={{ opacity: 0, y: 20 }}
+              // animate={{ opacity: 1, y: 0 }}
+              // transition={{ duration: 1, delay: index * 0.1 }}
             >
               <EventCard
                 title={event.name}
@@ -110,33 +115,36 @@ const Events = () => {
                 linkUrl={`/${event.slug}`}
                 imageUrl={event.imageUrl}
               />
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
-      <div className='flex justify-center w-full'>
+      <div data-aos="fade-up"
+        data-aos-duration="1000" className='flex justify-center w-full'>
 
       <img src={border} alt="Border" className="object-contain " loading="lazy" />
       </div>
 
 
       <section>
-        <motion.h2
+        <div
           className="pt-20 mb-20 text-5xl font-semibold text-center font-abril-fatface "
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          data-aos="fade-up"
+        data-aos-duration="1000"
         >
           Non-Technical Events
-        </motion.h2>
+        </div>
         <div className="grid justify-center grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {nonTechnicalEvents.map((event, index) => (
-            <motion.div
+            <div
+            key={index}
+            data-aos="zoom-in-up"
+            data-aos-duration={1000+100*index}
             className='flex justify-center '  
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 + 0.6 }}
+              // key={index}
+              // initial={{ opacity: 0, y: 20 }}
+              // animate={{ opacity: 1, y: 0 }}
+              // transition={{ duration: 0.5, delay: index * 0.1 + 0.6 }}
             >
               <EventCard
                 title={event.name}
@@ -144,7 +152,7 @@ const Events = () => {
                 linkUrl={`/${event.slug}`}
                 imageUrl={event.imageUrl}
               />
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>

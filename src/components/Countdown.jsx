@@ -32,7 +32,9 @@ const Countdown = ({ targetDate }) => {
     const offset = circumference - (value / max) * circumference;
 
     return (
-      <svg className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 transform -rotate-90" viewBox="0 0 120 120">
+      <svg
+     
+       className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 transform -rotate-90" viewBox="0 0 120 120">
         <circle
           cx="60"
           cy="60"

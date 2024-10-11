@@ -130,18 +130,25 @@ const Navbar = (activePage) => {
         </motion.div>
         }
       {isMenuOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.3 }}
+        <div
+          
           className="absolute font-abril-fatface top-full text-4xl left-0 w-full py-auto h-[100vh] bg-[#08080e] p-4 md:hidden z-[100] flex flex-col items-center"
         >
           <div className='flex flex-col  my-auto'>
 
-          <a href="/" className={`block py-1 text-center m-14 text-[#E7B472]`}>Home</a>
-          <a href="/events" className={`block py-1 text-center m-14 text-[#E7B472]  ${activePage==="events"?"underline underline-offset-4":""}`}>Events</a>
-          <a href="/about" className={`block py-1 text-center m-14 text-[#E7B472]  ${activePage==="events"?"underline underline-offset-4":""}`}>About</a>
+          <a
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          
+          href="/" className={`block py-1 text-center m-14 text-[#E7B472]`}>Home</a>
+          <a 
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          href="/events" className={`block py-1 text-center m-14 text-[#E7B472]  ${activePage==="events"?"underline underline-offset-4":""}`}>Events</a>
+          <a
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+          href="/about" className={`block py-1 text-center m-14 text-[#E7B472]  ${activePage==="events"?"underline underline-offset-4":""}`}>About</a>
           {/* <a
             href={test}
             download="Brochure.pdf"
@@ -150,7 +157,11 @@ const Navbar = (activePage) => {
             Brochure
           </a> */}
 
-          <div className="flex justify-center mt-12">
+          <div 
+          data-aos="zoom-in"
+          data-aos-duration="2500"
+          data-aos-anchor-placement="bottom-bottom"
+           className="flex justify-center mt-12">
             <button
               className="text-[#E7B472] text-4xl focus:outline-none"
               onClick={toggleMenu}
@@ -159,7 +170,7 @@ const Navbar = (activePage) => {
             </button>
           </div>
           </div>
-        </motion.div>
+        </div>
       )}
       </nav>
 

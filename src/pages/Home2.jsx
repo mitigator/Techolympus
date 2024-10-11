@@ -99,29 +99,18 @@ const Home2 = () => {
             <Navbar activePage="home" />
 
             {/* Background Image with lazy loading */}
-            {/* <motion.div
-                className="fixed inset-0 z-0 bg-scroll bg-center bg-no-repeat bg-contain md:bg-fixed md:bg-cover "
+            <motion.div
+            className="fixed inset-0 z-0  bg-scroll bg-bottom bg-contain md:bg-top bg-no-repeat md:bg-fixed md:bg-cover  "
                 style={{
                     backgroundImage: `url(${zeus})`,
-                    backgroundPosition: 'bottom',
+                   
                 }}
                 initial={{ scale: 1.1 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 1.5 }}
-            /> */}
+            />
 
-            <div
-            data-aos="fade-in"
-            data-aos-duration="1000"
-            className="fixed inset-0 z-0  bg-scroll bg-bottom bg-contain md:bg-top bg-no-repeat md:bg-fixed md:bg-cover  "
-            style={{
-                backgroundImage: `url(${zeus})`,
-                
-            }}
-            
-            >
-
-            </div>
+      
 
             <div className='bg-[#08080e] text-[#e7b472] flex flex-col justify-center items-center h-[100vh] md:h-[110vh] overflow-hidden'>
                 <motion.h1
@@ -139,7 +128,11 @@ const Home2 = () => {
                 >
                     techOlympus
                 </motion.h2>
+                <div  data-aos="zoom-in"
+        data-aos-duration="1000">
+
                 <Countdown targetDate={targetDate} />
+                </div>
 
 
                 <motion.div
@@ -167,8 +160,8 @@ const Home2 = () => {
 
                     <motion.p
                         className='font-bilbo-swap-caps text-center text-[#e7b472] text-[1.2em] sm:text-[1.8em] md:text-[2em] mt-4 md:mb-10'
-                        initial={{ x: -100, opacity: 0 }}
-                        animate={{ x: 0, opacity: 1 }}
+                        initial={{ y: 20, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.8, delay: 2.5 }}
                     >
                         Department Of Computer Science, Central Campus, Bangalore
@@ -182,34 +175,50 @@ const Home2 = () => {
                 className='bg-[#08080e] min-h-screen flex flex-col items-center gap-20 p-20 overflow-x-hidden'
                 variants={containerVariants}
             >
-                <img src={border} alt="Border" className="object-contain" loading="lazy" />
+                <img 
+                 data-aos="fade-up"
+        data-aos-duration="1000" 
+        src={border} alt="Border" className="object-contain" loading="lazy" />
 
-                <motion.h1
+                <div
+                 data-aos="fade-up"
+        data-aos-duration="1000"
                     className='text-[#E7B472] text-[50px] mb-6 font-abril-fatface'
-                    variants={itemVariants}
                 >
                     Events
-                </motion.h1>
+                </div>
 
-                <motion.div className='flex flex-col flex-wrap md:flex-row justify-evenly gap-36' variants={containerVariants}>
+                <div
+                 data-aos="zoom-in"
+                 data-aos-duration="1000"
+                className='flex flex-col flex-wrap md:flex-row justify-evenly gap-36' >
                     <motion.div variants={itemVariants}><Trails eventName="Coding  Debugging" link='/coding_debugging' /></motion.div>
                     <motion.div variants={itemVariants}><Trails eventName="Capture The Flag" link='/capture_the_flag' /></motion.div>
-                </motion.div>
-                <motion.div className='flex flex-col flex-wrap md:flex-row justify-evenly gap-36' variants={containerVariants}>
+                </div>
+                <div
+                data-aos="zoom-in"
+                 data-aos-duration="1000"
+                 className='flex flex-col flex-wrap md:flex-row justify-evenly gap-36' >
                     <motion.div variants={itemVariants}><Trails eventName="Hackathon" link='/hackathon' /></motion.div>
                     <motion.div variants={itemVariants}><Trails eventName="IOT" link='/iot' /></motion.div>
                     <motion.div variants={itemVariants}><Trails eventName="IT Quiz" link='/it_quiz' /></motion.div>
-                </motion.div>
-                <motion.div className='flex flex-col flex-wrap md:flex-row justify-evenly gap-36' variants={containerVariants}>
+                </div>
+                <div 
+                data-aos="zoom-in"
+                data-aos-duration="1000" 
+                 className='flex flex-col flex-wrap md:flex-row justify-evenly gap-36'>
                     <motion.div variants={itemVariants}><Trails eventName="UI/UX" link='/uiux' /></motion.div>
                     <motion.div variants={itemVariants}><Trails eventName="Gaming" link='/gaming' /></motion.div>
                     <motion.div variants={itemVariants}><Trails eventName="It Manager" link='/it_manager' /></motion.div>
-                </motion.div>
-                <motion.div className='flex flex-col flex-wrap md:flex-row justify-evenly gap-36' variants={containerVariants}>
+                </div>
+                <div 
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                 className='flex flex-col flex-wrap md:flex-row justify-evenly gap-36'>
                     <motion.div variants={itemVariants}><Trails eventName="Photography" link='/photography' /></motion.div>
                     <motion.div variants={itemVariants}><Trails eventName="Surprise Event" link='/surprise' /></motion.div>
                     <motion.div variants={itemVariants}><Trails eventName="Treasure Hunt" link='/treasure' /></motion.div>
-                </motion.div>
+                </div>
             </motion.div> 
             
             
@@ -218,34 +227,36 @@ const Home2 = () => {
                 className='bg-[#08080e] flex flex-col gap-5 items-center p-10 min-h-screen overflow-x-hidden'
                 variants={containerVariants}
             >
-            <img src={border} alt="Border" className="object-contain" loading="lazy" />
+            <img data-aos="fade-up"
+                 data-aos-duration="1000" src={border} alt="Border" className="object-contain" loading="lazy" />
 
-                <motion.h1
-                    className='font-bilbo-swap-caps text-[#e7b472] text-5xl '
-                    variants={itemVariants}
+                <h1
+                    className='font-bilbo-swap-caps text-[#e7b472] text-center text-6xl  md:text-7xl md:my-20 mt-10 md:mt-auto'
+                    data-aos="zoom-in"
+                 data-aos-duration="1000"
                 >
                     {contentData.themeTitle}
-                </motion.h1>
+                </h1>
                 <motion.div
                     className='flex flex-col-reverse items-center w-full gap-8 md:max-w-5xl md:flex-row'
-                    variants={containerVariants}
                 >
-                    <motion.div
-                        className='md:border-y md:border-r  md:border-l h-fit border-[#e7b472] text-white md:p-6 w-full text-justify md:w-full font-mono text-sm leading-relaxed xl:translate-x-[-275px] 2xl:translate-x-[-350px] lg:translate-x-[-80px] md:translate-x-[-40px] justify-between'
-                        variants={itemVariants}
-                    >
+                    <div
+                        className='md:border-y md:border-r  md:border-l h-fit border-[#e7b472] text-white md:p-6 w-full text-justify md:w-full font-mono text-sm leading-relaxed justify-between'
+                        data-aos="fade-up"
+                        data-aos-duration="1000"                    >
                         {contentData.description[0]}
                         <br/> <br/>
                                                 {contentData.description[1]}
-                    </motion.div>
+                    </div>
 
-                    <motion.div
+                    <div
                         className='flex items-center justify-center '
-                        variants={itemVariants}
-                        whileHover={{ scale: 1.1, rotate: 5 }}
+                        data-aos="zoom-in"
+                 data-aos-duration="1000"
+                       
                     >
                         <img src={Techolympys} alt="Techolympus Logo" className='object-contain w-[30rem] h-30rem]' />
-                    </motion.div>
+                    </div>
                 </motion.div>
                 <motion.div
                     className='flex flex-col justify-between w-full max-w-4xl gap-8 md:flex-row'
@@ -273,35 +284,40 @@ const Home2 = () => {
                 className='bg-[#08080e] flex  flex-col gap-10 items-center p-10 min-h-screen overflow-x-hidden'
                 variants={containerVariants}
             >
-                            <img src={border} alt="Border" className="object-contain" loading="lazy" />
+                            <img
+                            data-aos="fade-up"
+                            data-aos-duration="1000" src={border} alt="Border" className="object-contain" loading="lazy" />
 
-                <motion.h1
+                <h1
                     className='font-abril-fatface text-[#e7b472] text-5xl mb-10'
-                    variants={itemVariants}
-                >
+                    data-aos="zoom-in"
+                    data-aos-duration="1000"                >
                     {gatewaysData.title}
-                </motion.h1>
+                </h1>
                 <motion.div
-                    className='flex flex-col-reverse items-center justify-center w-full gap-8 md:flex-row-reverse md:h-auto'
+                    className='flex flex-col items-center justify-center w-full gap-8 md:flex-row md:h-auto'
                     variants={containerVariants}
+
                 >
-                    <motion.div
-                        className='md:border-y md:border-r h-fit md:border-l border-[#e7b472] text-white md:p-6 w-full text-justify md:w-1/2 font-mono text-sm leading-relaxed flex justify-center items-center 2xl:translate-x-[-50px] xl:translate-x-[-40px] lg:translate-x-[-60px] md:translate-x-[-40px]'
-                        variants={itemVariants}
+                   
+
+                    <div
+                        className='flex items-center justify-center md:w-1/3'
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
+                    >
+                        <img src={Logo} alt="Techolympus Logo" className='object-contain w-full h-full scale-[80%]' />
+                    </div>
+                    <div
+                        className=' max-w-[500px] md:border-y md:border-r h-fit md:border-l border-[#e7b472] text-white md:p-6 w-full text-justify md:w-1/2 font-mono text-sm leading-relaxed flex justify-center items-center '
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
                     >
                         <div className='text-justify'>
                             {gatewaysData.description[0]}
                             {gatewaysData.description[1]}
                         </div>
-                    </motion.div>
-
-                    <motion.div
-                        className='flex items-center justify-center md:w-1/3'
-                        variants={itemVariants}
-                        whileHover={{ scale: 1.1, rotate: -5 }}
-                    >
-                        <img src={Logo} alt="Techolympus Logo" className='object-contain w-full h-full' />
-                    </motion.div>
+                    </div>
                 </motion.div>
             </motion.div>
 
@@ -310,32 +326,39 @@ const Home2 = () => {
                 className='bg-[#08080e] flex  flex-col gap-10 items-center p-6 min-h-screen overflow-x-hidden'
                 variants={containerVariants}
             >
-                            <img src={border} alt="Border" className="object-contain" loading="lazy" />
+                            <img data-aos="fade-up"
+                    data-aos-duration="1000" src={border} alt="Border" className="object-contain" loading="lazy" />
 
-                <motion.h1
+                <h1
+
                     className='font-abril-fatface text-center w-full  text-[#e7b472] text-5xl md:mb-10'
-                    variants={itemVariants}
-                >
+                    data-aos="zoom-in"
+                    data-aos-duration="1000"                >
                     How To Register
-                </motion.h1>
+                </h1>
                 <motion.div
                     className='flex flex-col-reverse justify-center w-full gap-8 md:flex-row-reverse'
                     variants={containerVariants}
                 >
-                    <motion.div
+                    <div
                         className='md:border-y bg-[#0000004c] flex-col md:border-r md:border-l  p-5 px-4 md:px-8 border-[#e7b472] text-white   w-full text-justify md:w-1/2 font-mono text-sm leading-relaxed flex justify-center  '
-                        variants={itemVariants}
+                        data-aos="fade-in"
+                        data-aos-duration="1000"                        
                     >
                         {
                             htr.map((node,i)=>(
-                                <div key={i} className={`flex flex-col my-2 ${i===5?"bg-[#e7b47245] p-2 border-[#e7b472] border":""} `}>
+                                <div 
+                                data-aos="zoom-in"
+                                data-aos-duration={1000+i*100}
+                                // data-aos-once
+                                key={i} className={`flex flex-col my-2 ${i===5?"bg-[#e7b47245] p-2 border-[#e7b472] border":""} `}>
                                     <div className={`text-xl font-bold text-[#e7b472] underline underline-offset-2 `}>Step {i+1}</div>
                                     <div>{node}</div>
                                 </div>
 
                             ))
                         }
-                    </motion.div>
+                    </div>
                     
 
                     
