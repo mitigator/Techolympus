@@ -77,7 +77,7 @@ const Events = () => {
     <div className="mx-auto  pt-12  bg-[#000000] min-h-screen text-[#E7B472]">
       <Navbar activePage="events"/>
       <motion.div
-                className="fixed inset-0 z-0  bg-scroll bg-bottom bg-contain md:bg-top bg-no-repeat md:bg-fixed md:bg-cover  "
+                className="fixed inset-0 z-0 bg-scroll bg-bottom bg-no-repeat bg-contain md:bg-top md:bg-fixed md:bg-cover "
                 style={{
                     backgroundImage: `url(${zeus})`,
                    
@@ -122,7 +122,7 @@ const Events = () => {
       <div data-aos="fade-up"
         data-aos-duration="1000" className='flex justify-center w-full'>
 
-      <img src={border} alt="Border" className="object-contain " loading="lazy" />
+      <img src={border} alt="Border" className="object-contain w-[70%] md:w-auto " loading="lazy" />
       </div>
 
 

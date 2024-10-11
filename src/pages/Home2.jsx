@@ -12,7 +12,6 @@ import Footer from '../components/Footer';
 import border from '../assets/borderline.svg';
 import Preloader from '../components/Preloader';
 import Countdown from '../components/Countdown';
-import { div } from 'framer-motion/client';
 
 const Home2 = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -100,7 +99,7 @@ const Home2 = () => {
 
             {/* Background Image with lazy loading */}
             <motion.div
-            className="fixed inset-0 z-0  bg-scroll bg-bottom bg-contain md:bg-top bg-no-repeat md:bg-fixed md:bg-cover  "
+            className="fixed inset-0 z-0 bg-scroll bg-bottom bg-no-repeat bg-contain md:bg-top md:bg-fixed md:bg-cover "
                 style={{
                     backgroundImage: `url(${zeus})`,
                    
@@ -178,7 +177,7 @@ const Home2 = () => {
                 <img 
                  data-aos="fade-up"
         data-aos-duration="1000" 
-        src={border} alt="Border" className="object-contain" loading="lazy" />
+        src={border} alt="Border" className="object-contain w-[90%] md:w-auto" loading="lazy" />
 
                 <div
                  data-aos="fade-up"
@@ -228,7 +227,7 @@ const Home2 = () => {
                 variants={containerVariants}
             >
             <img data-aos="fade-up"
-                 data-aos-duration="1000" src={border} alt="Border" className="object-contain" loading="lazy" />
+                 data-aos-duration="1000" src={border} alt="Border" className="object-contain w-[90%] md:w-auto" loading="lazy" />
 
                 <h1
                     className='font-bilbo-swap-caps text-[#e7b472] text-center text-6xl  md:text-7xl md:my-20 mt-10 md:mt-auto'
@@ -286,7 +285,7 @@ const Home2 = () => {
             >
                             <img
                             data-aos="fade-up"
-                            data-aos-duration="1000" src={border} alt="Border" className="object-contain" loading="lazy" />
+                            data-aos-duration="1000" src={border} alt="Border" className="object-contain w-[90%] md:w-auto" loading="lazy" />
 
                 <h1
                     className='font-abril-fatface text-[#e7b472] text-5xl mb-10'
@@ -327,7 +326,7 @@ const Home2 = () => {
                 variants={containerVariants}
             >
                             <img data-aos="fade-up"
-                    data-aos-duration="1000" src={border} alt="Border" className="object-contain" loading="lazy" />
+                    data-aos-duration="1000" src={border} alt="Border" className="object-contain w-[80%] md:w-auto" loading="lazy" />
 
                 <h1
 

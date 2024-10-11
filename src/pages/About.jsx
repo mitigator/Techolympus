@@ -49,7 +49,7 @@ const About = () => {
 
         <div data-aos="fade-up" data-aos-duration="1000"  className='flex justify-center w-full mt-[5rem]'>
 
-<img src={border}  alt="Border" className="object-contain" loading="lazy" />
+<img src={border}  alt="Border" className="object-contain w-[70%] md:w-auto " loading="lazy" />
 </div>
 
 
@@ -71,7 +71,7 @@ const About = () => {
         </div>
     <div data-aos="fade-up" data-aos-duration="1000"  className='flex justify-center w-full mt-[5rem]'>
 
-        <img src={border} alt="Border" className="object-contain" loading="lazy" />
+        <img src={border} alt="Border" className="object-contain w-[70%] md:w-auto" loading="lazy" />
     </div>
 
 

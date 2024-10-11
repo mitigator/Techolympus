@@ -65,7 +65,7 @@ function SingleEventPage(props) {
 
     </div>
     <img data-aos="fade-up"
-        data-aos-duration="1000" src={end} alt="Border" className="object-contain" />
+        data-aos-duration="1000" src={end} alt="Border" className="object-contain w-[70%] md:w-auto" />
 
 
    
@@ -78,7 +78,7 @@ function SingleEventPage(props) {
         {eventData.description}
     </p>
     <img  data-aos="fade-up"
-   data-aos-duration="1000" src={end} alt="Border" className="object-contain" />
+   data-aos-duration="1000" src={end} alt="Border" className="object-contain w-[70%] md:w-auto" />
 
 
     {/* Prize Section */}
@@ -95,7 +95,7 @@ function SingleEventPage(props) {
     </div>
 
     <img  data-aos="fade-up"
-   data-aos-duration="1000" src={end} alt="Border" className="object-contain" />
+   data-aos-duration="1000" src={end} alt="Border" className="object-contain w-[70%] md:w-auto" />
 
      {/* Prerequsites Section */}
      <div className="text-[#FFD6A1] text-center px-4 md:px-0 mt-6 mb-[100px] md:mb-[50px]">
@@ -115,7 +115,7 @@ function SingleEventPage(props) {
     </div>
 
     <img  data-aos="fade-up"
-   data-aos-duration="1000" src={end} alt="Border" className="object-contain" />
+   data-aos-duration="1000" src={end} alt="Border" className="object-contain w-[70%] md:w-auto" />
 
 
 
@@ -137,7 +137,7 @@ function SingleEventPage(props) {
 
     <img  data-aos="fade-up"
     // data-aos-anchor-placement="top-center"
-   data-aos-duration="1000" src={end} alt="Border" className="object-contain" />
+   data-aos-duration="1000" src={end} alt="Border" className="object-contain w-[70%] md:w-auto" />
 
 
     {/* Constact Section */}
@@ -156,11 +156,6 @@ function SingleEventPage(props) {
               </div>
            
     </div>
-
-    <img  
-    data-aos="fade-up"
-    data-aos-anchor-placement="top-center"
-   data-aos-duration="1000" src={end} alt="Border" className="object-contain" />
 
    
 
@@ -182,7 +177,7 @@ function SingleEventPage(props) {
 
     </div>
 
-    {/* <img src={end} alt="Border" className="object-contain" /> */}
+    {/* <img src={end} alt="Border" className="object-contain w-[70%] md:w-auto" /> */}
 </div>
   )
 
