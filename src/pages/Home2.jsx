@@ -113,10 +113,10 @@ const Home2 = () => {
             <div
             data-aos="fade-in"
             data-aos-duration="1000"
-            className="fixed inset-0 z-0  bg-fixed bg-center bg-no-repeat bg-contain md:bg-fixed md:bg-cover  "
+            className="fixed inset-0 z-0  bg-fixed  bg-no-repeat md:bg-fixed bg-cover  "
             style={{
                 backgroundImage: `url(${zeus})`,
-                backgroundPosition: 'bottom',
+                // backgroundPosition: 'top', 
             }}
             
             >
