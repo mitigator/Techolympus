@@ -11,7 +11,7 @@ const Footer = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className='bg-[#0000009e] flex-col '>
+      <div className='bg-[#000000ba] flex-col '>
        <div className='flex   justify-between items-center text-[#0f0f19] text-[#E7B472] h-auto md:h-20 pt-4 md:py-0 z-100'>
         <motion.div 
           className='flex flex-col items-center justify-center mb-4 ml-5 md:ml-10 md:mb-0'
