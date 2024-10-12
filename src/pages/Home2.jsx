@@ -123,7 +123,7 @@ const Home2 = () => {
                 </motion.h1>
 
                 <motion.h2
-                    className='font-bilbo-swap-caps text-[50px] sm:text-[65px] md:text-[100px] z-10'
+                    className='text-color-animation font-bilbo-swap-caps text-[50px] sm:text-[65px] md:text-[100px] z-10'
                     variants={fadeIn}
                     transition={{ duration: 1, delay: 1.5 }}
                 >
@@ -251,7 +251,7 @@ const Home2 = () => {
                     </div>
 
                     <div
-                        className='flex items-center justify-center '
+                        className='flex items-center justify-center scale-animation'
                         data-aos="zoom-in"
                  data-aos-duration="1000"
                        
@@ -303,7 +303,7 @@ const Home2 = () => {
                    
 
                     <div
-                        className='flex items-center justify-center md:w-1/3'
+                        className='flex items-center justify-center md:w-1/3 scale-animation'
                         data-aos="zoom-in"
                         data-aos-duration="1000"
                     >
@@ -352,7 +352,7 @@ const Home2 = () => {
                                 data-aos="zoom-in"
                                 data-aos-duration={1000+i*100}
                                 // data-aos-once
-                                key={i} className={`flex flex-col my-2 ${i===5?"bg-[#e7b47245] p-2 border-[#e7b472] border":""} `}>
+                                key={i} className={`flex flex-col my-2 ${i===5?"bg-[#e7b47245] p-2 border-[#e7b472] border scale-animation":""} `}>
                                     <div className={`text-xl font-bold text-[#e7b472] underline underline-offset-2 `}>Step {i+1}</div>
                                     <div>{node}</div>
                                 </div>

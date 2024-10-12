@@ -34,7 +34,7 @@ const Countdown = ({ targetDate }) => {
     return (
       <svg
      
-       className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 transform -rotate-90" viewBox="0 0 120 120">
+       className="w-16 h-16 transform -rotate-90 sm:w-20 sm:h-20 lg:w-24 lg:h-24" viewBox="0 0 120 120">
         <circle
           cx="60"
           cy="60"
@@ -59,7 +59,7 @@ const Countdown = ({ targetDate }) => {
           y="60"
           dy=".3em"
           textAnchor="middle"
-          className="text-lg sm:text-xl lg:text-2xl font-bold"
+          className="text-lg font-bold sm:text-xl lg:text-2xl"
           fill="#FFD6A1"
           transform="rotate(90 60 60)" 
         >
@@ -70,7 +70,7 @@ const Countdown = ({ targetDate }) => {
   };
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 justify-center m-6">
+    <div className="grid justify-center tracking-[1px] grid-cols-2 gap-6 m-6 sm:grid-cols-4 sm:gap-8 font-caesar-dressing">
       <div className="text-center">
         {renderCircle('days', 365, timeLeft.days)}
         <div className="text-xs sm:text-sm text-[#FFD6A1]">Days</div>

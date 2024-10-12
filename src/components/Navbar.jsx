@@ -48,7 +48,7 @@ const Navbar = (activePage) => {
       <nav className={`bg-[#08080ec3] relative h-full md:flex-row flex-row-reverse border-[#E7B472] text-[#E7B472] font-abril-fatface  md:p-1 pl-5 pr-5 md:pr-0 md:pl-0 flex justify-between items-center ${isMenuOpen?"py-5":"py-3"} md:py-0`}>
         <div className="z-10 items-center hidden gap-5 pl-2 space-x-2 md:py-1 md:flex">
          
-          <div className="w-11 h-11 m-2 p-[1px] rounded-full hover:bg-[#e7b472] bg-[#e7b472d2] border border-[#e7b472]  flex justify-center items-center hover:shadow-xl shadow-[#e7b472]">
+          <div className="w-11 h-11 m-2 p-[1px] rounded-full hover:bg-[#e7b472] nav-logo-animation bg-[#e7b472d2] border border-[#e7b472]  flex justify-center items-center hover:shadow-xl shadow-[#e7b472]">
             <Link to='/'>
               <img src={Techolympys} alt="Techolympys Logo" />
             </Link>

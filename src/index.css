@@ -21,6 +21,8 @@
     
   }
 
+
+
   .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -39,6 +41,43 @@
     75% { color: #e7b472;}
     100% { color: #fff; transform: scale(1);}
   }
+
+
+  .bg-color-animation{
+    animation: bg-color-change 3s infinite ease-in-out;
+  }
+
+  @keyframes bg-color-change {
+    0% { background-color: #fff;   }
+    25% { background-color: #e7b472;}
+    50% { background-color: #e3ab62;}
+    75% { background-color: #e7b472;}
+    100% { background-color: #fff; ;}
+  }
+
+  .text-color-animation{
+    animation: text-color-change 3s infinite ease-in-out;
+  }
+
+  @keyframes text-color-change {
+    0% { color: #fff;  transform: scale(1); }
+    25% { color: #e7b472;}
+    50% { color: #e7b472ef;transform: scale(1.05);}
+    75% { color: #e7b472;}
+    100% { color: #fff;transform: scale(1) ;}
+  }
+
+  .scale-animation{
+    animation: scale-up-down 3s infinite ease-in-out;
+  }
+
+  @keyframes scale-up-down {
+    0% { transform: scale(1); }
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1) ;}
+  }
+
+  
   
 
 
