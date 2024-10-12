@@ -135,7 +135,7 @@ const Navbar = (activePage) => {
           
           className="absolute font-abril-fatface top-full text-4xl left-0 w-full py-auto h-[100vh] bg-[#08080e] mt-[-2rem] p-4 md:hidden z-[100] flex flex-col items-center"
         >
-          <div className='flex flex-col my-auto bg-red-500'>
+          <div className='flex flex-col my-auto '>
 
           <a
           data-aos="zoom-in"
