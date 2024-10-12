@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 
 const About = () => {
   return (
-    <div className='bg-[#0f0f19] overflow-y-hidden min-h-screen'>
+    <div className='bg-[#000000] overflow-y-hidden min-h-screen'>
       <Navbar  activePage = "about"/>
       <div 
         className="relative min-h-screen pt-20 bg-center bg-no-repeat bg-cover"

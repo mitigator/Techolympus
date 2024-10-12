@@ -90,13 +90,7 @@ const Home2 = () => {
     }
 
     return (
-        <div className='min-h-screen overflow-y-hidden'>
-        <motion.div
-            className='relative min-h-screen overflow-y-hidden'
-            initial="hidden"
-            animate="visible"
-            variants={containerVariants}
-        >
+        <div className='min-h-screen relative overflow-y-hidden bg-[#000000]'>
             <Navbar activePage="home" />
 
             {/* Background Image with lazy loading */}
@@ -369,7 +363,6 @@ const Home2 = () => {
 
                    
             <Footer />
-        </motion.div>
             </div>
 
     );
