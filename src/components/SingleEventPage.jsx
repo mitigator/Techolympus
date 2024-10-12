@@ -15,7 +15,7 @@ function SingleEventPage(props) {
      <h1
      data-aos="fade-down"
     data-aos-duration="1000"
-     className="mt-[100px] text-4xl font-bold tracking-[2px] mb-[30px] break-words  font-abril-fatface md:text-6xl text-[#e7b472]">
+     className="mt-[100px] text-4xl font-bold tracking-[2px] mb-[30px] break-words text-center   font-abril-fatface md:text-6xl text-[#e7b472]">
         {eventData.title}
 
     </h1>
