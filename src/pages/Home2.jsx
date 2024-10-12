@@ -12,6 +12,7 @@ import Footer from '../components/Footer';
 import border from '../assets/borderline.svg';
 import Preloader from '../components/Preloader';
 import Countdown from '../components/Countdown';
+import { div } from 'framer-motion/client';
 
 const Home2 = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -89,8 +90,9 @@ const Home2 = () => {
     }
 
     return (
+        <div className='overflow-y-hidden'>
         <motion.div
-            className='relative'
+            className='relative overflow-y-hidden'
             initial="hidden"
             animate="visible"
             variants={containerVariants}
@@ -368,6 +370,8 @@ const Home2 = () => {
                    
             <Footer />
         </motion.div>
+            </div>
+
     );
 };
 

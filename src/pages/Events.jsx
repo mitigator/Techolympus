@@ -74,7 +74,7 @@ const Events = () => {
   }, []);
 
   return (
-    <div className="mx-auto  pt-12  bg-[#000000] min-h-screen text-[#E7B472]">
+    <div className="mx-auto  pt-12  bg-[#000000] min-h-screen text-[#E7B472] overflow-y-hidden">
       <Navbar activePage="events"/>
       <motion.div
                 className="fixed inset-0 z-0 bg-scroll bg-bottom bg-no-repeat bg-contain md:bg-top md:bg-fixed md:bg-cover "
