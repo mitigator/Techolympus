@@ -56,15 +56,19 @@
   }
 
   .text-color-animation{
-    animation: text-color-change 3s infinite ease-in-out;
+    animation: text-color-change 2s infinite ease-in-out;
   }
 
   @keyframes text-color-change {
-    0% { color: #fff;  transform: scale(1); }
+    0% { color: #fff;   }
+    10% { color: #ffffffef;}
+    15% { color: #e7b472ef;}
     25% { color: #e7b472;}
-    50% { color: #e7b472ef;transform: scale(1.05);}
+    50% { color: #ffffffef;}
     75% { color: #e7b472;}
-    100% { color: #fff;transform: scale(1) ;}
+    80% { color: #ffffffef;}
+    85% { color: #e7b472ef;}
+    100% { color: #fff;}
   }
 
   .scale-animation{
