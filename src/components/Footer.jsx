@@ -11,8 +11,8 @@ const Footer = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className='bg-[#E7B472] flex-col '>
-       <div className='flex   justify-between items-center text-[#0f0f19] h-auto md:h-20 pt-4 md:py-0 z-100'>
+      <div className='bg-[#0000009e] flex-col '>
+       <div className='flex   justify-between items-center text-[#0f0f19] text-[#E7B472] h-auto md:h-20 pt-4 md:py-0 z-100'>
         <motion.div 
           className='flex flex-col items-center justify-center mb-4 ml-5 md:ml-10 md:mb-0'
           whileHover={{ scale: 1.05 }}
@@ -30,7 +30,7 @@ const Footer = () => {
             whileHover={{ scale: 1.2, rotate: 10 }}
             whileTap={{ scale: 0.9 }}
           >
-            <FaInstagram className="h-5 w-5 md:h-8 md:w-8 text-[#0f0f19]" />
+            <FaInstagram className="h-5 w-5 md:h-6 md:w-6 text-[#E7B472]" />
           </motion.a>
           <motion.a 
             href='https://www.linkedin.com/in/gateways2024/' 
@@ -39,11 +39,11 @@ const Footer = () => {
             whileHover={{ scale: 1.2, rotate: -10 }}
             whileTap={{ scale: 0.9 }}
           >
-            <FaLinkedin className="h-5 w-5 md:h-8 md:w-8 text-[#0f0f19]" />
+            <FaLinkedin className="h-5 w-5 md:h-6 md:w-6 text-[#E7B472]" />
           </motion.a>
         </div>
        </div>
-        <div className='py-1 bg-[#c0955e] text-[#06071e] text-xs xl:text-[14px] mx-auto font-mono font-bold text-center'>Developed By <strong>Shubham</strong>,<strong>Pavitharani</strong> and <strong>Aravind</strong> 
+        <div className='py-1 bg-[#00000098] text-[#E7B472] text-xs xl:text-[14px] mx-auto font-mono font-bold text-center'>Developed By <strong>Shubham</strong>, <strong>Pavitharani</strong> and <strong>Aravind</strong> 
           
         </div>
       </div>
