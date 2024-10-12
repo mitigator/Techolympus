@@ -91,7 +91,7 @@ const Events = () => {
         <div
         data-aos="fade-up"
         data-aos-duration="1000"
-          className="px-10 mb-20 text-5xl font-semibold text-center md:px-auto font-abril-fatface "
+          className=" tracking-[3px] px-10 mb-20 text-5xl font-semibold text-center md:px-auto font-abril-fatface "
          
         >
           Technical Events
@@ -128,7 +128,7 @@ const Events = () => {
 
       <section>
         <div
-          className="pt-20 mb-20 text-5xl font-semibold text-center font-abril-fatface "
+          className="tracking-[3px]  pt-20 mb-20 text-5xl font-semibold text-center font-abril-fatface "
           data-aos="fade-up"
         data-aos-duration="1000"
         >
