@@ -17,7 +17,7 @@ const About = () => {
       >
         {/* Overlay Background */}
         <div 
-          className="absolute inset-0  min-h-screen bg-cover md:bg-contain bg-[#0f0f19] opacity-0" 
+          className="absolute inset-0  min-h-screen bg-cover md:bg-contain bg-[#000000] opacity-0" 
           style={{ backgroundImage: `url(${light})`, backgroundAttachment: 'fixed' }} 
         ></div>
 

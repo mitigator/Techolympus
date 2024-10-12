@@ -107,7 +107,7 @@ const Home2 = () => {
 
       
 
-            <div className='bg-[#08080e] text-[#e7b472] flex flex-col justify-center items-center h-[100vh] md:h-[110vh] overflow-hidden'>
+            <div className=' text-[#e7b472] flex flex-col justify-center items-center h-[100vh] md:h-[110vh] overflow-hidden'>
                 <motion.h1
                     className='font-abril-fatface text-[40px] sm:text-[50px] md:text-[80px] mt-10 md:mt-20 z-10'
                     variants={fadeIn}
@@ -167,7 +167,7 @@ const Home2 = () => {
 
 
             <motion.div
-                className='bg-[#08080e] min-h-screen flex flex-col items-center gap-20 p-20 overflow-x-hidden'
+                className='flex flex-col items-center min-h-screen gap-20 p-20 overflow-x-hidden '
                 variants={containerVariants}
             >
                 <img 
@@ -219,7 +219,7 @@ const Home2 = () => {
             
 
             <motion.div
-                className='bg-[#08080e] flex flex-col gap-5 items-center p-10 min-h-screen overflow-x-hidden'
+                className='flex flex-col items-center min-h-screen gap-5 p-10 overflow-x-hidden '
                 variants={containerVariants}
             >
             <img data-aos="fade-up"
@@ -276,7 +276,7 @@ const Home2 = () => {
  
 
             <motion.div
-                className='bg-[#08080e] flex  flex-col gap-10 items-center p-10 h-fit overflow-x-hidden overflow-y-hidden'
+                className='flex flex-col items-center gap-10 p-10 overflow-x-hidden overflow-y-hidden  h-fit'
                 variants={containerVariants}
             >
                             <img
@@ -318,7 +318,7 @@ const Home2 = () => {
 
 
             <motion.div
-                className='bg-[#08080e] flex  flex-col gap-10 items-center p-6 min-h-screen overflow-x-hidden'
+                className='flex flex-col items-center min-h-screen gap-10 p-6 overflow-x-hidden'
                 variants={containerVariants}
             >
                             <img data-aos="fade-up"

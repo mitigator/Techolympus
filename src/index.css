@@ -55,6 +55,54 @@
     100% { background-color: #fff; ;}
   }
 
+
+  .golden-plate:hover {
+   
+    transition: background-color 2s ease-in;
+    background: linear-gradient(
+      45deg,
+      #d18828,
+      #d17c0d,
+      #f1ac51,
+      #ffffff,
+      #f1ac51,
+      #d17c0d,
+      #d18828
+    );
+    background-size: 200% 100%;
+    animation: golden-shimmer 6s linear infinite;
+  }
+  
+  @keyframes golden-shimmer {
+    0% {
+      background-position: 0% 50%;
+    }
+    12.5% {
+      background-position: 25% 50%;
+    }
+    25% {
+      background-position: 50% 50%;
+    }
+    37.5% {
+      background-position: 75% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    62.5% {
+      background-position: 75% 50%;
+    }
+    75% {
+      background-position: 50% 50%;
+    }
+    87.5% {
+      background-position: 25% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
   .text-color-animation{
     animation: text-color-change 2s infinite ease-in-out;
   }

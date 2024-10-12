@@ -20,8 +20,8 @@ const Trial = ({ eventName, link }) => {
         className="relative flex items-center justify-center bg-transparent cursor-pointer h-60 w-60 group"
         onClick={handleCardClick} // Make the card clickable
       >
-        <div className="relative bg-[url('../assets/img.svg')] bg-contain bg-no-repeat w-[385px] h-[297px] flex justify-center items-center transition-transform duration-300 group-hover:scale-105">
-          <div className="w-[310px] h-[310px] bg-[url('./assets/img2.svg')] bg-center bg-contain bg-no-repeat relative flex justify-center items-center">
+        <div className="relative  bg-contain bg-no-repeat w-[385px] h-[297px] flex justify-center items-center transition-transform duration-300 group-hover:scale-105">
+          <div className="w-[310px] h-[310px] bg-[url('./assets/img2-animate.svg')]  md:bg-[url('./assets/img2.svg')]  md:hover:bg-[url('./assets/img2-animate.svg')] bg-center bg-contain bg-no-repeat relative flex justify-center items-center">
             <h2 className=" text-[#E7B472] text-center max-w-[200px] text-2xl break-words  font-abril-fatface  group-hover:scale-110 transition-transform duration-300">
               {eventName}
             </h2>

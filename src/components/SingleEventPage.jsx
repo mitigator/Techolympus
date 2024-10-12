@@ -8,7 +8,7 @@ function SingleEventPage(props) {
     const { eventData,img } = props;
   return (
     <div
-    className="bg-[#0f0f19] min-h-screen bg-bgleaf bg-no-repeat bg-cover bg-center bg-fixed flex flex-col items-center gap-10  pt-20"
+    className="bg-[#000000] min-h-screen bg-bgleaf bg-no-repeat bg-cover bg-center bg-fixed flex flex-col items-center gap-10  pt-20"
     style={{ backgroundImage: `url(${bg})` }}
 >
      {/* Title */}
@@ -165,12 +165,12 @@ function SingleEventPage(props) {
      data-aos-duration="1000"
      data-aos-anchor-placement="bottom"
 
-    className="mb-[100px] md:my-[100px] scale-animation">
+    className="mb-[100px] md:my-[100px] ">
         <a 
             href={eventData.link} 
             target="_blank" 
             rel="noopener noreferrer"
-            className=" tracking-[4px]   transition-all px-10 md:px-20 py-5  md:py-10 mb-10   hover:text-[#0f0f19] text-[#E7B472] text-lg md:text-3xl font-bold border-4 hover:bg-[#E7B472] border-[#E7B472] font-abril-fatface"
+            className=" tracking-[4px]  golden-plate transition-none px-10 md:px-20 py-5  md:py-10 mb-10   hover:text-[#0f0f19] text-[#E7B472] text-lg md:text-3xl font-bold border-4  border-[#E7B472] font-abril-fatface"
         >
             Register Now
         </a>
