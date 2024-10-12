@@ -15,9 +15,9 @@ export default {
       animation: {
         'spin-slow': 'spin 8s linear infinite',
       },
-      backgroundImage: {
-        'gradient-text': 'linear-gradient(180deg, #ED9523 30.87%, #E7B472 52.26%, #FFD6A2 68.15%, #9D5900 88.31%)',
-      },
+      // backgroundImage: {
+      //   'gradient-text': 'linear-gradient(180deg, #ED9523 30.87%, #E7B472 52.26%, #FFD6A2 68.15%, #9D5900 88.31%)',
+      // },
       clipPath: {
         'custom-polygon': 'polygon(0 0, 100% 0, 100% 70%, 0 100%, 0 30%)',
       }

@@ -109,7 +109,7 @@ const Navbar = (activePage) => {
           className="items-center hidden py-3 md:py-0 md:flex"
         >
 
-          <a to='https://christuniversity.in/' target='_blank'>
+          <a href='https://christuniversity.in/' rel="noopener noreferrer" target='_blank'>
             <img src={christ} alt="Christ University logo" className="w-auto h-10 md:h-12" />
           </a>
 

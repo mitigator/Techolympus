@@ -15,7 +15,7 @@ function SingleEventPage(props) {
      <h1
      data-aos="fade-down"
     data-aos-duration="1000"
-     className="mt-[100px] text-4xl font-bold text-transparent mb-[30px]  font-abril-fatface md:text-6xl bg-clip-text bg-gradient-text">
+     className="mt-[100px] text-4xl font-bold tracking-[2px] mb-[30px] break-words  font-abril-fatface md:text-6xl text-[#e7b472]">
         {eventData.title}
 
     </h1>
@@ -86,9 +86,9 @@ function SingleEventPage(props) {
         <h2 
          data-aos="zoom-in"
    data-aos-duration="1000"
-        className="text-4xl font-bold text-transparent mb-[30px]  font-abril-fatface md:text-6xl bg-clip-text bg-gradient-text">Prize Pool</h2>
+        className="text-4xl font-bold  mb-[30px]  font-abril-fatface md:text-6xl text-[#e7b472] tracking-[2px]">Prize Pool</h2>
         <div className='mt-5  md:mt-10 flex flex-col  font-bold text-[40px] md:text-[70px] gap-[2rem]'>
-        <p className='p-5 font-atomic-age text-[#E7B472]  color-animation '>{eventData.firstPrize}</p>
+        <p className='p-5 font-atomic-age text-[#fff]  '>{eventData.firstPrize}</p>
         {/* <p  className='p-5 text-[#d6d6d6]     '>2nd Prize: {eventData.secondPrize}</p>
         <p  className='p-5 text-[#ab6a2a] '>3rd Prize: {eventData.thirdPrize}</p> */}
         </div>
@@ -102,8 +102,8 @@ function SingleEventPage(props) {
         <h2
          data-aos="zoom-in"
    data-aos-duration="1000"
-        className="pb-10 text-4xl font-bold text-transparent mb-[30px]  font-abril-fatface md:text-6xl bg-clip-text bg-gradient-text">Prerequisites</h2>
-        <ul className="  justify-center  text-lg md:text-2xl text-justify list-none list-inside flex flex-col gap-[1rem]">
+        className="pb-10 text-4xl font-bold mb-[30px]  font-abril-fatface md:text-6xl text-[#e7b472] tracking-[2px]">Prerequisites</h2>
+        <ul className="  justify-center text-white text-lg md:text-2xl text-justify list-none list-inside flex flex-col gap-[1rem]">
             {eventData.prerequisites.map((rule, index) => (
                 <li 
                 data-aos-anchor-placement="top-center" 
@@ -122,8 +122,8 @@ function SingleEventPage(props) {
     {/* Rules Section */}
     <div className="text-[#FFD6A1] text-center px-4 md:px-0 mt-6 mb-[100px] md:mb-[100px]">
         <h2  data-aos="zoom-in"
-   data-aos-duration="1000" className="text-4xl font-bold text-transparent mb-[30px]  font-abril-fatface md:text-6xl bg-clip-text bg-gradient-text">Rules</h2>
-        <ul className="  justify-center  text-lg md:text-2xl text-justify list-none list-inside flex flex-col gap-[1rem]">
+   data-aos-duration="1000" className="text-4xl font-bold  mb-[30px]  font-abril-fatface md:text-6xl text-[#e7b472] tracking-[2px]">Rules</h2>
+        <ul className="  justify-center text-white text-lg md:text-2xl text-justify list-none list-inside flex flex-col gap-[1rem]">
             {eventData.rules.map((rule, index) => (
                 <li
                 data-aos-anchor-placement="bottom" 
@@ -143,8 +143,8 @@ function SingleEventPage(props) {
     {/* Constact Section */}
     <div className="text-[#FFD6A1] text-center px-4 md:px-0 mt-6 mb-[100px] md:mb-[50px]">
         <h2  data-aos="zoom-in"
-   data-aos-duration="1000" className="pb-5 text-4xl font-bold text-transparent mb-[30px]  font-abril-fatface md:text-6xl bg-clip-text bg-gradient-text">Contact Info</h2>
-              <div className='flex flex-col gap-3 mx-auto bebas-neue-regular'>
+   data-aos-duration="1000" className="pb-5 text-4xl font-bold mb-[30px]  font-abril-fatface md:text-6xl text-[#e7b472] tracking-[2px]">Contact Info</h2>
+              <div className='flex flex-col gap-3 mx-auto text-white bebas-neue-regular'>
                 <div
                 data-aos="zoom-in"
                 data-aos-duration="1000"
