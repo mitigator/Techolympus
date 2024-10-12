@@ -140,7 +140,7 @@ const Home2 = () => {
                     transition={{ duration: 1, delay: 2 }}
                 >
                     <motion.div
-                        className='translate-y-[65px] md:translate-y-[85px] flex flex-col'
+                        className='translate-y-[52px] md:translate-y-[85px] flex flex-col'
                         // whileHover={{ scale: 1.1 }}
                     >
                         <p className='text-[25px] sm:text-[40px] '>30</p>

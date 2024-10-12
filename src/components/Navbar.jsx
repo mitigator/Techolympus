@@ -45,7 +45,7 @@ const Navbar = (activePage) => {
       initial={{ y: 0 }}
       animate={controls}
     >
-      <nav className="bg-[#08080ec3]  border-[#E7B472] text-[#E7B472] font-abril-fatface  md:p-1 pl-5 md:pl-0 flex justify-between items-center py-3 md:py-0">
+      <nav className={`bg-[#08080ec3] relative h-full md:flex-row flex-row-reverse border-[#E7B472] text-[#E7B472] font-abril-fatface  md:p-1 pl-5 pr-5 md:pr-0 md:pl-0 flex justify-between items-center ${isMenuOpen?"py-5":"py-3"} md:py-0`}>
         <div className="z-10 items-center hidden gap-5 pl-2 space-x-2 md:py-1 md:flex">
          
           <div className="w-11 h-11 m-2 p-[1px] rounded-full hover:bg-[#e7b472] bg-[#e7b472d2] border border-[#e7b472]  flex justify-center items-center hover:shadow-xl shadow-[#e7b472]">
@@ -55,16 +55,16 @@ const Navbar = (activePage) => {
           </div>
         </div>
 
-        <div className="flex items-center ">
+        <div className="flex items-center justify-end ">
           {!isMenuOpen && (
             <button
-              className="z-50 block md:hidden focus:outline-none"
+              className="z-50 block rotate-180 md:hidden focus:outline-none"
               onClick={toggleMenu}
             >
               <motion.div
                 initial={false}
                 animate={isMenuOpen ? 'open' : 'closed'}
-                className="space-y-1"
+                className="flex flex-col justify-end space-y-1 "
               >
                 <motion.div
                   className="w-7 h-[3px] bg-[#E7B472]"
@@ -129,12 +129,13 @@ const Navbar = (activePage) => {
 
         </motion.div>
         }
+
       {isMenuOpen && (
         <div
           
-          className="absolute font-abril-fatface top-full text-4xl left-0 w-full py-auto h-[100vh] bg-[#08080e] p-4 md:hidden z-[100] flex flex-col items-center"
+          className="absolute font-abril-fatface top-full text-4xl left-0 w-full py-auto h-[100vh] bg-[#08080e] mt-[-2rem] p-4 md:hidden z-[100] flex flex-col items-center"
         >
-          <div className='flex flex-col my-auto'>
+          <div className='flex flex-col my-auto bg-red-500'>
 
           <a
           data-aos="zoom-in"

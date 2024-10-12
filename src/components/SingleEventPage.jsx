@@ -170,7 +170,7 @@ function SingleEventPage(props) {
             href={eventData.link} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="  transition-all px-10 md:px-20 py-5  md:py-10 mb-10   hover:text-[#0f0f19] text-[#E7B472] text-lg md:text-3xl font-bold border-4 hover:bg-[#E7B472] border-[#E7B472] font-abril-fatface"
+            className=" tracking-[4px]  transition-all px-10 md:px-20 py-5  md:py-10 mb-10   hover:text-[#0f0f19] text-[#E7B472] text-lg md:text-3xl font-bold border-4 hover:bg-[#E7B472] border-[#E7B472] font-abril-fatface"
         >
             Register Now
         </a>
