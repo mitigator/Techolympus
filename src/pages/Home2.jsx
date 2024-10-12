@@ -90,9 +90,9 @@ const Home2 = () => {
     }
 
     return (
-        <div className='overflow-y-hidden'>
+        <div className='min-h-screen overflow-y-hidden'>
         <motion.div
-            className='relative overflow-y-hidden'
+            className='relative min-h-screen overflow-y-hidden'
             initial="hidden"
             animate="visible"
             variants={containerVariants}
@@ -101,7 +101,7 @@ const Home2 = () => {
 
             {/* Background Image with lazy loading */}
             <motion.div
-            className="fixed inset-0 z-0 bg-scroll bg-bottom bg-no-repeat bg-contain md:bg-top md:bg-fixed md:bg-cover "
+            className="fixed inset-0 z-0 min-h-screen bg-scroll bg-bottom bg-no-repeat bg-contain md:bg-top md:bg-fixed md:bg-cover "
                 style={{
                     backgroundImage: `url(${zeus})`,
                    

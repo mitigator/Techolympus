@@ -26,7 +26,7 @@ function App() {
     AOS.init();
   },[])
   return (
-    <AnimatePresence mode='wait'>
+    // <AnimatePresence mode='wait'>
       <BrowserRouter>
       <Routes location={location} key={location.pathname} >
         <Route path="/" element={<Home2 />} />
@@ -46,7 +46,7 @@ function App() {
         <Route path="*" element={<NotFound />} /> 
       </Routes>
     </BrowserRouter>
-    </AnimatePresence>
+    // </AnimatePresence>
   );
 }
 

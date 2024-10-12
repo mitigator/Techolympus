@@ -9,15 +9,15 @@ import Footer from '../components/Footer';
 
 const About = () => {
   return (
-    <div className='bg-[#0f0f19] overflow-y-hidden'>
+    <div className='bg-[#0f0f19] overflow-y-hidden min-h-screen'>
       <Navbar  activePage = "about"/>
       <div 
-        className="relative h-full pt-20 bg-center bg-no-repeat bg-cover"
+        className="relative min-h-screen pt-20 bg-center bg-no-repeat bg-cover"
         style={{ backgroundImage: `url(${bg})`, backgroundAttachment: 'fixed' }} 
       >
         {/* Overlay Background */}
         <div 
-          className="absolute inset-0 h-full bg-cover md:bg-contain bg-[#0f0f19] opacity-0" 
+          className="absolute inset-0  min-h-screen bg-cover md:bg-contain bg-[#0f0f19] opacity-0" 
           style={{ backgroundImage: `url(${light})`, backgroundAttachment: 'fixed' }} 
         ></div>
 
