@@ -30,7 +30,6 @@ export const Hackathon = () => {
         <div>
             <Navbar />
             <SingleEventPage eventData={eventData} img={img}/>
-            <Footer/>
         </div>
     );
 };

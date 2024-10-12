@@ -30,7 +30,6 @@ export const Itmanager = () => {
         <div>
             <Navbar />
             <SingleEventPage eventData={eventData} img={img}/>
-            <Footer/>
         </div>
     );
 };

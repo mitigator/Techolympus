@@ -11,7 +11,7 @@ const Footer = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className='bg-[#000000ba] flex-col '>
+      <div className='bg-[#000000b7] flex-col w-full border-t border-[#e7b4727b]'>
        <div className='flex   justify-between items-center text-[#0f0f19] text-[#E7B472] h-auto md:h-20 pt-4 md:py-0 z-100'>
         <motion.div 
           className='flex flex-col items-center justify-center mb-4 ml-5 md:ml-10 md:mb-0'
@@ -43,7 +43,7 @@ const Footer = () => {
           </motion.a>
         </div>
        </div>
-        <div className='py-1 bg-[#00000098] text-[#E7B472] text-xs xl:text-[14px] mx-auto font-mono font-bold text-center'>Developed By <strong>Shubham</strong>, <strong>Pavitharani</strong> and <strong>Aravind</strong> 
+        <div className='py-1 bg-[#8668412b] border-t border-[#e7b4721a] text-[#E7B472] text-xs xl:text-[14px] mx-auto font-mono font-bold text-center'>Developed By <strong>Shubham</strong>, <strong>Pavitharani</strong> and <strong>Aravind</strong> 
           
         </div>
       </div>

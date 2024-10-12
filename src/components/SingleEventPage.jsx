@@ -2,6 +2,9 @@ import React from 'react'
 import bg from '../assets/bgleaf.svg';
 import end from '../assets/borderline.svg';
 import PropTypes from 'prop-types'; 
+import Footer from './Footer';
+import zeus from '../assets/zeus.svg';
+
 
 
 function SingleEventPage(props) {
@@ -175,6 +178,9 @@ function SingleEventPage(props) {
             Register Now
         </a>
 
+    </div>
+    <div className='w-[100vw] '>
+    <Footer/>
     </div>
 
     {/* <img src={end} alt="Border" className="object-contain w-[70%] md:w-auto" /> */}

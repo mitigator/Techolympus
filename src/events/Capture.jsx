@@ -33,7 +33,6 @@ export const Capture = () => {
         <div>
             <Navbar />
             <SingleEventPage eventData={eventData} img={img}/>
-            <Footer/>
         </div>
         }
         

@@ -30,7 +30,6 @@ export const Gaming = () => {
         <div>
             <Navbar />
             <SingleEventPage eventData={eventData} img={img}/>
-            <Footer/>
         </div>
     );
 };

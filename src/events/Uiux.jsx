@@ -31,7 +31,6 @@ export const Uiux = () => {
             <Navbar />
             <SingleEventPage eventData={eventData} img={img}/>
 
-            <Footer/>
         </div>
     );
 };

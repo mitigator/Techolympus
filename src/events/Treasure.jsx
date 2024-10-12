@@ -30,8 +30,6 @@ export const Treasure = () => {
         <div>
             <Navbar />
             <SingleEventPage eventData={eventData} img={img}/>
-
-            <Footer/>
         </div>
     );
 };
