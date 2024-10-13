@@ -18,8 +18,8 @@ const Footer = () => {
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
-          <p className='text-lg font-abril-fatface md:text-xl'>Gateways 2024</p>
-          <p className='ml-0 text-sm font-bilbo-swap-caps md:text-base md:ml-2'>techOlympus</p>
+          <p className='text-lg font-abril-fatface md:text-xl '>Gateways 2024</p>
+          <p className='ml-0 text-sm font-bilbo-swap-caps md:text-base md:ml-2 text-color-animation'>techOlympus</p>
         </motion.div>
         
         <div className='flex mr-5 space-x-4 md:mr-10'>

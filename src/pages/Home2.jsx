@@ -95,7 +95,7 @@ const Home2 = () => {
 
             {/* Background Image with lazy loading */}
             <motion.div
-            className="fixed inset-0 z-0 min-h-screen bg-scroll bg-bottom bg-no-repeat bg-contain md:bg-top md:bg-fixed md:bg-cover "
+            className="fixed inset-0 z-0 min-h-screen bg-scroll bg-bottom bg-no-repeat bg-contain lightning-zap md:bg-top md:bg-fixed md:bg-cover "
                 style={{
                     backgroundImage: `url(${zeus})`,
                    
@@ -133,7 +133,7 @@ const Home2 = () => {
                 <motion.div
                     className='flex flex-col items-center font-abril-fatface md:translate-y-[-50px]'
                     variants={fadeIn}
-                    transition={{ duration: 1, delay: 2 }}
+                    transition={{ duration: 0.5, delay: 1 }}
                 >
                     <motion.div
                         className='translate-y-[52px] md:translate-y-[85px] flex flex-col'
@@ -150,7 +150,7 @@ const Home2 = () => {
                         loading="lazy" // Lazy loading added
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1.2, delay: 2 }}
+                        transition={{ duration: 0.5, delay: 1 }}
                     />
 
                     <motion.p
@@ -226,7 +226,7 @@ const Home2 = () => {
                  data-aos-duration="1000" src={border} alt="Border" className="object-contain w-[90%] md:w-auto" loading="lazy" />
 
                 <h1
-                    className='font-bilbo-swap-caps text-[#e7b472] text-center text-6xl  md:text-7xl md:my-20 mt-10 md:mt-auto'
+                    className='font-bilbo-swap-caps text-color-animation text-[#e7b472] text-center text-6xl  md:text-7xl md:my-20 mt-10 md:mt-auto'
                     data-aos="zoom-in"
                  data-aos-duration="1000"
                 >
@@ -276,7 +276,7 @@ const Home2 = () => {
  
 
             <motion.div
-                className='flex flex-col items-center gap-10 p-10 overflow-x-hidden overflow-y-hidden  h-fit'
+                className='flex flex-col items-center gap-10 p-10 overflow-x-hidden overflow-y-hidden h-fit'
                 variants={containerVariants}
             >
                             <img
