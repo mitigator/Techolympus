@@ -77,7 +77,7 @@ const Events = () => {
     <div className="mx-auto  pt-12  bg-[#000000] min-h-screen text-[#E7B472] overflow-y-hidden">
       <Navbar activePage="events"/>
       <motion.div
-                className="fixed inset-0 z-0 min-h-screen bg-scroll bg-bottom bg-no-repeat bg-contain md:bg-top md:bg-fixed md:bg-cover "
+                className="fixed inset-0 z-0 min-h-screen bg-scroll bg-bottom bg-no-repeat bg-contain lightning-zap md:bg-top md:bg-fixed md:bg-cover "
                 style={{
                     backgroundImage: `url(${zeus})`,
                    
