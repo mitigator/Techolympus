@@ -91,7 +91,7 @@ function SingleEventPage(props) {
    data-aos-duration="1000"
         className="text-4xl font-bold  mb-[30px]  font-abril-fatface md:text-6xl text-[#e7b472] tracking-[2px]">Prize Pool</h2>
         <div className='mt-5  md:mt-10 flex flex-col  font-bold text-[40px] md:text-[70px] gap-[2rem]'>
-        <p className='p-5 font-atomic-age text-[#fff]  '>{eventData.firstPrize}</p>
+        <p className='p-5 font-atomic-age golden-price '>{eventData.firstPrize}</p>
         {/* <p  className='p-5 text-[#d6d6d6]     '>2nd Prize: {eventData.secondPrize}</p>
         <p  className='p-5 text-[#ab6a2a] '>3rd Prize: {eventData.thirdPrize}</p> */}
         </div>
@@ -173,7 +173,7 @@ function SingleEventPage(props) {
             href={eventData.link} 
             target="_blank" 
             rel="noopener noreferrer"
-            className=" tracking-[4px]  golden-plate transition-none px-10 md:px-20 py-5  md:py-10 mb-10   hover:text-[#0f0f19] text-[#E7B472] text-lg md:text-3xl font-bold border-4  border-[#E7B472] font-abril-fatface"
+            className=" tracking-[4px]   transition-none px-10 md:px-20 py-5  md:py-10 mb-10   hover:text-[#0f0f19] hover:bg-[#E7B472] text-[#E7B472] text-lg md:text-3xl font-bold border-4  border-[#E7B472] font-abril-fatface"
         >
             Register Now
         </a>

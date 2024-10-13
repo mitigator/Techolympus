@@ -252,4 +252,41 @@
     }
   }
 
+
+  .golden-price {
+    background: linear-gradient(
+      45deg,
+      #f2d543 10%,
+      #e7d472 25%,
+      #fff 35%, 
+      #f6e27a 50%,
+      #e7d472 75%,
+      #f2d543 50%
+    );
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300% 300%;
+    animation: shine 6s ease-in-out infinite;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: 0% 0%;
+    }
+    25% {
+      background-position: 100% 100%;
+    }
+    50% {
+      background-position: 200% 200%;
+    }
+    75% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
   
