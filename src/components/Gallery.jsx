@@ -69,7 +69,7 @@ const Gallery = () => {
         scrollTrigger: {
           trigger: gridRef.current,
           start: 'top 90%',
-          end: 'bottom 10%',
+          end: 'bottom 1%',
           scrub: true,
         },
       }
