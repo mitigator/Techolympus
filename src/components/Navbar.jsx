@@ -97,7 +97,7 @@ const Navbar = (activePage) => {
           <div className="z-50 justify-center hidden gap-24 space-x-6 md:flex font-abril-fatface">
             <a className={`hover:underline underline-offset-4 ${activePage === "events" ? "underline" : ""}`} href="/events">Events</a>
             <a className={`hover:underline underline-offset-4 ${activePage === "about" ? "underline" : ""}`} href="/about">About</a>
-            <a className={`hover:underline underline-offset-4 ${activePage === "about" ? "underline" : ""}`} href="https://heyzine.com/flip-book/54ac0d4a17.html" target="_blank"
+            <a className={`hover:underline underline-offset-4 ${activePage === "about" ? "underline" : ""}`} href="https://heyzine.com/flip-book/c2ac9d7649.html" target="_blank"
               rel="noopener noreferrer">Brochure</a>
           </div>
         </div>
@@ -154,7 +154,7 @@ const Navbar = (activePage) => {
               <a
                 data-aos="zoom-in"
                 data-aos-duration="2000"
-                href="https://heyzine.com/flip-book/54ac0d4a17.html" className={`block py-1 text-center m-14 text-[#E7B472]  ${activePage === "brochure" ? "underline underline-offset-4" : ""}`}>Brochure</a>
+                href="https://heyzine.com/flip-book/c2ac9d7649.html" className={`block py-1 text-center m-14 text-[#E7B472]  ${activePage === "brochure" ? "underline underline-offset-4" : ""}`}>Brochure</a>
               {/* <a
             href={test}
             download="Brochure.pdf"
