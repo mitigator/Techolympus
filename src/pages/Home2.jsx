@@ -117,7 +117,7 @@ const Home2 = () => {
                 </motion.h1>
 
                 <motion.h2
-                    className='text-color-animation font-bilbo-swap-caps text-[50px] sm:text-[65px] md:text-[100px] z-10'
+                    className='text-white font-bilbo-swap-caps text-[50px] sm:text-[65px] md:text-[100px] z-10'
                     variants={fadeIn}
                     transition={{ duration: 1, delay: 1.5 }}
                 >
