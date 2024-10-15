@@ -14,6 +14,8 @@ import {Photography} from './events/Photography';
 import {Treasure} from './events/Treasure';
 import {Uiux} from './events/Uiux';
 import {Gaming} from './events/Gaming';
+import Gallery from './components/Gallery';
+import Flipbook from './components/Flipbook';
 import {AnimatePresence} from 'framer-motion'
 import './animation/Transition.css'
 import "aos/dist/aos.css"
@@ -43,6 +45,8 @@ function App() {
         <Route path="/treasure" element={<Treasure />} />
         <Route path="/uiux" element={<Uiux />} />
         <Route path="/gaming" element={<Gaming />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/brochure" element={<Flipbook />} />
         <Route path="*" element={<NotFound />} /> 
       </Routes>
     </BrowserRouter>

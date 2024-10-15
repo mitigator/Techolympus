@@ -16,7 +16,7 @@ const Navbar = (activePage) => {
   };
 
 
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -40,14 +40,14 @@ const Navbar = (activePage) => {
   }, [lastScrollY, controls]);
 
   return (
-    <motion.div 
+    <motion.div
       className="fixed top-0 left-0 right-0 z-50 "
       initial={{ y: 0 }}
       animate={controls}
     >
-      <nav className={`bg-[#080808c3] relative h-full md:flex-row flex-row-reverse border-[#E7B472] text-[#E7B472] font-abril-fatface  md:p-1 pl-5 pr-5 md:pr-0 md:pl-0 flex justify-between items-center ${isMenuOpen?"py-5":"py-3"} md:py-0`}>
+      <nav className={`bg-[#080808c3] relative h-full md:flex-row flex-row-reverse border-[#E7B472] text-[#E7B472] font-abril-fatface  md:p-1 pl-5 pr-5 md:pr-0 md:pl-0 flex justify-between items-center ${isMenuOpen ? "py-5" : "py-3"} md:py-0`}>
         <div className="z-10 items-center hidden gap-5 pl-2 space-x-2 md:py-1 md:flex">
-         
+
           <div className="w-11 h-11 m-2 p-[1px] rounded-full hover:bg-[#e7b472] bg-color-animation   bg-[#e7b472d2] border border-[#e7b472]  flex justify-center items-center hover:shadow-xl shadow-[#e7b472]">
             <Link to='/'>
               <img src={Techolympys} alt="Techolympys Logo" />
@@ -95,13 +95,14 @@ const Navbar = (activePage) => {
           )}
 
           <div className="z-50 justify-center hidden gap-24 space-x-6 md:flex font-abril-fatface">
-            <a className={`hover:underline underline-offset-4 ${activePage==="events"?"underline":""}`} href="/events">Events</a>
-            <a className={`hover:underline underline-offset-4 ${activePage==="about"?"underline":""}`} href="/about">About</a>
-            {/* <a className={`hover:underline underline-offset-4`} href={test} download="Brochure.pdf">Brochure</a> */}
+            <a className={`hover:underline underline-offset-4 ${activePage === "events" ? "underline" : ""}`} href="/events">Events</a>
+            <a className={`hover:underline underline-offset-4 ${activePage === "about" ? "underline" : ""}`} href="/about">About</a>
+            <a className={`hover:underline underline-offset-4 ${activePage === "about" ? "underline" : ""}`} href="https://heyzine.com/flip-book/dec355997f.html#page/1" target="_blank"
+              rel="noopener noreferrer">Brochure</a>
           </div>
         </div>
 
-       
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -115,42 +116,42 @@ const Navbar = (activePage) => {
 
         </motion.div>
 
-        {!isMenuOpen&&
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2 }}
-          className="flex items-center md:py-3 md:hidden"
-        >
+        {!isMenuOpen &&
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+            className="flex items-center md:py-3 md:hidden"
+          >
 
-          <a to='https://christuniversity.in/' target='_blank'>
-            <img src={christ} alt="Christ University logo" className="w-auto h-10 md:h-14" />
-          </a>
+            <a to='https://christuniversity.in/' target='_blank'>
+              <img src={christ} alt="Christ University logo" className="w-auto h-10 md:h-14" />
+            </a>
 
-        </motion.div>
+          </motion.div>
         }
 
-      {isMenuOpen && (
-        <div
-          
-          className="absolute font-abril-fatface top-full text-4xl left-0 w-full py-auto h-[100vh] bg-[#08080e] mt-[-2rem] p-4 md:hidden z-[100] flex flex-col items-center"
-        >
-          <div className='flex flex-col my-auto '>
+        {isMenuOpen && (
+          <div
 
-          <a
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-          
-          href="/" className={`block py-1 text-center m-14 text-[#E7B472]`}>Home</a>
-          <a 
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-          href="/events" className={`block py-1 text-center m-14 text-[#E7B472]  ${activePage==="events"?"underline underline-offset-4":""}`}>Events</a>
-          <a
-          data-aos="zoom-in"
-          data-aos-duration="2000"
-          href="/about" className={`block py-1 text-center m-14 text-[#E7B472]  ${activePage==="events"?"underline underline-offset-4":""}`}>About</a>
-          {/* <a
+            className="absolute font-abril-fatface top-full text-4xl left-0 w-full py-auto h-[100vh] bg-[#08080e] mt-[-2rem] p-4 md:hidden z-[100] flex flex-col items-center"
+          >
+            <div className='flex flex-col my-auto '>
+
+              <a
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+
+                href="/" className={`block py-1 text-center m-14 text-[#E7B472]`}>Home</a>
+              <a
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+                href="/events" className={`block py-1 text-center m-14 text-[#E7B472]  ${activePage === "events" ? "underline underline-offset-4" : ""}`}>Events</a>
+              <a
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+                href="/about" className={`block py-1 text-center m-14 text-[#E7B472]  ${activePage === "events" ? "underline underline-offset-4" : ""}`}>About</a>
+              {/* <a
             href={test}
             download="Brochure.pdf"
             className="block py-2 text-center m-14 text-[#E7B472]"
@@ -158,26 +159,26 @@ const Navbar = (activePage) => {
             Brochure
           </a> */}
 
-          <div 
-          data-aos="zoom-in"
-          data-aos-duration="2500"
-          data-aos-anchor-placement="bottom-bottom"
-           className="flex justify-center mt-12">
-            <button
-              className="text-[#E7B472] text-4xl focus:outline-none"
-              onClick={toggleMenu}
-            >
-              &#10005;
-            </button>
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="2500"
+                data-aos-anchor-placement="bottom-bottom"
+                className="flex justify-center mt-12">
+                <button
+                  className="text-[#E7B472] text-4xl focus:outline-none"
+                  onClick={toggleMenu}
+                >
+                  &#10005;
+                </button>
+              </div>
+            </div>
           </div>
-          </div>
-        </div>
-      )}
+        )}
       </nav>
 
       <style>
         {
-          isMenuOpen&&`
+          isMenuOpen && `
           body {
             overflow: hidden;
           }
