@@ -142,7 +142,7 @@ const Navbar = (activePage) => {
                 data-aos="zoom-in"
                 data-aos-duration="1000"
 
-                to="/" className={`block py-1 text-center m-14 text-[#E7B472]`}>Home</Link>
+                to="/" className={`block py-1 text-center m-14 mt-0 text-[#E7B472]`}>Home</Link>
               <Link
                 data-aos="zoom-in"
                 data-aos-duration="1500"
