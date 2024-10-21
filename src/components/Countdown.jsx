@@ -59,7 +59,7 @@ const Countdown = ({ targetDate }) => {
           y="60"
           dy=".3em"
           textAnchor="middle"
-          className="text-lg font-bold sm:text-xl lg:text-2xl"
+          className="text-2xl font font-abril-fatface sm:text-xl lg:text-3xl"
           fill="#FFD6A1"
           transform="rotate(90 60 60)" 
         >
@@ -71,7 +71,7 @@ const Countdown = ({ targetDate }) => {
 
   return (
     <div className="grid justify-center tracking-[1px] grid-cols-2 gap-6 m-6 sm:grid-cols-4 sm:gap-8 font-caesar-dressing">
-      <div className="text-center">
+      <div className="text-[40px] text-center">
         {renderCircle('days', 365, timeLeft.days)}
         <div className="text-xs sm:text-sm text-[#FFD6A1]">Days</div>
       </div>
