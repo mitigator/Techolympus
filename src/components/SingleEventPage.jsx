@@ -31,9 +31,8 @@ function SingleEventPage(props) {
     </div>
 
     {/* Event Details Section */}
-    <div className="text-[#FFD6A1] font-abril-fatface  w-[90%] md:w-[75%] flex flex-col gap-4 md:flex-row md:justify-between px-4 md:px-0 text-lg md:text-2xl">
+    <div className="text-[#FFD6A1]   font-abril-fatface  w-[90%] md:w-[75%] flex flex-col gap-4  md:justify-between px-6 md:px-0 text-lg md:text-2xl">
         <div
-        
         className="flex flex-col items-start w-full gap-4 md:flex-row md:items-center">
             <div
             data-aos="zoom-in"
@@ -49,6 +48,8 @@ function SingleEventPage(props) {
                 <div className='text-base font-bold bg-[#E7B472] font-mono text-[#030520] px-2 py-1'>Team Size</div>
                 <p className='px-4 h-full items-center justify-center flex w-full text-center  py-2  border-[#E7B472] border-2  '>{eventData.teamSize} Per Team</p>
                 </div>
+           
+           {!eventData?.eventMode&&
             <div 
             data-aos="zoom-in"
         data-aos-duration="1500"
@@ -56,6 +57,9 @@ function SingleEventPage(props) {
                 <div className='  text-base font-bold bg-[#E7B472] font-mono text-[#030520] px-2 py-1'>Event Venue</div>
                 <p className='px-4 h-full items-center justify-center flex w-full text-center  py-2  border-[#E7B472] border-2  '>{eventData.venue}</p>
                 </div>
+           }
+
+
             <div
             data-aos="zoom-in"
         data-aos-duration="2000"
@@ -65,7 +69,18 @@ function SingleEventPage(props) {
                 </div>
 
         </div>
+        <div
+         data-aos="zoom-in"
+        data-aos-duration="500"
+         className='flex justify-center mt-10'>
+            {
+                eventData?.eventMode&&
+                <div className=' tracking-[2px] border-[#E7B472] w-full md:w-fit text-center px-6 py-2  text-3xl text-color-animation '>
+                    ONLINE  EVENT 
 
+                </div>
+            }
+        </div>
     </div>
     <img data-aos="fade-up"
         data-aos-duration="1000" src={end} alt="Border" className="object-contain w-[70%] md:w-auto" />
@@ -204,7 +219,9 @@ SingleEventPage.propTypes = {
         contactPerson: PropTypes.string.isRequired,
         contactNumber: PropTypes.string.isRequired,
         link: PropTypes.string.isRequired,
-        prerequisites:PropTypes.string.isRequired
+        prerequisites:PropTypes.string.isRequired,
+        eventMode:PropTypes.string.isRequired
+
     }).isRequired,
     img: PropTypes.string.isRequired,
 };
