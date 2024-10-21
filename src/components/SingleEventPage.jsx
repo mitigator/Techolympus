@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import bg from '../assets/bgleaf.svg';
 import end from '../assets/borderline.svg';
 import PropTypes from 'prop-types'; 
@@ -8,7 +8,14 @@ import zeus from '../assets/zeus.svg';
 
 
 function SingleEventPage(props) {
+
+    
+    
     const { eventData,img } = props;
+    useEffect(()=>{
+        document.title = `${eventData.eventType}- Gateways 2024`;
+        window.scrollTo(0,0)
+    },[eventData])
   return (
     <div
     className="bg-[#000000] min-h-screen bg-bgleaf bg-no-repeat bg-cover bg-center bg-fixed flex flex-col items-center gap-10  pt-20"

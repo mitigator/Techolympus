@@ -10,6 +10,8 @@ import Footer from '../components/Footer';
 export const Capture = () => {
     const [eventData, setEventData] = useState(null);
 
+    
+
     useEffect(() => {
         window.scrollTo(0, 0);
 

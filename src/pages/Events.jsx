@@ -48,6 +48,12 @@ const EventCard = ({ title, description, linkUrl, imageUrl }) => (
 );
 
 const Events = () => {
+
+  useEffect(()=>{
+    document.title = "Events - Gateways 2024";
+    window.scrollTo(0,0)
+},[])
+
   const [technicalEvents, setTechnicalEvents] = useState([]);
   const [nonTechnicalEvents, setNonTechnicalEvents] = useState([]);
 

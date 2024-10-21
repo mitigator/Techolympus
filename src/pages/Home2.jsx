@@ -16,6 +16,13 @@ import Countdown from '../components/Countdown';
 // import { div } from 'framer-motion/client';
 
 const Home2 = () => {
+
+    useEffect(()=>{
+        document.title = "Gateways 2024";
+        window.scrollTo(0,0)
+    },[])
+
+
     const [isLoading, setIsLoading] = useState(true);
     const targetDate = '2024-11-14T07:30:00';
 

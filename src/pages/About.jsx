@@ -5,9 +5,15 @@ import logo from '../assets/aboutLogo.svg';
 import border from '../assets/borderline.svg';
 import NewAboutCard from '../components/NewAboutCard';
 import Footer from '../components/Footer';
+import { useEffect } from 'react';
 
 
 const About = () => {
+  useEffect(()=>{
+    document.title = "About - Gateways 2024";
+    window.scrollTo(0,0)
+},[])
+
   return (
     <div className='bg-[#000000] overflow-y-hidden min-h-screen'>
       <Navbar  activePage = "about"/>
