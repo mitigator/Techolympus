@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import OliveLeaf from '../assets/OliveLeaf.png';
 import zeus from '../assets/zeus.svg';
+import zuesMobile from '../assets/zeusMobile.svg'
 import Trails from '../components/Trial';
 import Techolympys from '../assets/Techolympuslogo.svg';
 import contentData from '../json/Theme.json';
@@ -12,7 +13,7 @@ import Footer from '../components/Footer';
 import border from '../assets/borderline.svg';
 import Preloader from '../components/Preloader';
 import Countdown from '../components/Countdown';
-import { div } from 'framer-motion/client';
+// import { div } from 'framer-motion/client';
 
 const Home2 = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -95,9 +96,20 @@ const Home2 = () => {
 
             {/* Background Image with lazy loading */}
             <motion.div
-            className="fixed inset-0 z-0 min-h-screen bg-scroll bg-bottom bg-no-repeat bg-contain lightning-zap md:bg-top md:bg-fixed md:bg-cover "
+            className={`fixed inset-0 z-0 hidden sm:flex min-h-screen bg-scroll bg-bottom bg-no-repeat bg-contain lightning-zap md:bg-top md:bg-fixed md:bg-cover `}
                 style={{
                     backgroundImage: `url(${zeus})`,
+                   
+                }}
+                initial={{ scale: 1.1 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 1.5 }}
+            />
+            {/* Background Image with lazy loading  for mobile*/}
+            <motion.div
+            className={`fixed  flex sm:hidden inset-0 z-0  min-h-screen bg-scroll bg-bottom bg-no-repeat bg-contain lightning-zap md:bg-top md:bg-fixed md:bg-cover `}
+                style={{
+                    backgroundImage: `url(${zuesMobile})`,
                    
                 }}
                 initial={{ scale: 1.1 }}
