@@ -157,7 +157,7 @@ const Home2 = () => {
                         className='font-bilbo-swap-caps text-center text-[#e7b472] text-[1.2em] sm:text-[1.8em] md:text-[2em] mt-4 md:mb-10'
                         initial={{ y: 20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.8, delay: 2.5 }}
+                        transition={{ duration: 0.8, delay: 0.5}}
                     >
                         Department Of Computer Science, Central Campus, Bangalore
                     </motion.p>
