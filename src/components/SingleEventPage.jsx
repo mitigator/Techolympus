@@ -12,10 +12,10 @@ function SingleEventPage(props) {
     
     
     const { eventData,img } = props;
-    // useEffect(()=>{
-    //     document.title = `${eventData.eventType}- Gateways 2024`;
-    //     window.scrollTo(0,0)
-    // },[eventData])
+    useEffect(()=>{
+        document.title = `${eventData.eventType}- Gateways 2024`;
+        window.scrollTo(0,0)
+    },[eventData])
 
 
 
