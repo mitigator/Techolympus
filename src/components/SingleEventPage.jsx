@@ -12,10 +12,13 @@ function SingleEventPage(props) {
     
     
     const { eventData,img } = props;
-    useEffect(()=>{
-        document.title = `${eventData.eventType}- Gateways 2024`;
-        window.scrollTo(0,0)
-    },[eventData])
+    // useEffect(()=>{
+    //     document.title = `${eventData.eventType}- Gateways 2024`;
+    //     window.scrollTo(0,0)
+    // },[eventData])
+
+
+
   return (
     <div
     className="bg-[#000000] min-h-screen bg-bgleaf bg-no-repeat bg-cover bg-center bg-fixed flex flex-col items-center gap-10  pt-20"
@@ -56,7 +59,7 @@ function SingleEventPage(props) {
                 <p className='px-4 h-full items-center justify-center flex w-full text-center  py-2  border-[#E7B472] border-2  '>{eventData.teamSize} Per Team</p>
                 </div>
            
-           {!eventData?.eventMode&&
+          
             <div 
             data-aos="zoom-in"
         data-aos-duration="1500"
@@ -64,7 +67,7 @@ function SingleEventPage(props) {
                 <div className='  text-base font-bold bg-[#E7B472] font-mono text-[#030520] px-2 py-1'>Event Venue</div>
                 <p className='px-4 h-full items-center justify-center flex w-full text-center  py-2  border-[#E7B472] border-2  '>{eventData.venue}</p>
                 </div>
-           }
+           
 
 
             <div
@@ -76,18 +79,21 @@ function SingleEventPage(props) {
                 </div>
 
         </div>
-        <div
-         data-aos="zoom-in"
-        data-aos-duration="500"
-         className='flex justify-center mt-10'>
-            {
-                eventData?.eventMode&&
-                <div className=' tracking-[2px] border-[#E7B472] w-full md:w-fit text-center px-6 py-2  text-3xl text-color-animation '>
-                    ONLINE  EVENT 
 
-                </div>
-            }
-        </div>
+
+
+        
+        <div data-aos="zoom-in"
+        data-aos-duration="1000" className='mt-10 text-3xl text-center'>{eventData.datetime}</div>
+
+
+        <div
+        data-aos="zoom-in"
+        data-aos-duration="1200"
+         className='font-mono text-center text-color-animation'>{eventData.regtype} Registration</div>
+
+
+
     </div>
     <img data-aos="fade-up"
         data-aos-duration="1000" src={end} alt="Border" className="object-contain w-[70%] md:w-auto" />
@@ -183,6 +189,8 @@ function SingleEventPage(props) {
            
     </div>
 
+
+  
    
 
     {/* External Link Button */}
@@ -201,6 +209,18 @@ function SingleEventPage(props) {
             Register Now
         </a>
 
+    </div>
+
+      
+    <div
+    data-aos="zoom-in"
+        data-aos-duration="1000"
+     className='flex flex-col gap-5 p-2 '>
+        <div className='flex flex-col font-mono text-3xl font-black text-center text-white scale-animation'>
+            <span className='mr-2 text-xl'>Registration Closes</span>
+            <span className='font-abril-fatface font-medium text-[#E7B472]'>{eventData.regclose} </span>
+            
+        </div>
     </div>
     <div className='w-[100vw] '>
     <Footer/>
@@ -228,7 +248,10 @@ SingleEventPage.propTypes = {
         contactNumber: PropTypes.string.isRequired,
         link: PropTypes.string.isRequired,
         prerequisites:PropTypes.string.isRequired,
-        eventMode:PropTypes.string.isRequired
+        eventMode:PropTypes.string.isRequired,
+        regclose:PropTypes.string.isRequired,
+        datetime:PropTypes.string.isRequired,
+        regtype:PropTypes.string.isRequired
 
     }).isRequired,
     img: PropTypes.string.isRequired,
