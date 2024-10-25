@@ -190,6 +190,7 @@ function SingleEventPage(props) {
     </div>
 
 
+
   
    
 
@@ -210,6 +211,7 @@ function SingleEventPage(props) {
         </a>
 
     </div>
+   
 
       
     <div
@@ -220,6 +222,16 @@ function SingleEventPage(props) {
             <span className='mr-2 text-xl'>Registration Closes</span>
             <span className='font-abril-fatface font-medium text-[#E7B472]'>{eventData.regclose} </span>
             
+        </div>
+    </div>
+     <div
+    data-aos="zoom-in-up"
+    data-aos-duration="1500"
+    data-aos-anchor-placement="top-bottom"
+    className='flex justify-center'>
+        <div className='text-[#E7B472] mx-3 text-center font-mono text-md md:text-xl bg-[#e7b47222] px-4 py-2 font-bold'>
+
+        {eventData.percollegecap}
         </div>
     </div>
     <div className='w-[100vw] '>
@@ -238,7 +250,7 @@ SingleEventPage.propTypes = {
         eventType: PropTypes.string.isRequired,
         teamSize: PropTypes.string.isRequired,
         venue: PropTypes.string.isRequired,
-        rounds: PropTypes.number.isRequired,
+        rounds: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
         firstPrize: PropTypes.string.isRequired,
         secondPrize: PropTypes.string.isRequired,
@@ -247,11 +259,12 @@ SingleEventPage.propTypes = {
         contactPerson: PropTypes.string.isRequired,
         contactNumber: PropTypes.string.isRequired,
         link: PropTypes.string.isRequired,
-        prerequisites:PropTypes.string.isRequired,
+        prerequisites:PropTypes.arrayOf(PropTypes.string).isRequired,
         eventMode:PropTypes.string.isRequired,
         regclose:PropTypes.string.isRequired,
         datetime:PropTypes.string.isRequired,
-        regtype:PropTypes.string.isRequired
+        regtype:PropTypes.string.isRequired,
+        percollegecap:PropTypes.string.isRequired
 
     }).isRequired,
     img: PropTypes.string.isRequired,

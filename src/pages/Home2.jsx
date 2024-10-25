@@ -46,7 +46,7 @@ const Home2 = () => {
 
     const htr = [
         'Name of the college the student is currently studying in',
-        'Name,College provided student register number and phone number of Member-1 who is the team leader ',
+        'Name, College provided student register number and phone number of Member-1 who is the team leader ',
         'Details of other teammates in the team. (Only applicable for Team Events)',
         'Open the payment link provided in the google form and make the payment to register for the event. Payment has to be done only once per  individual.',
         'In case, if the Individual / Team is registering for another event, they can upload the same payment screenshot/s that displays the Transaction ID.',
@@ -351,14 +351,21 @@ const Home2 = () => {
                     How To Register
                 </h1>
                 <motion.div
-                    className='flex flex-col-reverse justify-center w-full gap-8 md:flex-row-reverse'
+                    className='flex flex-col-reverse justify-center w-full gap-8 md:flex-row-reverse '
                     variants={containerVariants}
                 >
                     <div
-                        className='md:border-y bg-[#0000004c] flex-col md:border-r md:border-l  p-5 px-4 md:px-8 border-[#e7b472] text-white   w-full text-justify md:w-1/2 font-mono text-sm leading-relaxed flex justify-center  '
+                        className='md:border-y bg-[#0000004c] flex-col md:border-r md:border-l  p-5 px-4 md:px-8 border-[#e7b472] text-white  w-full text-justify md:w-1/2 font-mono text-sm leading-relaxed flex justify-center  '
                         data-aos="fade-in"
                         data-aos-duration="1000"                        
                     >
+                        <div
+                        data-aos="zoom-in-up"
+                        data-aos-duration="1000"   
+                        className='bg-[#e7b472] text-black px-2 mt-2 py-1 text-center font-bold'>
+                            Participante in any number of events for  ₹150/-
+                        </div>
+                      
                         {
                             htr.map((node,i)=>(
                                 <div 
@@ -372,6 +379,12 @@ const Home2 = () => {
 
                             ))
                         }
+                          <div
+                          data-aos="zoom-in-up"
+                          data-aos-duration="1000"   
+                          className='bg-[#e7b472] text-black px-2 mt-2 py-1 text-center font-bold'>
+                            Accomodation Fee  ₹300/- first come first serve
+                         </div>
                     </div>
                     
 
