@@ -82,15 +82,21 @@ function SingleEventPage(props) {
 
 
 
-        
+        <div className='mt-10 flex flex-col gap2 text center '>
+        <div 
+         data-aos="zoom-in"
+        data-aos-duration="800"
+        className='text-center font-mono font-bold text-white text-xl'>Event Date</div>
+
         <div data-aos="zoom-in"
-        data-aos-duration="1000" className='mt-10 text-3xl text-center'>{eventData.datetime}</div>
+        data-aos-duration="1000" className=' text-3xl text-center'>{eventData.datetime}</div>
+        </div>
 
 
         <div
         data-aos="zoom-in"
         data-aos-duration="1200"
-         className='font-mono text-center text-color-animation'>{eventData.regtype} Registration</div>
+         className='font-mono mt-5 text-center text-color-animation'>{eventData.regtype} Registration</div>
 
 
 

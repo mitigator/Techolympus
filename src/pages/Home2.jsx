@@ -45,6 +45,8 @@ const Home2 = () => {
     };
 
     const htr = [
+        'Browse through the events given above or in the events page and clicking on an event you wish to participate.',
+        'Read all details about the event carefully and click on register button to redirect to the form and fill the details as mentioned in the following steps',
         'Name of the college the student is currently studying in',
         'Name, College provided student register number and phone number of Member-1 who is the team leader ',
         'Details of other teammates in the team. (Only applicable for Team Events)',
@@ -360,7 +362,7 @@ const Home2 = () => {
                         data-aos-duration="1000"                        
                     >
                         <div
-                        data-aos="zoom-in-up"
+                        data-aos="zoom-in"
                         data-aos-duration="1000"   
                         className='bg-[#e7b472] text-black px-2 mt-2 py-1 text-center font-bold'>
                             Participante in any number of events for  ₹150/-
@@ -372,7 +374,7 @@ const Home2 = () => {
                                 data-aos="zoom-in"
                                 data-aos-duration={1000+i*100}
                                 // data-aos-once
-                                key={i} className={`flex flex-col my-2 ${i===5?"bg-[#e7b47245] p-2 border-[#e7b472] border scale-animation":""} `}>
+                                key={i} className={`flex flex-col my-2 ${i===5||i==7?"bg-[#e7b47245] p-2 border-[#e7b472] border scale-animation":""} `}>
                                     <div className={`text-xl font-bold text-[#e7b472] underline underline-offset-2 `}>Step {i+1}</div>
                                     <div>{node}</div>
                                 </div>
@@ -380,7 +382,7 @@ const Home2 = () => {
                             ))
                         }
                           <div
-                          data-aos="zoom-in-up"
+                          data-aos="zoom-in"
                           data-aos-duration="1000"   
                           className='bg-[#e7b472] text-black px-2 mt-2 py-1 text-center font-bold'>
                             Accomodation Fee  ₹300/- first come first serve
