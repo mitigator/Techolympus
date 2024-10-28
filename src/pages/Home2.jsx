@@ -365,7 +365,7 @@ const Home2 = () => {
                         data-aos="zoom-in"
                         data-aos-duration="1000"   
                         className='bg-[#e7b472] text-black px-2 mt-2 py-1 text-center font-bold'>
-                            Participante in any number of events for  ₹150/-
+                            Participate in any number of events for  ₹150/-
                         </div>
                       
                         {
