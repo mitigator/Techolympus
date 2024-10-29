@@ -388,11 +388,19 @@ const Home2 = () => {
                             Accomodation Fee  ₹300/- first come first serve
                          </div>
                     </div>
+
                     
 
                     
                 </motion.div>
             </motion.div>
+                    <div className='flex justify-center my-4 font-mono text-white hover:underline underline-offset-2 hover:text-[#e7b472]'>
+                    <a 
+                     data-aos="zoom-in"
+                    data-aos-duration="2000"
+                    href="/assets/Gateways2024-Brochure.pdf" download >Download Brochure</a>
+
+                    </div>
 
 
                    

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const NotFound = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#0f0f19] text-[#e7b472]">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#0b0b0b] text-[#e7b472]">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -12,7 +12,7 @@ const NotFound = () => {
         className="text-center"
       >
         <motion.h1
-          className="text-6xl font-bold mb-4"
+          className="mb-4 text-6xl font-bold"
           initial={{ scale: 0.5 }}
           animate={{ scale: 1 }}
           transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
@@ -20,7 +20,7 @@ const NotFound = () => {
           404
         </motion.h1>
         <motion.p
-          className="text-2xl mb-8"
+          className="mb-8 font-mono text-2xl"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.5 }}
@@ -29,7 +29,7 @@ const NotFound = () => {
         </motion.p>
         <Link to='/'>
         <motion.button
-          className="px-6 py-3 bg-[#e7b472] text-[#0f0f19] rounded-lg font-semibold hover:bg-opacity-80 transition-colors duration-300"
+          className="px-6 py-3 font-mono bg-[#e7b472] text-[#0f0f19]  font-semibold hover:bg-opacity-80 transition-colors duration-300"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => {
