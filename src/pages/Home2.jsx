@@ -429,13 +429,13 @@ const Home2 = () => {
                         <div  data-aos="zoom-in"
                         className='flex flex-col'
                     data-aos-duration="2000">
-                            <div className='bg-[#e7b472]   font-bold  text-black px-7 py-1 md:min-w-[200px] text-center mx-auto'>Mohit P</div>
+                            <div className='bg-[#e7b472]   font-bold  text-black px-7 py-1 w-[160px] md:min-w-[200px] text-center mx-auto'>Mohit P</div>
                             <a href="tel:8921893291" className='px-5 py-1 bebas-neue-regular tracking-[3px] bg-[#e7b4721d]  text-center select-text'>8921893291</a>
                         </div>
                         <div  data-aos="zoom-in"
                         className='flex flex-col'
                     data-aos-duration="2000">
-                            <div className='bg-[#e7b472]   font-bold  text-black px-7 py-1 md:min-w-[200px] text-center mx-auto'>R Sharanya</div>
+                            <div className='bg-[#e7b472]   font-bold  text-black px-7 py-1 w-[160px] md:min-w-[200px] text-center mx-auto'>R Sharanya</div>
                             <a href="tel:9686224079" className='px-5 py-1 bebas-neue-regular tracking-[3px] bg-[#e7b4721d] text-center select-text'>9686224079</a>
                         </div>
 
