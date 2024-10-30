@@ -82,21 +82,21 @@ function SingleEventPage(props) {
 
 
 
-        <div className='mt-10 flex flex-col gap2 text center '>
+        <div className='flex flex-col mt-10 gap2 text center '>
         <div 
          data-aos="zoom-in"
         data-aos-duration="800"
-        className='text-center font-mono font-bold text-white text-xl'>Event Date</div>
+        className='font-mono text-xl font-bold text-center text-white'>Event Date</div>
 
         <div data-aos="zoom-in"
-        data-aos-duration="1000" className=' text-3xl text-center'>{eventData.datetime}</div>
+        data-aos-duration="1000" className='text-3xl text-center '>{eventData.datetime}</div>
         </div>
 
 
         <div
         data-aos="zoom-in"
         data-aos-duration="1200"
-         className='font-mono mt-5 text-center text-color-animation'>{eventData.regtype} Registration</div>
+         className='mt-5 font-mono text-center text-color-animation'>{eventData.regtype} Registration</div>
 
 
 
@@ -176,6 +176,25 @@ function SingleEventPage(props) {
     <img  data-aos="fade-up"
     // data-aos-anchor-placement="top-center"
    data-aos-duration="1000" src={end} alt="Border" className="object-contain w-[70%] md:w-auto" />
+    
+    {/* Eligibility Section */}
+    <div className="text-[#FFD6A1] text-center px-4 md:px-0 mt-6 mb-[100px] md:mb-[100px]">
+        <h2  data-aos="zoom-in"
+   data-aos-duration="1000" className="text-4xl font-bold  mb-[30px]  font-abril-fatface md:text-6xl text-[#e7b472] tracking-[2px]">Eligibility</h2>
+           
+                <div
+                data-aos-anchor-placement="bottom" 
+
+                data-aos="zoom-in"
+                data-aos-duration={1000}
+                className='mx-auto max-w-[80%] md:max-w-[90%] text-center  font-mono px-4 py-2 text-white text-lg md:text-2xl'>{eventData?.eligibility}</div>
+       
+    </div>
+
+    <img  data-aos="fade-up"
+    // data-aos-anchor-placement="top-center"
+   data-aos-duration="1000" src={end} alt="Border" className="object-contain w-[70%] md:w-auto" />
+
 
 
     {/* Constact Section */}
@@ -270,7 +289,8 @@ SingleEventPage.propTypes = {
         regclose:PropTypes.string.isRequired,
         datetime:PropTypes.string.isRequired,
         regtype:PropTypes.string.isRequired,
-        percollegecap:PropTypes.string.isRequired
+        percollegecap:PropTypes.string.isRequired,
+        eligibility:PropTypes.string.isRequired
 
     }).isRequired,
     img: PropTypes.string.isRequired,

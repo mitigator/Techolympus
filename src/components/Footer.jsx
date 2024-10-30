@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -13,6 +14,7 @@ const Footer = () => {
     >
       <div className='bg-[#000000b7] flex-col w-full border-t border-[#e7b4727b]'>
        <div className='flex   justify-between items-center text-[#0f0f19] text-[#E7B472] h-auto md:h-20 pt-4 md:py-0 z-100'>
+       <Link to="/">
         <motion.div 
           className='flex flex-col items-center justify-center mb-4 ml-5 md:ml-10 md:mb-0'
           whileHover={{ scale: 1.05 }}
@@ -21,6 +23,7 @@ const Footer = () => {
           <p className='text-lg font-abril-fatface md:text-xl '>Gateways 2024</p>
           <p className='ml-0 text-sm font-bilbo-swap-caps md:text-base md:ml-2 text-color-animation'>techOlympus</p>
         </motion.div>
+       </Link>
         
         <div className='flex mr-5 space-x-4 md:mr-10'>
           <motion.a 

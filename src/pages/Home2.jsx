@@ -394,13 +394,64 @@ const Home2 = () => {
                     
                 </motion.div>
             </motion.div>
-                    <div className='flex justify-center my-4 font-mono text-white hover:underline underline-offset-2 hover:text-[#e7b472]'>
+
+
+
+{/* CONCTACT SECTION */}
+                    <motion.div
+                className='flex flex-col items-center gap-10 p-10 overflow-x-hidden overflow-y-hidden h-fit'
+                variants={containerVariants}
+            >
+                            <img
+                            data-aos="fade-up"
+                            data-aos-duration="1000" src={border} alt="Border" className=" object-contain w-[90%] md:w-auto" loading="lazy" />
+
+                <h1
+                    className='font-abril-fatface text-[#e7b472] text-5xl '
+                    data-aos="zoom-in"
+                    data-aos-duration="1000"                >
+                    Contact
+                </h1>
+                <motion.div
+                    className='flex flex-col items-center justify-center w-full gap-8 md:h-auto'
+                    variants={containerVariants}
+
+                >
+                    <div className='font-mono text-white'  
+                    data-aos="zoom-in"
+                    data-aos-duration="2000"
+                    >For any queries regarding the fest </div>
+                   
+
+                 
+                   
+                    <div className='flex gap-2 font-mono text-lg text-white md:text-xl md:flex-row md:gap-10 '>
+                        <div  data-aos="zoom-in"
+                        className='flex flex-col'
+                    data-aos-duration="2000">
+                            <div className='bg-[#e7b472]   font-bold  text-black px-7 py-1 md:min-w-[200px] text-center mx-auto'>Mohit P</div>
+                            <a href="tel:8921893291" className='px-5 py-1 bebas-neue-regular tracking-[3px] bg-[#e7b4721d]  text-center select-text'>8921893291</a>
+                        </div>
+                        <div  data-aos="zoom-in"
+                        className='flex flex-col'
+                    data-aos-duration="2000">
+                            <div className='bg-[#e7b472]   font-bold  text-black px-7 py-1 md:min-w-[200px] text-center mx-auto'>R Sharanya</div>
+                            <a href="tel:9686224079" className='px-5 py-1 bebas-neue-regular tracking-[3px] bg-[#e7b4721d] text-center select-text'>9686224079</a>
+                        </div>
+
+
+                    </div>
+                </motion.div>
+            </motion.div>
+            <div className='flex justify-center my-4 mt-10 font-mono text-white hover:underline underline-offset-2 hover:text-[#e7b472]'>
                     <a 
                      data-aos="zoom-in"
                     data-aos-duration="2000"
                     href="/assets/Gateways2024-Brochure.pdf" download >Download Brochure</a>
 
                     </div>
+
+
 
 
                    
