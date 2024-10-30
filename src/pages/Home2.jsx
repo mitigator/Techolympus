@@ -417,7 +417,7 @@ const Home2 = () => {
                     variants={containerVariants}
 
                 >
-                    <div className='font-mono text-white'  
+                    <div className='font-mono text-center text-white'  
                     data-aos="zoom-in"
                     data-aos-duration="2000"
                     >For any queries regarding the fest </div>
@@ -425,18 +425,18 @@ const Home2 = () => {
 
                  
                    
-                    <div className='flex gap-2 font-mono text-lg text-white md:text-xl md:flex-row md:gap-10 '>
+                    <div className='flex gap-2 font-mono text-[14px] text-white md:text-xl md:flex-row md:gap-10 '>
                         <div  data-aos="zoom-in"
-                        className='flex flex-col'
+                        className='flex flex-col text-center w-[130px] md:min-w-[300px]'
                     data-aos-duration="2000">
-                            <div className='bg-[#e7b472]   font-bold  text-black px-7 py-1 w-[160px] md:min-w-[200px] text-center mx-auto'>Mohit P</div>
+                            <div className='bg-[#e7b472] w-full  font-bold  text-black  py-1  text-center mx-auto'>Mohit</div>
                             <a href="tel:8921893291" className='px-5 py-1 bebas-neue-regular tracking-[3px] bg-[#e7b4721d]  text-center select-text'>8921893291</a>
                         </div>
                         <div  data-aos="zoom-in"
-                        className='flex flex-col'
+                        className='flex flex-col text-center w-[130px] md:min-w-[300px]'
                     data-aos-duration="2000">
-                            <div className='bg-[#e7b472]   font-bold  text-black px-7 py-1 w-[160px] md:min-w-[200px] text-center mx-auto'>R Sharanya</div>
-                            <a href="tel:9686224079" className='px-5 py-1 bebas-neue-regular tracking-[3px] bg-[#e7b4721d] text-center select-text'>9686224079</a>
+                            <div className='bg-[#e7b472]  w-full font-bold  text-black  py-1  text-center mx-auto'>Sharanya</div>
+                            <a href="tel:9686224079" className='px-5 py-1 text-center bebas-neue-regular tracking-[3px] bg-[#e7b4721d]  select-text'>9686224079</a>
                         </div>
 
 
