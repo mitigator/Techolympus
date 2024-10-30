@@ -178,7 +178,7 @@ function SingleEventPage(props) {
    data-aos-duration="1000" src={end} alt="Border" className="object-contain w-[70%] md:w-auto" />
     
     {/* Eligibility Section */}
-    <div className="text-[#FFD6A1] text-center px-4 md:px-0 mt-6 mb-[100px] md:mb-[100px]">
+    <div className="text-[#FFD6A1] text-center px-4 md:px-0 mt-6 mb-[100px] md:mb-[60px]">
         <h2  data-aos="zoom-in"
    data-aos-duration="1000" className="text-4xl font-bold  mb-[30px]  font-abril-fatface md:text-6xl text-[#e7b472] tracking-[2px]">Eligibility</h2>
            
