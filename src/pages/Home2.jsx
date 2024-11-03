@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import OliveLeaf from '../assets/OliveLeaf.png';
 import zeus from '../assets/zeus.svg';
+import techbyheart from '../assets/sponcers/TBH-White.png'
+import myPerfect from '../assets/sponcers/MyPerfect-white.png'
+import poorvika from '../assets/sponcers/poorvika-white.png'
+import lsTech from '../assets/sponcers/LS-White.png'
 import zuesMobile from '../assets/zeusMobile.svg'
 import Trails from '../components/Trial';
 import Techolympys from '../assets/Techolympuslogo.svg';
@@ -43,6 +47,11 @@ const Home2 = () => {
         hidden: { opacity: 0 },
         visible: { opacity: 1 },
     };
+
+    const movetoTop=()=>{
+        window.scrollTo(0,0)
+
+    }
 
     const htr = [
         'Browse through the events given above or in the events page and clicking on an event you wish to participate.',
@@ -395,10 +404,75 @@ const Home2 = () => {
                 </motion.div>
             </motion.div>
 
+{/* Sponcers Section */}
+<motion.div
+                className='flex flex-col items-center gap-10 p-10 overflow-x-hidden overflow-y-hidden h-fit'
+                variants={containerVariants}
+            >
+                            <img
+                            data-aos="fade-up"
+                            data-aos-duration="1000" src={border} alt="Border" className=" object-contain w-[90%] md:w-auto" loading="lazy" />
+
+                <h1
+                    className='font-abril-fatface text-[#e7b472] text-5xl '
+                    data-aos="zoom-in"
+                    data-aos-duration="1000"                >
+                    Our Sponcors
+                </h1>
+                <motion.div
+                    className='flex flex-col items-center justify-center w-full gap-8 md:h-auto'
+                    variants={containerVariants}
+
+                >
+
+                    <div className='flex-wrap items-center justify-center hidden gap-20 sm:flex'>
+                        <div data-aos="zoom-in"
+                    data-aos-duration="1000"   className='singleSponcorCard'><img src={techbyheart} alt="" /></div>
+                        <div data-aos="zoom-in"
+                    data-aos-duration="1000"  className='singleSponcorCard'><img src={lsTech} alt="" /></div>
+                        <div data-aos="zoom-in"
+                    data-aos-duration="1000"  className='singleSponcorCard'><img src={poorvika} alt="" /></div>
+                        <div data-aos="zoom-in"
+                    data-aos-duration="1000"  className='singleSponcorCard'><img src={myPerfect} alt="" /></div>
+                    </div>
+
+                    <div className='flex w-full overflow-x-hidden sm:hidden'>
+                    <div className="flex flex-row horizontal-scrolling-items">
+
+                    <div className="flex flex-row gap-[20px] horizontal-scrolling-items__item">
+                    <div data-aos="zoom-in"
+                    data-aos-duration="1000"   className='singleSponcorCard min-w-[150px]'><img src={techbyheart} alt="" /></div>
+                        <div data-aos="zoom-in"
+                    data-aos-duration="1000"  className='singleSponcorCard  min-w-[150px]'><img src={lsTech} alt="" /></div>
+                        <div data-aos="zoom-in"
+                    data-aos-duration="1000"  className='singleSponcorCard min-w-[150px]'><img src={poorvika} alt="" /></div>
+                        <div data-aos="zoom-in"
+                    data-aos-duration="1000"  className='singleSponcorCard min-w-[150px]'><img src={myPerfect} alt="" /></div>
+                      </div>
+
+                      <div className="flex flex-row gap-[20px] horizontal-scrolling-items__item ">
+                    <div data-aos="zoom-in"
+                    data-aos-duration="1000"   className='singleSponcorCard min-w-[150px]'><img src={techbyheart} alt="" /></div>
+                        <div data-aos="zoom-in"
+                    data-aos-duration="1000"  className='singleSponcorCard  min-w-[150px]'><img src={lsTech} alt="" /></div>
+                        <div data-aos="zoom-in"
+                    data-aos-duration="1000"  className='singleSponcorCard min-w-[150px]'><img src={poorvika} alt="" /></div>
+                        <div data-aos="zoom-in"
+                    data-aos-duration="1000"  className='singleSponcorCard min-w-[150px]'><img src={myPerfect} alt="" /></div>
+                      </div>
+                     
+
+</div>
+  
+
+                    </div>
+                   
+                </motion.div>
+</motion.div>
 
 
 {/* CONCTACT SECTION */}
-                    <motion.div
+             <motion.div
                 className='flex flex-col items-center gap-10 p-10 overflow-x-hidden overflow-y-hidden h-fit'
                 variants={containerVariants}
             >
@@ -443,16 +517,21 @@ const Home2 = () => {
                     </div>
                 </motion.div>
             </motion.div>
-            <div className='flex justify-center my-4 mt-10 font-mono text-white hover:underline underline-offset-2 hover:text-[#e7b472]'>
+
+
+            <div className='flex justify-center scale-animation my-4 mt-10 font-mono text-white hover:underline underline-offset-2 hover:text-[#e7b472]'>
                     <a 
                      data-aos="zoom-in"
                     data-aos-duration="2000"
                     href="/assets/Gateways2024-Brochure.pdf" download >Download Brochure</a>
 
-                    </div>
-
-
-
+            </div>
+            <div className='flex justify-end px-10 py-10 mx-auto'>
+                <div onClick={movetoTop} className='p-2 rounded-full flex bg-[#e7b472] cursor-pointer'>
+                <svg height={20} width={20} viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+                </div>
+            </div>
+          
 
                    
             <Footer />

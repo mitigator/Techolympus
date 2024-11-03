@@ -323,3 +323,46 @@
     100% { opacity: 1; }
   }
 
+.singleSponcorCard{
+  max-width: 200px; /* Set a maximum width to scale down larger images */
+  flex: 1; /* Allows images to grow/shrink proportionally */
+  position: relative; /* Needed to position the gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+     
+}
+
+
+/* Gradient background effect */
+.image-singleSponcorCard::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  z-index: -1; /* Ensures it appears behind the image */
+}
+
+.singleSponcorCard img{
+  width: 100%; /* Makes the image fill the width of its container */
+  height: auto; /* Maintains the image's aspect ratio */
+  object-fit: contain; 
+}
+
+
+@keyframes infiniteScroll {
+  from {transform: translateX(0)}
+  to {transform: translateX(-50%)}
+}
+
+.horizontal-scrolling-items {
+  display: flex;
+  width: 3000px;
+  animation-name: infiniteScroll;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.horizontal-scrolling-items__item {
+  white-space: nowrap;
+}
