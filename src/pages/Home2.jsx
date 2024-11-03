@@ -4,7 +4,7 @@ import OliveLeaf from '../assets/OliveLeaf.png';
 import zeus from '../assets/zeus.svg';
 import techbyheart from '../assets/sponcers/TBH-White.png'
 import myPerfect from '../assets/sponcers/MyPerfect-white.png'
-import poorvika from '../assets/sponcers/poorvika-white.png'
+import poorvika from '../assets/sponcers/Poorvika-white.png'
 import lsTech from '../assets/sponcers/LS-White.png'
 import zuesMobile from '../assets/zeusMobile.svg'
 import Trails from '../components/Trial';
