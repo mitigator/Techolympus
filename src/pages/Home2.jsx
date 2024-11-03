@@ -17,6 +17,7 @@ import Footer from '../components/Footer';
 import border from '../assets/borderline.svg';
 import Preloader from '../components/Preloader';
 import Countdown from '../components/Countdown';
+import MoveToTop from '../components/MoveToTop';
 // import { div } from 'framer-motion/client';
 
 const Home2 = () => {
@@ -48,10 +49,7 @@ const Home2 = () => {
         visible: { opacity: 1 },
     };
 
-    const movetoTop=()=>{
-        window.scrollTo(0,0)
-
-    }
+    
 
     const htr = [
         'Browse through the events given above or in the events page and clicking on an event you wish to participate.',
@@ -528,12 +526,8 @@ const Home2 = () => {
                     href="/assets/Gateways2024-Brochure.pdf" download >Download Brochure</a>
 
             </div>
-            <div className='flex justify-end px-10 py-10 '>
-                <div onClick={movetoTop} className='p-2 bg-[#e7b472]  cursor-pointer'>
-                <svg height={20} width={20} viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
-                </div>
-            </div>
             
+            <MoveToTop/>
             <Footer />
             </div>
 

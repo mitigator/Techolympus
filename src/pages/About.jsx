@@ -6,6 +6,7 @@ import border from '../assets/borderline.svg';
 import NewAboutCard from '../components/NewAboutCard';
 import Footer from '../components/Footer';
 import { useEffect } from 'react';
+import MoveToTop from '../components/MoveToTop';
 
 
 const About = () => {
@@ -128,6 +129,7 @@ const About = () => {
 
 
         </div>
+      <MoveToTop/>
       <Footer/>
       </div>
     </div>

@@ -18,6 +18,7 @@ import treasureHuntImage from '../assets/artemis.svg';
 import itManagerImage from '../assets/Hades.svg';
 import surpriseEventImage from '../assets/hera.svg';
 import Footer from '../components/Footer';
+import MoveToTop from '../components/MoveToTop';
 
 const EventCard = ({ title, description, linkUrl, imageUrl }) => (
   <div
@@ -163,7 +164,7 @@ const Events = () => {
         </div>
       </section>
       <div className='pt-[100px]'>
-
+      <MoveToTop/>
       <Footer/>
       </div>
     </div>

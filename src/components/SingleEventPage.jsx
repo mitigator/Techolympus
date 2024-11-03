@@ -4,6 +4,7 @@ import end from '../assets/borderline.svg';
 import PropTypes from 'prop-types'; 
 import Footer from './Footer';
 import zeus from '../assets/zeus.svg';
+import MoveToTop from './MoveToTop';
 
 
 
@@ -260,6 +261,7 @@ function SingleEventPage(props) {
         </div>
     </div>
     <div className='w-[100vw] '>
+    <MoveToTop/>
     <Footer/>
     </div>
 
