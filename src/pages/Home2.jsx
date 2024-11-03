@@ -436,6 +436,7 @@ const Home2 = () => {
                     data-aos-duration="1000"  className='singleSponcorCard'><img src={myPerfect} alt="" /></div>
                     </div>
 
+{/* Sponcor section mobile view  */}
                     <div className='flex w-full overflow-x-hidden sm:hidden'>
                     <div className="flex flex-row horizontal-scrolling-items">
 
@@ -472,6 +473,7 @@ const Home2 = () => {
 
 
 {/* CONCTACT SECTION */}
+
              <motion.div
                 className='flex flex-col items-center gap-10 p-10 overflow-x-hidden overflow-y-hidden h-fit'
                 variants={containerVariants}
