@@ -98,6 +98,17 @@ function SingleEventPage(props) {
         data-aos="zoom-in"
         data-aos-duration="1200"
          className='mt-5 font-mono text-center text-color-animation'>{eventData.regtype} Registration</div>
+{
+    eventData.eventType==="Hackathon"&&
+         <div
+          data-aos="zoom-in"
+        data-aos-duration="1200"
+         className='mx-auto my-5 font-mono text-white'>
+            International payment is accepted for this event 
+         </div>
+}
+
+
 
 
 
