@@ -415,7 +415,7 @@ const Home2 = () => {
                     className='font-abril-fatface text-[#e7b472] text-5xl '
                     data-aos="zoom-in"
                     data-aos-duration="1000"                >
-                    Our Sponcors
+                    Our Sponsors
                 </h1>
                 <motion.div
                     className='flex flex-col items-center justify-center w-full gap-8 md:h-auto'
