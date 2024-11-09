@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import OliveLeaf from '../assets/OliveLeaf.png';
 import zeus from '../assets/zeus.svg';
-import techbyheart from '../assets/sponcers/TBH-White.png'
-import myPerfect from '../assets/sponcers/MyPerfect-white.png'
-import poorvika from '../assets/sponcers/Poorvika-white.png'
+import techbyheart from '../assets/sponcers/TBH-Norm.png'
+import allSponsors from '../assets/sponcers/All-Sponcers.png'
+import myPerfect from '../assets/sponcers/MyPerfect.png'
+import poorvika from '../assets/sponcers/Poorvika-color.png'
 import lsTech from '../assets/sponcers/LS-White.png'
+import SM from '../assets/sponcers/SM.png'
 import zuesMobile from '../assets/zeusMobile.svg'
 import Trails from '../components/Trial';
 import Techolympys from '../assets/Techolympuslogo.svg';
@@ -167,7 +169,7 @@ const Home2 = () => {
                         className='translate-y-[52px] md:translate-y-[85px] flex flex-col'
                         // whileHover={{ scale: 1.1 }}
                     >
-                        <p className='text-[25px] sm:text-[40px] '>30</p>
+                        <p className='text-[25px] sm:text-[40px] '>28</p>
                         <p className='text-[12px] sm:text-[20px] leading-[0px]'>years</p>
                     </motion.div>
 
@@ -412,7 +414,7 @@ const Home2 = () => {
                             data-aos-duration="1000" src={border} alt="Border" className=" object-contain w-[90%] md:w-auto" loading="lazy" />
 
                 <h1
-                    className='font-abril-fatface text-[#e7b472] text-5xl '
+                    className='font-abril-fatface text-[#e7b472] text-5xl text-center '
                     data-aos="zoom-in"
                     data-aos-duration="1000"                >
                     Our Sponsors
@@ -424,7 +426,12 @@ const Home2 = () => {
                 >
 
                     <div className='flex-wrap items-center justify-center hidden gap-20 sm:flex'>
-                        <div data-aos="zoom-in"
+                    <div data-aos="zoom-in"
+                    data-aos-duration="1000"   className='mt-12 singleSponcorCard'><img src={allSponsors} className='xl:scale-[500%] lg:scale-[400%] scale-[300%]' alt="" /></div> 
+ 
+                        
+                        
+                        {/* <div data-aos="zoom-in"
                     data-aos-duration="1000"   className='singleSponcorCard'><img src={techbyheart} alt="" /></div>
                         <div data-aos="zoom-in"
                     data-aos-duration="1000"  className='singleSponcorCard'><img src={lsTech} alt="" /></div>
@@ -432,10 +439,14 @@ const Home2 = () => {
                     data-aos-duration="1000"  className='singleSponcorCard'><img src={poorvika} alt="" /></div>
                         <div data-aos="zoom-in"
                     data-aos-duration="1000"  className='singleSponcorCard'><img src={myPerfect} alt="" /></div>
+                   <div data-aos="zoom-in"
+                    data-aos-duration="1000"  className='singleSponcorCard'><img src={myPerfect} alt="" /></div> */}
+
+
                     </div>
 
 {/* Sponcor section mobile view  */}
-                    <div className='flex w-full overflow-x-hidden sm:hidden'>
+           <div className='flex w-full overflow-x-hidden sm:hidden'>
                     <div className="flex flex-row horizontal-scrolling-items">
 
                     <div className="flex flex-row gap-[20px] horizontal-scrolling-items__item">
@@ -447,6 +458,9 @@ const Home2 = () => {
                     data-aos-duration="1000"  className='singleSponcorCard min-w-[150px]'><img src={poorvika} alt="" /></div>
                         <div data-aos="zoom-in"
                     data-aos-duration="1000"  className='singleSponcorCard min-w-[150px]'><img src={myPerfect} alt="" /></div>
+                        <div data-aos="zoom-in"
+                    data-aos-duration="1000"  className='singleSponcorCard min-w-[150px]'><img src={SM} alt="" /></div>
+
                       </div>
 
                       <div className="flex flex-row gap-[20px] horizontal-scrolling-items__item ">
@@ -458,13 +472,12 @@ const Home2 = () => {
                     data-aos-duration="1000"  className='singleSponcorCard min-w-[150px]'><img src={poorvika} alt="" /></div>
                         <div data-aos="zoom-in"
                     data-aos-duration="1000"  className='singleSponcorCard min-w-[150px]'><img src={myPerfect} alt="" /></div>
+                        <div data-aos="zoom-in"
+                    data-aos-duration="1000"  className='singleSponcorCard min-w-[150px]'><img src={SM} alt="" /></div>
+
                       </div>
-                     
-
-</div>
-  
-
-                    </div>
+         </div>
+   </div>
                    
                 </motion.div>
 </motion.div>
