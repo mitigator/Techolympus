@@ -11,7 +11,7 @@ const Navbar = (activePage) => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const controls = useAnimation();
 
-  const flipBookURL = "https://heyzine.com/flip-book/68b930374e.html"
+  const flipBookURL = "https://heyzine.com/flip-book/98523e19ca.html"
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
