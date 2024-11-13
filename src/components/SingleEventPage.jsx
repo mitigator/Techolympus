@@ -238,14 +238,14 @@ function SingleEventPage(props) {
      data-aos-anchor-placement="bottom"
 
     className="mb-[100px] md:my-[100px] ">
-        <a 
+        <div 
             href={eventData.link} 
             target="_blank" 
             rel="noopener noreferrer"
-            className=" tracking-[4px]   transition-none px-10 md:px-20 py-5  md:py-10 mb-10   hover:text-[#0f0f19] hover:bg-[#E7B472] text-[#E7B472] text-lg md:text-3xl  border-4  border-[#E7B472] font-abril-fatface"
+            className=" tracking-[4px] text-center font-black transition-none px-10 md:px-20 py-5  md:py-10 mb-10    text-[#d72d2d] text-xl md:text-4xl   font-abril-fatface"
         >
-            Register Now
-        </a>
+            REGISTRATIONS ARE CLOSED
+        </div>
 
     </div>
    
@@ -256,8 +256,7 @@ function SingleEventPage(props) {
         data-aos-duration="1000"
      className='flex flex-col gap-5 p-2 '>
         <div className='flex flex-col font-mono text-3xl font-black text-center text-white scale-animation'>
-            <span className='mr-2 text-xl'>Registration Closes</span>
-            <span className='font-abril-fatface font-medium text-[#E7B472]'>{eventData.regclose} </span>
+            <span className='font-abril-fatface font-medium text-[#E7B472]'>Check for On Spot availabilty</span>
             
         </div>
     </div>
