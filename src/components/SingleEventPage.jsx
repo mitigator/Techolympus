@@ -256,7 +256,7 @@ function SingleEventPage(props) {
         data-aos-duration="1000"
      className='flex flex-col gap-5 p-2 '>
         <div className='flex flex-col font-mono text-3xl font-black text-center text-white scale-animation'>
-            <span className='font-abril-fatface font-medium text-[#E7B472]'>Check for On Spot availabilty</span>
+            <span className='font-abril-fatface font-medium text-[#E7B472] mx-3'>Check for On Spot availabilty</span>
             
         </div>
     </div>
